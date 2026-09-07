@@ -1,6 +1,6 @@
 # Implement
 
-## Preconditions
+## Input
 
 The work contract is approved at the depth required by its workflow.
 
@@ -15,7 +15,10 @@ The work contract is approved at the depth required by its workflow.
    behavior changes.
 5. Integrate once in the main agent and run deterministic affected checks.
 
-## Outcome
+## Output
 
-Proceed to Review only with passing evidence. If a check fails, diagnose it;
-never weaken the check or silently expand scope.
+Proceed to Review only with passing evidence.
+
+## Rules
+
+- If a check fails, diagnose it; never weaken the check or silently expand scope.

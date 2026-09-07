@@ -1,9 +1,13 @@
 # Task Workflow
 
+## Input
+
 Use for maintenance, dependencies, configuration, documentation, refactoring,
 or operations that are neither a new capability nor incorrect behavior.
 
-## Phase order
+## Workflow
+
+Resume the first incomplete phase; read its contract before continuing.
 
 | Order | Phase                               | Purpose                                     |
 | ----- | ----------------------------------- | ------------------------------------------- |
@@ -11,6 +15,11 @@ or operations that are neither a new capability nor incorrect behavior.
 | 2     | [Implement](../phases/implement.md) | Deliver the smallest approved change        |
 | 3     | [Review](../phases/review.md)       | Review through the authorized delivery path |
 | 4     | [Complete](../phases/complete.md)   | Reconcile and verify the integrated result  |
+
+## Output
+
+Report the current phase, approval state, verification, and next transition or
+blocker under the parent skill's output contract.
 
 ## Rules
 

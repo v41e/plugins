@@ -1,7 +1,9 @@
 # Reset Selected Documents
 
-Use Reset only when the user explicitly requests replacement and names the exact
-documents.
+## Input
+
+An explicit replacement request naming the selected documents, current evidence,
+and the chosen target and templates.
 
 ## Workflow
 
@@ -13,3 +15,13 @@ documents.
 4. Replace only the named documents and leave every unselected file unchanged.
 5. Reset optional architecture documentation only when it is explicitly named
    and the target contract permits it.
+
+## Output
+
+Report replaced documents, material discarded content, validation, and unresolved
+facts under the parent skill's output contract.
+
+## Rules
+
+- Reset requires explicit replacement authorization for the named documents.
+- Leave unselected documents unchanged.

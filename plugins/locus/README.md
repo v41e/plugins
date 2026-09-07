@@ -8,22 +8,24 @@ The package provides five client-independent Agent Skills for finding owned
 context, maintaining canonical knowledge documents, tracking repository work,
 distilling verified evidence, and choosing the smallest matching workflow.
 
+> *Locus* is Latin for "place": knowledge and active work belong with their
+> verified owners, where they can be found, maintained, and trusted.
+
 - **Type**: Agent Plugin.
 - **Runtime**: compatible agent client; no bundled runtime or MCP server.
 
 ## Structure
 
 - [`plugin.json`](plugin.json): portable Agent Plugins v1 identity metadata
-- [`.codex-plugin/`](.codex-plugin/): Codex compatibility metadata:
-  - [`plugin.json`](.codex-plugin/plugin.json): Codex identity and interface metadata
+- [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`examples/`](examples/): generic, publishable examples:
-  - [`knowledge-map/`](examples/knowledge-map/AGENTS.md): private knowledge-map starting point
+  - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting point
 - [`skills/`](skills/): shared instruction-driven workflows:
-  - [`find/`](skills/find/SKILL.md): owned-knowledge and active-work discovery
-  - [`init/`](skills/init/SKILL.md): knowledge-document creation, refresh, and templates
-  - [`track/`](skills/track/SKILL.md): proportional Feature, Bug, and Task work tracking
-  - [`distill/`](skills/distill/SKILL.md): durable-knowledge ownership and promotion
-  - [`using/`](skills/using/SKILL.md): capability explanation and routing
+  - [`find/`](skills/find/): owned-knowledge and active-work discovery
+  - [`init/`](skills/init/): knowledge-document creation, refresh, and templates
+  - [`track/`](skills/track/): proportional Feature, Bug, and Task work tracking
+  - [`distill/`](skills/distill/): durable-knowledge ownership and promotion
+  - [`using/`](skills/using/): capability explanation and routing
 - [`AGENTS.md`](AGENTS.md): plugin operating contract
 
 ## Quickstart

@@ -1,6 +1,6 @@
 # Complete
 
-## Preconditions
+## Input
 
 Required reviews passed and the work reached the repository's authorized
 integration boundary.
@@ -16,7 +16,11 @@ integration boundary.
 5. Report any release, publish, production, or promotion work that remains under
    human ownership.
 
-## Outcome
+## Output
 
-Report completion with current evidence. Do not merge, push a production branch,
-release, publish, or deploy merely because implementation is complete.
+Report completion with current evidence.
+
+## Rules
+
+- Do not merge, push a production branch, release, publish, or deploy merely
+  because implementation is complete.

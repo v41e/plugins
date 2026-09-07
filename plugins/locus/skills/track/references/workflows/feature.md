@@ -1,8 +1,12 @@
 # Feature Workflow
 
+## Input
+
 Use for a new or materially expanded capability.
 
-## Phase order
+## Workflow
+
+Resume the first incomplete phase; read its contract before continuing.
 
 | Order | Phase                               | Purpose                                            |
 | ----- | ----------------------------------- | -------------------------------------------------- |
@@ -12,6 +16,11 @@ Use for a new or materially expanded capability.
 | 4     | [Implement](../phases/implement.md) | Deliver the smallest approved change               |
 | 5     | [Review](../phases/review.md)       | Review through the authorized delivery path        |
 | 6     | [Complete](../phases/complete.md)   | Reconcile and verify the integrated result         |
+
+## Output
+
+Report the current phase, approval state, verification, and next transition or
+blocker under the parent skill's output contract.
 
 ## Rules
 

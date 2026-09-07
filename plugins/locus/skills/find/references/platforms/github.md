@@ -1,6 +1,16 @@
-# GitHub Active Work
+# GitHub Adapter
 
 Use GitHub only when the task needs remote shaping, delivery, or review context.
+
+## Concept mapping
+
+| Concept            | GitHub surface | Semantics                                                        |
+| ------------------ | -------------- | ---------------------------------------------------------------- |
+| Work contract      | Issue          | Shaping, decisions, and approved specification or plan snapshots |
+| Coordination state | Project item   | Interpret status from verified metadata or repository policy     |
+| Delivery           | Pull request   | Verification, deviations, and review                             |
+
+## Evidence resolution
 
 1. Follow an explicitly named issue or pull request regardless of state.
 2. Otherwise read the repository-root `Work Tracking` section. If it declares
@@ -21,6 +31,6 @@ Use GitHub only when the task needs remote shaping, delivery, or review context.
 8. After completed delivery, inspect the relevant current code, tests, or
    repository docs when the question asks for current truth rather than history.
 
-Issues own shaping, decisions, and approved specification or plan snapshots.
-Pull requests own delivery, verification, deviations, and review. Code, tests,
-and repository docs remain durable truth.
+## Boundary semantics
+
+Code, tests, and repository docs remain durable truth.
