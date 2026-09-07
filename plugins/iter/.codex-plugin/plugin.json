@@ -1,6 +1,6 @@
 {
   "name": "iter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Brief or operate one repository, or explicitly dispatch caller-supplied work sequentially across saved Codex projects.",
   "author": {
     "name": "v41e",
@@ -9,7 +9,11 @@
   "homepage": "https://github.com/v41e/plugins/tree/main/plugins/iter",
   "repository": "https://github.com/v41e/plugins",
   "license": "MIT",
-  "keywords": ["orchestrate", "operation", "planning"],
+  "keywords": [
+    "orchestrate",
+    "operation",
+    "planning"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Iter",
@@ -25,6 +29,11 @@
     "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
     "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
     "category": "Productivity",
-    "capabilities": ["Read", "Write", "Plan", "Summarize"]
+    "capabilities": [
+      "Read",
+      "Write",
+      "Plan",
+      "Summarize"
+    ]
   }
 }
