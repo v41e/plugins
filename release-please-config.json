@@ -10,7 +10,9 @@
       "package-name": "locus",
       "extra-files": [
         "plugins/locus/plugin.json",
-        "plugins/locus/.codex-plugin/plugin.json"
+        "plugins/locus/.codex-plugin/plugin.json",
+        "plugins/iter/plugin.json",
+        "plugins/iter/.codex-plugin/plugin.json"
       ]
     }
   }

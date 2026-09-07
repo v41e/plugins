@@ -3,6 +3,10 @@
 Refresh reconciles existing documents with the current template contract. It is
 not replacement from a template.
 
+## Input
+
+Selected existing documents, current evidence, and the chosen target and templates.
+
 ## Workflow
 
 1. Read every existing selected document and every selected template completely.
@@ -13,7 +17,15 @@ not replacement from a template.
    its owner changed; do not duplicate durable explanations in `AGENTS.md`.
 6. Remove obsolete boilerplate, duplication, and placeholders only after useful
    content is preserved.
-7. Never silently delete unmatched content or replace facts with placeholders.
-   Report unresolved content as an open fact.
-8. Re-read the refreshed documents together and compare them with the templates
+7. Re-read the refreshed documents together and compare them with the templates
    for structure, not wording.
+
+## Output
+
+Report refreshed or already-aligned documents, preserved custom content,
+validation, and unresolved facts under the parent skill's output contract.
+
+## Rules
+
+- Never silently delete unmatched content or replace facts with placeholders.
+- Report unresolved content as an open fact.

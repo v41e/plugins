@@ -1,6 +1,6 @@
 # Triage
 
-## Preconditions
+## Input
 
 Observed behavior may contradict an existing expectation.
 
@@ -12,7 +12,11 @@ Observed behavior may contradict an existing expectation.
 4. Keep a human report untriaged until evidence confirms the defect. An
    agent-discovered failure may proceed with sufficient evidence.
 
-## Outcome
+## Output
 
 Proceed to Implement when the defect and acceptance evidence are clear.
-Otherwise report the missing evidence without inventing a fix.
+
+## Rules
+
+- When the defect or acceptance evidence is unclear, report the missing
+  evidence without inventing a fix.

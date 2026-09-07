@@ -1,6 +1,6 @@
 # Review
 
-## Preconditions
+## Input
 
 The integrated implementation passes its affected checks.
 
@@ -16,7 +16,11 @@ The integrated implementation passes its affected checks.
 5. Verify requested changes, return to Implement, and keep the delivery record
    open. Then repeat deterministic checks and Review.
 
-## Outcome
+## Output
 
-Wait for required review and integration. Integrate only when the nearest
-authority assigns that responsibility.
+Report review status and any outstanding review or integration gate.
+
+## Rules
+
+- Wait for required review and integration. Integrate only when the nearest
+  authority assigns that responsibility.
