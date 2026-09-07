@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate JSON
-        run: jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json
+        run: jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json plugins/iter/plugin.json plugins/iter/.codex-plugin/plugin.json
       - name: Check whitespace
         env:
           EVENT_NAME: ${{ github.event_name }}

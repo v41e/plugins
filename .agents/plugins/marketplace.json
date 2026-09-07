@@ -6,6 +6,18 @@
   },
   "plugins": [
     {
+      "name": "iter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/iter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "locus",
       "source": {
         "source": "local",
