@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "locus",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Find, initialize, track, and distill owned knowledge and active repository work.",
   "author": {
     "name": "v41e",
@@ -10,5 +10,9 @@
   "homepage": "https://github.com/v41e/plugins/tree/main/plugins/locus",
   "repository": "https://github.com/v41e/plugins",
   "license": "MIT",
-  "keywords": ["knowledge", "memory", "docs"]
+  "keywords": [
+    "knowledge",
+    "memory",
+    "docs"
+  ]
 }
