@@ -10,12 +10,13 @@ owning directory under `plugins/`.
 
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus plugin; follow its local `AGENTS.md`
+  - [`iter/`](plugins/iter/): Iter plugin; follow its local `AGENTS.md`
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): system relationships and boundaries
 - [`README.md`](README.md): human-facing repository overview
 
 ## Commands
 
-- Metadata: `jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json`.
+- Metadata: `jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json plugins/iter/plugin.json plugins/iter/.codex-plugin/plugin.json`.
 - Plugin checks belong to the owning directory under `plugins/`.
 
 ## Verification
