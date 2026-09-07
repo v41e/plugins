@@ -1,6 +1,6 @@
 # Design
 
-## Preconditions
+## Input
 
 The Feature is ready for a human design decision.
 
@@ -18,6 +18,10 @@ The Feature is ready for a human design decision.
 6. When a local specification and formal remote record both exist, publish the
    approved specification without local-only tracking metadata.
 
-## Outcome
+## Output
 
-Record approval and continue to Plan. Do not implement an unapproved design.
+Record approval and continue to Plan.
+
+## Rules
+
+- Do not implement an unapproved design.

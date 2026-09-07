@@ -1,6 +1,6 @@
 # Ideate
 
-## Preconditions
+## Input
 
 A Feature idea exists without an approved repository contract.
 
@@ -19,8 +19,11 @@ A Feature idea exists without an approved repository contract.
    remote state unchanged.
 6. Consolidate related ideas; retire redundant drafts and backlog records.
 
-## Outcome
+## Output
 
-Stop at Design readiness. Do not create a formal remote record, specification,
-plan, branch, or implementation. Missing drafts or backlog records do not block
-Design.
+Stop at Design readiness. Missing drafts or backlog records do not block Design.
+
+## Rules
+
+- Do not create a formal remote record, specification, plan, branch, or
+  implementation during Ideate.

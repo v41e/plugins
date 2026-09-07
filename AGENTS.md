@@ -22,6 +22,8 @@ owning directory under `plugins/`.
 
 - Validate repository and plugin JSON with the metadata command.
 - Confirm catalog paths exist and the README plugin table matches the catalog.
+- Keep matching manifest fields and ordering aligned across plugins; homepages
+  point to each package, while repository URLs identify the shared repository.
 - Follow the owning plugin's `AGENTS.md` for plugin-level verification.
 
 ## Guardrails
@@ -30,6 +32,10 @@ owning directory under `plugins/`.
   this public repository.
 - Treat marketplace and plugin distribution changes as supply-chain changes.
 - Keep implementations and plugin-specific guidance inside the owning plugin.
+- Skills, modes, workflows, and phases use `Input`, `Workflow`, `Output`, and
+  `Rules` in that order. Add routing sections only where needed.
+- Platform and integration references map concepts or conditions to concrete
+  capabilities and their semantics; they do not define a second workflow.
 - Keep the marketplace catalog and root plugin table aligned.
 - Preserve unrelated worktree changes.
 - Do not release, publish, mutate external systems, or run destructive commands

@@ -1,6 +1,6 @@
 # Plan
 
-## Preconditions
+## Input
 
 The Feature design is approved.
 
@@ -14,7 +14,12 @@ The Feature design is approved.
    local-only tracking metadata.
 5. Refresh mapped metadata and move any remote tracked item to ready.
 
-## Outcome
+## Output
 
-Stop at implementation readiness. Continue in the current task or hand off the
-approved design and implementation steps to a separate execution task.
+Stop at implementation readiness. Report the approved design and implementation
+steps.
+
+## Rules
+
+- Continue in the current task or hand off only the approved design and
+  implementation steps to a separate execution task.

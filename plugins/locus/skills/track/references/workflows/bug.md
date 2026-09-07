@@ -1,8 +1,12 @@
 # Bug Workflow
 
+## Input
+
 Use for observed behavior that contradicts an existing expectation.
 
-## Phase order
+## Workflow
+
+Resume the first incomplete phase; read its contract before continuing.
 
 | Order | Phase                               | Purpose                                            |
 | ----- | ----------------------------------- | -------------------------------------------------- |
@@ -10,6 +14,11 @@ Use for observed behavior that contradicts an existing expectation.
 | 2     | [Implement](../phases/implement.md) | Fix the shared root cause with regression evidence |
 | 3     | [Review](../phases/review.md)       | Review through the authorized delivery path        |
 | 4     | [Complete](../phases/complete.md)   | Reconcile and verify the integrated result         |
+
+## Output
+
+Report the current phase, approval state, verification, and next transition or
+blocker under the parent skill's output contract.
 
 ## Rules
 

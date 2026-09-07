@@ -7,6 +7,10 @@ description: Use when the user or agent needs to understand Locus, choose among 
 
 Route the request to the smallest matching skill or required sequence.
 
+## Input
+
+The user's requested outcome, known ownership, and available installed skills.
+
 ## Route
 
 | Need                          | Route           | Boundary          |
@@ -17,7 +21,7 @@ Route the request to the smallest matching skill or required sequence.
 | Track repository work         | `locus:track`   | Lifecycle only    |
 | Promote durable evidence      | `locus:distill` | Authorized writes |
 
-## Sequences
+## Workflow
 
 - For orientation, answer here; invoke no child skill.
 - For an action with unclear ownership or active state, use `locus:find`

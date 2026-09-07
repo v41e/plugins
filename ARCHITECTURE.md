@@ -27,6 +27,18 @@ flowchart LR
   details remain inside its owning directory.
 - **Versioning**: every plugin manifest shares the repository version.
 
+### 2.3. Skill Contracts
+
+Skills are callable entrypoints. Modes select alternative operations; workflows
+order lifecycle phases; phases define one step and its transition gate. Each
+uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections where
+selection is needed.
+
+Platform adapters map logical concepts to concrete tools, commands, and remote
+surfaces. Integration adapters map observed conditions to installed skills.
+Their mappings preserve the selected operation's scope and approval gates.
+Target references describe destination structure and templates.
+
 ## 3. Data Stores
 
 This repository has no data store.
