@@ -18,6 +18,15 @@ Map project orchestration to current Codex task tools.
 ## Adapter rules
 
 - Use only returned IDs and supported fields.
+- Pass every caller-supplied supported model and reasoning choice as the task
+  tool's `model` and `thinking` arguments, not only in `prompt`. Omit unsupplied
+  values: creation uses the user's configured model and other native defaults,
+  while continuation keeps the task's current settings. Do not invent
+  permission-profile arguments.
+- Preserve explicit delivery authorization and restrictions in `prompt` at
+  their original scope. Signed commits, branch pushes, and PR creation remain
+  distinct grants; `deliver a PR` is not equivalent. A newer restriction or
+  denied approval wins.
 - Do not call a task mutation tool unless the caller explicitly requested
   dispatch, creation, or continuation across the project list.
 - Never resend a new task's creation prompt.
