@@ -26,8 +26,9 @@ mutation, delivery, and production boundaries.
 3. Resolve every requested project exactly. Report missing or ambiguous
    identities; never guess.
 4. Process resolved projects in caller order:
-   1. Prepare one standalone task prompt that preserves the caller's work and
-      adds only the project identity and applicable boundaries.
+   1. Prepare one standalone task prompt that preserves the caller's work,
+      including any explicit delivery authorization and restrictions, and adds
+      only the project identity and applicable boundaries.
    2. Continue a task only when it clearly owns the same project and work.
       Otherwise create one only when authorized.
    3. Wait for that task alone. Continue waiting through normal timeouts while
