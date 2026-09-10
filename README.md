@@ -6,10 +6,10 @@ Public Agent Plugins and Codex marketplace metadata for v41e.
 
 The marketplace distributes two independently installable plugins:
 
-| Plugin                           | Purpose                                                                                       |
-| -------------------------------- | --------------------------------------------------------------------------------------------- |
-| [Locus](plugins/locus/README.md) | Discover, initialize, track, and distill knowledge and active work across owned destinations. |
-| [Iter](plugins/iter/README.md)   | Brief or operate one repository, or explicitly dispatch work across saved Codex projects.     |
+| Plugin                           | Purpose                                                                                          |
+| -------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [Locus](plugins/locus/README.md) | Discover, initialize, track, and distill knowledge and active work across owned destinations.    |
+| [Iter](plugins/iter/README.md)   | Brief current project work, execute authorized changes, or dispatch across saved Codex projects. |
 
 ## Structure
 

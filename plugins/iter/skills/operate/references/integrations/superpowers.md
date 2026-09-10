@@ -1,22 +1,30 @@
 # Superpowers Integration
 
-Optional skill mappings for conditions observed by `operate`.
+## Artifacts
 
-## Condition mapping
+Paths are relative to the project root. Project instructions and links override
+defaults.
 
-| Observed condition                                                                  | Skill                                         | Semantics                                                                         |
-| ----------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
-| A bug or unexpected behavior is reproducible                                        | `$superpowers:systematic-debugging`           | Diagnose the root cause before editing.                                           |
-| Changed behavior can be expressed by a failing executable check                     | `$superpowers:test-driven-development`        | Capture RED before implementation and keep the smallest durable regression check. |
-| An approved written implementation plan is being executed in this task              | `$superpowers:executing-plans`                | Execute the existing plan; do not create one merely to add ceremony.              |
-| Review feedback must be applied                                                     | `$superpowers:receiving-code-review`          | Verify feedback technically before changing the implementation.                   |
-| The repository workflow reaches material pre-merge review without equivalent review | `$superpowers:requesting-code-review`         | Request bounded review; do not duplicate an equivalent gate.                      |
-| Completion is about to be claimed                                                   | `$superpowers:verification-before-completion` | Re-run current evidence before making the claim.                                  |
+| Artifact | Default path               |
+| -------- | -------------------------- |
+| Drafts   | `docs/superpowers/drafts/` |
+| Specs    | `docs/superpowers/specs/`  |
+| Plans    | `docs/superpowers/plans/`  |
 
-## Integration semantics
+Missing paths need no setup. Reading artifacts requires no installed skills.
 
-- Apply every matching condition; this adapter does not define phase order.
-- Superpowers is optional. Its absence does not weaken the selected mode's
-  authorization, scope, verification, delivery, or production boundaries.
-- Do not add delegation, worktrees, plans, or review ceremony unless the task
-  and repository policy require them.
+## Skills
+
+Use installed skills for every matching condition. The mode owns order and gates.
+
+| Condition                                              | Skill                                         |
+| ------------------------------------------------------ | --------------------------------------------- |
+| Reproducible bug or unexpected behavior                | `$superpowers:systematic-debugging`           |
+| Changed behavior supports an executable failing check  | `$superpowers:test-driven-development`        |
+| Executing an approved written plan                     | `$superpowers:executing-plans`                |
+| Applying review feedback                               | `$superpowers:receiving-code-review`          |
+| Material pre-merge review without an equivalent review | `$superpowers:requesting-code-review`         |
+| About to claim completion                              | `$superpowers:verification-before-completion` |
+
+Do not add delegation, worktrees, plans, or review ceremony unless the task and
+repository policy require them.

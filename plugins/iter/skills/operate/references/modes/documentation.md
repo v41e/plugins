@@ -13,8 +13,7 @@ to identify the canonical documentation and any source generator that owns it.
    with their owning canonical docs.
 3. Read current code, commands, manifests, tests, approved architecture, and
    repository guidance that directly define each selected surface.
-4. Verify, refresh, add, update, or align the smallest set of owned canonical
-   docs. Change a source generator when it owns the generated document.
+4. Update only affected canonical docs; edit their generator when applicable.
 5. Run applicable documentation, link, manifest, generator, and formatting
    checks. Do not reformat unrelated text.
 6. Deliver through the permitted Git and PR workflow. If all selected surfaces
@@ -23,14 +22,14 @@ to identify the canonical documentation and any source generator that owns it.
 ## Output
 
 Report the target and surface, evidence used, changed files or verified no-op,
-validation, delivery state, cross-repository findings, and unresolved decisions.
+validation, delivery state, coordination findings, and unresolved decisions.
 
 ## Rules
 
 - A draft idea is not documentation drift.
 - Add missing owned documentation when the authorized scope requires it.
 - Inspect domain documentation only when scope and ownership put it in bounds.
-- Report cross-repository discrepancies as coordination findings; do not edit
-  another repository here.
+- Report discrepancies outside the authorized execution context as coordination
+  findings; do not edit them.
 - Do not create speculative docs.
 - Keep changes to documentation or its owning generator.

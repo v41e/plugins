@@ -17,24 +17,30 @@ mutation, delivery, and production boundaries.
 
 1. Read local project guidance needed to resolve project identities and
    boundaries. Do not copy umbrella instructions wholesale into task prompts.
-2. At project and task operations, read the configured platform adapter:
-
-   | Platform | Adapter                                   |
-   | -------- | ----------------------------------------- |
-   | Codex    | [codex.md](references/platforms/codex.md) |
-
+2. For Codex project and task operations, read the
+   [Codex adapter](references/platforms/codex.md).
 3. Resolve every requested project exactly. Report missing or ambiguous
-   identities; never guess.
+   identities; partial task discovery cannot prove absence.
 4. Process resolved projects in caller order:
    1. Prepare one standalone task prompt that preserves the caller's work,
       including any explicit delivery authorization and restrictions, and adds
-      only the project identity and applicable boundaries.
-   2. Continue a task only when it clearly owns the same project and work.
-      Otherwise create one only when authorized.
-   3. Wait for that task alone. Continue waiting through normal timeouts while
-      it runs; never start the next project early.
-   4. Collect its outcome. Stop on human action, unresolved setup, interruption,
-      a real blocker, or an exhausted caller or runtime budget.
+      only the project identity and applicable boundaries. Preserve signed-commit,
+      push, and PR grants separately; newer restrictions override older grants.
+      Pass requested execution settings through supported tool arguments.
+   2. Continue a task only when it is unfinished and clearly owns the same
+      project and assignment. An Issue or PR may corroborate identity but never
+      replace the assignment match; a matching title is not identity. Otherwise
+      create one only when authorized.
+   3. Dispatch once and wait for that task alone. Pending setup and timeouts
+      are not completion; never redispatch or start the next project early.
+   4. Collect its outcome and apply the continuation rules:
+
+      | State                                                                                        | Action                                         |
+      | -------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+      | Stopped with a local blocker                                                                 | Continue independent work only when authorized |
+      | Dependent on blocked work                                                                    | Hold                                           |
+      | Shared permission/safety failure, uncertain running state, interruption, or exhausted budget | Stop                                           |
+
 5. Return the ordered aggregate, including unresolved and unstarted projects.
 
 ## Output
@@ -52,5 +58,7 @@ each outcome or blocker, unstarted projects, and any next human action.
 - Never edit project repositories from the umbrella task.
 - Never invent identities, permissions, or execution context.
 - Run one project task at a time.
+- Never bypass a denied action or run repository operations from the coordinator
+  to evade a worker blocker.
 - Never merge, release, deploy, schedule, or change live automations unless the
   caller's task and authorization explicitly require it.
