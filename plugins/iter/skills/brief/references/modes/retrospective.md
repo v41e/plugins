@@ -8,8 +8,8 @@ repeated friction.
 
 ## Workflow
 
-1. Establish the approved baseline from explicit evidence in an Issue, spec,
-   plan, or prior brief.
+1. Establish the approved baseline from explicit decisions or linked Issues,
+   specs, plans, or prior briefs.
 2. If no approved baseline exists, label **Missing baseline** and summarize
    observed results without inventing commitments.
 3. Compare interval results with the baseline while keeping current open state
@@ -28,3 +28,5 @@ Use six sections: **Baseline**, **Completed**, **Unfinished**, **Deviations**,
 - A proposal is not authorization to implement, dispatch, schedule, or create
   tracked work.
 - Draft ideas and current Project status are not historical commitments.
+- Archived or deleted temporary artifacts do not imply missing history when
+  linked decisions or Issues preserve the approved baseline.

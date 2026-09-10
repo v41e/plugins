@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory is the portable Agent Plugins v1 package root. Repository-local
+This directory is the portable Agent Plugins v1 package root. Project-context
 skills own shared behavior; `orchestrate` owns Codex-specific saved-project
 dispatch, and client metadata adapts package discovery.
 
@@ -12,8 +12,8 @@ dispatch, and client metadata adapts package discovery.
 - [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
-  - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes for one repository
-  - [`operate/`](skills/operate/): change modes for one repository
+  - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
+  - [`operate/`](skills/operate/): authorized engineering and documentation modes
   - [`orchestrate/`](skills/orchestrate/): Codex desktop coordination across saved projects
 - [`README.md`](README.md): human-facing plugin overview and quickstart
 
@@ -31,13 +31,16 @@ dispatch, and client metadata adapts package discovery.
 
 - For manifest changes, validate and inspect both metadata files.
 - Validate each skill entrypoint and every referenced mode, platform, or
-  integration adapter.
+  integration mapping.
+- Confirm each skill's relative reference links resolve inside that skill.
 - Check local Markdown links and inspect the complete plugin diff.
 
 ## Guardrails
 
-- Keep `brief` and `operate` repository-local and client-independent.
+- Keep `brief` and `operate` inside the current task or owning execution context
+  and client-independent.
 - Keep client-specific metadata limited to discovery and interface adaptation.
+- Keep references inside their owning skill.
 - Keep `orchestrate` as the sole cross-project coordinator. It delegates to the
   exact owning saved Codex project one task at a time, preserves arbitrary
   caller work, and never edits a project repository from the umbrella workspace.
