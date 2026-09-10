@@ -2,9 +2,10 @@
 
 ## Input
 
-Use the normalized future `planning_horizon`, `as_of`, current open work,
-approved commitments, dependencies, active tasks or PRs, and supplied capacity.
-Use an optional normalized historical `lookback` only for recent progress.
+Use the normalized future `planning_horizon`, `as_of`, current remote and local
+work, prior decisions, dependencies, active tasks or PRs, and supplied capacity.
+Use an optional normalized historical `lookback` only for recent progress. A
+roadmap or milestone is useful when supplied, not required.
 
 ## Workflow
 
@@ -12,18 +13,19 @@ Use an optional normalized historical `lookback` only for recent progress.
    `as_of` or query events inside the future `planning_horizon`.
 2. If `lookback` exists, gather completed activity only inside that historical
    interval and keep it separate from the horizon.
-3. Separate approved commitments from drafts and proposals, then deduplicate
+3. Reconcile prior decisions with current remote and local work, then deduplicate
    work already represented by an active task or PR.
-4. Prefer finishing approved work and removing blockers.
-5. When approved work is empty, either propose one bounded improvement,
-   refactor, or feature grounded in evidence, or recommend no new work. A
-   proposal remains a human decision, not a commitment.
+4. Recommend focus by project and order next actions: bugs or blockers,
+   implementation-ready approved work, work needing design or planning, ideas
+   needing discussion, then ongoing or deferred work.
+5. When no approved next action exists, either propose one bounded improvement
+   grounded in evidence or recommend no new work.
 
 ## Output
 
-For each proposed outcome, state its concrete end state, evidence, dependency
-or capacity risk, existing owner or PR, and required human decision. End with a
-short recommended ordering or **No new work recommended**.
+For each project, state the recommended focus and ordered actions with evidence,
+dependency or capacity risk, existing owner or PR, and required human decision.
+End with **No new work recommended** when appropriate.
 
 ## Rules
 
@@ -32,3 +34,4 @@ short recommended ordering or **No new work recommended**.
 - Do not treat an Issue, artifact, or Project status as approval without
   explicit evidence.
 - Do not change priorities, assignments, Project fields, or task ownership.
+- Proposals are not commitments.

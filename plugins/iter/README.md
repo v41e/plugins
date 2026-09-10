@@ -1,19 +1,19 @@
 # Iter
 
-Portable Agent Plugins v1 package for repository-local engineering operations
+Portable Agent Plugins v1 package for project-context engineering operations
 and explicit sequential Codex saved-project orchestration.
 
 ## Overview
 
-The package provides four Agent Skills: one router, two repository-local
+The package provides four Agent Skills: one router, two project-context
 executors, and one Codex-specific cross-project coordinator.
 
-> *Iter* is Latin for "journey." The name also evokes iteration: understand,
+> _Iter_ is Latin for "journey." The name also evokes iteration: understand,
 > act, reassess, and repeat—a loop of deliberate progress.
 
 - **Type**: Agent Plugin.
-- **Local runtime**: Git, GitHub CLI, and a current repository context for
-  `brief` and `operate`.
+- **Local runtime**: current project context and its available local or remote
+  evidence for `brief` and `operate`.
 - **Orchestration runtime**: Codex desktop saved-project and task tools for
   `orchestrate`.
 
@@ -23,8 +23,8 @@ executors, and one Codex-specific cross-project coordinator.
 - [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
-  - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes for one repository
-  - [`operate/`](skills/operate/): engineering and documentation modes for one repository
+  - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
+  - [`operate/`](skills/operate/): authorized engineering and documentation modes
   - [`orchestrate/`](skills/orchestrate/): explicit sequential dispatch across saved Codex projects
 - [`AGENTS.md`](AGENTS.md): plugin operating contract
 

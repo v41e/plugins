@@ -16,11 +16,14 @@ workflow attempts.
    workflow attempts for the same workflow, branch, and commit.
 3. Record a superseded failure as skipped and continue with the remaining
    candidates. Supersession ends only that candidate, never the whole pass.
-4. For the next unresolved, authorized, unowned candidate, reproduce the
-   behavior with the narrowest relevant command.
-5. Trace the failing path and its callers, then fix the shared root cause inside
-   the authorized scope.
-6. Add or update the smallest durable regression check.
+4. For the next unresolved, authorized, unowned candidate, establish the change:
+   - For a defect, reproduce it with the narrowest relevant command and trace
+     the failing path and its callers to the shared root cause.
+   - For additive work, use the approved acceptance criteria and inspect the
+     affected paths and callers. Capture a focused failing acceptance check
+     when the requested behavior is executable.
+5. Implement the smallest complete change inside the authorized scope.
+6. Add or update the smallest durable check for the defect or acceptance criteria.
 7. Run focused checks, then repository-required broader checks.
 8. Default to one independently reviewable outcome. Continue to another
    candidate only when the caller's explicit scope or budget includes it.
@@ -28,14 +31,14 @@ workflow attempts.
 
 ## Output
 
-Report the reproduced cause, changed files, tests and checks with results,
-delivery state, skipped superseded or owned candidates, remaining blockers,
-and human action.
+Report the defect's reproduced cause or the additive work's acceptance results,
+changed files, tests and checks with results, delivery state, skipped superseded
+or owned candidates, remaining blockers, and human action.
 
 ## Rules
 
-- Implement only requested, explicitly approved, or reproducibly necessary
-  fixes inside the authorized pass.
+- Implement only requested or explicitly approved changes, or reproducibly
+  necessary fixes inside the authorized pass.
 - Do not duplicate work already owned by an active task or PR.
 - Preserve unrelated dirty-worktree changes.
 - Do not broaden a fix into speculative cleanup or an unapproved refactor.
