@@ -11,11 +11,11 @@ Report verified work state without coordinating tasks or doing the work.
 
 - Modes: one or more from the table below.
 - Scope: subject and sources from the request and project context.
-- Window: explicit or relative.
+- Windows: explicit or relative for each selected mode.
 - Timezone: caller or runtime IANA zone.
 - `as_of`: capture once; resolve all relative windows against it.
 
-| Mode            | Interpret `window` as                          | Reference                                             |
+| Mode            | Required windows                          | Reference                                             |
 | --------------- | ---------------------------------------------- | ----------------------------------------------------- |
 | `status`        | Historical `status_window`                     | [status.md](references/modes/status.md)               |
 | `plan`          | Future `planning_horizon`; optional `lookback` | [plan.md](references/modes/plan.md)                   |
@@ -27,22 +27,22 @@ guess or wait indefinitely.
 
 ## Workflow
 
-1. Read the selected mode completely.
+1. Read every selected mode completely.
 2. Read project instructions, ownership, and source links. Non-Git contexts are
-   valid. For each Git source, establish its root and read the nearest
+   valid. For each local Git checkout, establish its root and read the nearest
    `AGENTS.md` and `CONTRIBUTING.md`:
 
    ```sh
    git rev-parse --show-toplevel
    ```
 
-3. Resolve relative windows against `as_of`. Convert named-zone calendar
-   boundaries to explicit half-open instants `[start, end)` with local offsets
+3. Resolve each mode's relative windows against `as_of`. Convert named-zone
+   calendar boundaries to explicit half-open instants `[start, end)` with local offsets
    and UTC equivalents. Let the timezone database determine each boundary's
    offset; never assume every local day is 24 hours.
 4. Gather relevant remote, local, task, and worktree evidence.
    For GitHub, read the [GitHub adapter](references/platforms/github.md) and
-   only its selected-mode references. Missing, unsupported, or ambiguous
+   its references for every selected mode. Missing, unsupported, or ambiguous
    providers leave remote coverage **Unknown**.
 
 5. For local Git sources, use relevant commands such as:
@@ -61,13 +61,13 @@ guess or wait indefinitely.
 6. Follow project artifact links and conventions. For Superpowers artifacts,
    read the [Superpowers integration](references/integrations/superpowers.md).
 7. Reconcile newer evidence, distinguish current state from interval activity,
-   then follow the selected mode's output contract.
+   then produce each selected mode's output using its own windows.
 
 ## Output
 
-State the subject, mode, `as_of`, timezone, normalized local and UTC intervals,
-and evidence coverage. Separate verified facts, inferences, unknowns,
-proposals, and human decisions.
+State the subject, selected modes, `as_of`, timezone, and each mode's normalized
+local and UTC intervals and evidence coverage. Separate verified facts,
+inferences, unknowns, proposals, and human decisions.
 
 ## Rules
 
