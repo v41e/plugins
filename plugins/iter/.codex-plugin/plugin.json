@@ -1,6 +1,6 @@
 {
   "name": "iter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Brief current project work, execute authorized changes, or explicitly dispatch caller-supplied work sequentially across saved Codex projects.",
   "author": {
     "name": "v41e",
