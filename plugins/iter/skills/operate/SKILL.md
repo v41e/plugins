@@ -52,6 +52,14 @@ Use the selected mode's output contract.
 - Drafts and ideas do not authorize implementation.
 - Silence and comment counts prove nothing. Use explicit approval evidence;
   the latest human restriction wins.
-- Commit, push, or open a PR only when permitted by the request and repository
-  policy. Never merge, release, deploy, create schedules, or mutate live
-  automations.
+- Before commit, push, or PR creation, satisfy any required local human review of
+  the verified uncommitted diff and material decisions. Access approval is not
+  delivery authority. Preserve standing task-specific commit, push, and PR
+  grants separately; newer restrictions override them.
+- Perform permitted Git delivery in the selected worktree with configured
+  signing. If Git metadata access or signing fails, request access only for the
+  resolved Git common directory and worktree administration directory. Never
+  switch repositories, reconstruct Git metadata, use remote APIs as a substitute,
+  disable signing, or bypass a denial; retain the reviewed diff and report the
+  blocker.
+- Never merge, release, deploy, create schedules, or mutate live automations.
