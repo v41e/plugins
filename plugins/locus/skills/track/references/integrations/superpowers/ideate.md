@@ -1,6 +1,6 @@
 # Ideate
 
-Superpowers skills for the Locus Ideate phase.
+Superpowers skills for the Locus Ideate stage.
 
 ## Skills
 

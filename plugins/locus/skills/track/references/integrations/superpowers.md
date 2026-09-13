@@ -1,10 +1,10 @@
 # Superpowers Integration
 
-Phase-specific Superpowers skill selection for Locus Track.
+Stage-specific Superpowers skill selection for Locus Track.
 
-## Phase references
+## Stage references
 
-| Phase     | Reference                                |
+| Stage     | Reference                                |
 | --------- | ---------------------------------------- |
 | Ideate    | [ideate.md](superpowers/ideate.md)       |
 | Design    | [design.md](superpowers/design.md)       |
@@ -17,8 +17,8 @@ Phase-specific Superpowers skill selection for Locus Track.
 
 ## Rules
 
-- Read only the current phase; its workflow owns order.
+- Read only the current stage; its workflow owns order.
 - Apply every matching row; rows may combine.
 - User and repository instructions override this adapter.
 - If Superpowers is unavailable, use equivalent capabilities without weakening
-  phase gates.
+  stage gates.

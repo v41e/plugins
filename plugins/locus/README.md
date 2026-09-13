@@ -23,7 +23,7 @@ distilling verified evidence, and choosing the smallest matching workflow.
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`find/`](skills/find/): owned-knowledge and active-work discovery
   - [`init/`](skills/init/): knowledge-document creation, refresh, and templates
-  - [`track/`](skills/track/): proportional Feature, Bug, and Task work tracking
+  - [`track/`](skills/track/): proportional Feature, Bug, and Task lifecycle stages
   - [`distill/`](skills/distill/): durable-knowledge ownership and promotion
   - [`using/`](skills/using/): capability explanation and routing
 - [`AGENTS.md`](AGENTS.md): plugin operating contract

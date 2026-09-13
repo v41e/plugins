@@ -1,6 +1,6 @@
 # GitHub Adapter
 
-Phase-specific GitHub synchronization for Locus Track.
+Stage-specific GitHub synchronization for Locus Track.
 
 ## Capability resolution
 
@@ -24,9 +24,9 @@ Before any mutation:
 | Ready, active, review, or done | Mapped Project status  |
 | Delivery record                | Pull request           |
 
-## Phase references
+## Stage references
 
-| Phase     | Reference                           |
+| Stage     | Reference                           |
 | --------- | ----------------------------------- |
 | Ideate    | [ideate.md](github/ideate.md)       |
 | Design    | [design.md](github/design.md)       |
@@ -39,7 +39,7 @@ Before any mutation:
 
 ## Rules
 
-- The selected workflow defines phase order.
+- The selected workflow defines stage order.
 - Mutate GitHub only when repository policy, explicit human direction, or an
   existing owned record requires synchronization.
 - GitHub Projects and structured metadata are optional. An Issue may exist

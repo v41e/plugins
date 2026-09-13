@@ -15,7 +15,8 @@ Missing paths need no setup. Reading artifacts requires no installed skills.
 
 ## Skills
 
-Use installed skills for every matching condition. The mode owns order and gates.
+Use installed skills for every matching condition inside the authoritative
+lifecycle stage and run boundary.
 
 | Condition                                              | Skill                                         |
 | ------------------------------------------------------ | --------------------------------------------- |
@@ -28,3 +29,5 @@ Use installed skills for every matching condition. The mode owns order and gates
 
 Do not add delegation, worktrees, plans, or review ceremony unless the task and
 repository policy require them.
+When Track owns the lifecycle, its stage order and gates remain authoritative.
+Otherwise the selected mode owns the bounded run's order.

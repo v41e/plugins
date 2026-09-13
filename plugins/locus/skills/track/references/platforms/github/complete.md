@@ -1,6 +1,6 @@
 # Complete
 
-GitHub actions for the Locus Complete phase.
+GitHub actions for the Locus Complete stage.
 
 ## Actions
 

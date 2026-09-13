@@ -36,7 +36,9 @@ Report review status and any outstanding review or integration gate.
   authority assigns that responsibility.
 - If Git metadata access or signing fails, stay in the selected worktree and
   request access only for the resolved Git common directory and current worktree
-  administration directory. If access is unavailable or denied, keep the
-  reviewed diff and report the blocker. Do not switch repositories, reconstruct
-  Git metadata, use remote APIs as a substitute, disable signing, or bypass a
-  denial.
+  administration directory. If a granted scope is insufficient and the Git
+  operation is already authorized, use the configured approval mechanism for
+  that exact native operation. Unavailable approval or a hard denial stops
+  delivery; keep the reviewed diff and report the blocker. Never broaden or
+  repeat escalation, switch repositories, reconstruct Git metadata, use remote
+  APIs as a substitute, disable signing, or bypass the denial.

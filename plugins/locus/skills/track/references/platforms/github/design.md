@@ -1,6 +1,6 @@
 # Design
 
-GitHub actions for the Locus Design phase.
+GitHub actions for the Locus Design stage.
 
 ## Actions
 
@@ -16,6 +16,6 @@ GitHub actions for the Locus Design phase.
 ## Boundaries
 
 - Omit empty optional sections.
-- Keep Issue and Project URLs, phase, Project fields, local Tracking metadata,
+- Keep Issue and Project URLs, stage, Project fields, local Tracking metadata,
   specification, and plan out of the initial body.
 - Remove intake-only labels after acceptance; preserve orthogonal labels.

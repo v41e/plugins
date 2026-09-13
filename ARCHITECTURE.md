@@ -30,18 +30,19 @@ flowchart LR
 ### 2.3. Skill Contracts
 
 Skills are callable entrypoints. Modes select alternative operations; workflows
-order lifecycle phases; phases define one step and its transition gate. Each
-uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections where
-selection is needed.
+order lifecycle stages; stages define execution steps and a transition gate.
+Each uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections
+where selection is needed.
 
 Platform adapters map logical concepts to concrete tools, commands, and remote
 surfaces. Integration adapters map observed conditions to installed skills.
 Their mappings preserve the selected operation's scope and approval gates.
 Target references describe destination structure and templates.
 
-Locus owns knowledge and work tracking. Iter owns repository briefs, authorized
-operations, and explicitly requested sequential project-task dispatch. They
-remain independently installable.
+Locus owns knowledge and Feature, Bug, or Task work lifecycles. Iter owns
+repository briefs, one bounded authorized operation per run, and explicitly
+requested sequential project-task dispatch. They remain independently
+installable.
 
 ## 3. Data Stores
 

@@ -1,19 +1,19 @@
 # Iter
 
-Portable Agent Plugins v1 package for project-context engineering operations
-and explicit sequential Codex saved-project orchestration.
+Portable Agent Plugins v1 package for bounded project-context operations and
+explicit sequential Codex saved-project orchestration.
 
 ## Overview
 
-The package provides four Agent Skills: one router, two project-context
-executors, and one Codex-specific cross-project coordinator.
+The package provides four Agent Skills: one router, one read-only briefer, one
+bounded operator, and one Codex-specific cross-project coordinator.
 
 > _Iter_ is Latin for "journey." The name also evokes iteration: understand,
 > act, reassess, and repeat—a loop of deliberate progress.
 
 - **Type**: Agent Plugin.
 - **Local runtime**: current project context and its available local or remote
-  evidence for `brief` and `operate`.
+  evidence; `operate` completes one bounded authorized run.
 - **Orchestration runtime**: Codex desktop saved-project and task tools for
   `orchestrate`.
 
@@ -24,7 +24,7 @@ executors, and one Codex-specific cross-project coordinator.
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
   - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
-  - [`operate/`](skills/operate/): authorized engineering and documentation modes
+  - [`operate/`](skills/operate/): one bounded authorized engineering or documentation run
   - [`orchestrate/`](skills/orchestrate/): explicit sequential dispatch across saved Codex projects
 - [`AGENTS.md`](AGENTS.md): plugin operating contract
 

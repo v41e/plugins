@@ -1,6 +1,6 @@
 # Plan
 
-GitHub actions for the Locus Plan phase.
+GitHub actions for the Locus Plan stage.
 
 ## Actions
 

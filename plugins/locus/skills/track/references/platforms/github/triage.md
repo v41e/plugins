@@ -1,6 +1,6 @@
 # Triage
 
-GitHub actions for the Locus Triage phase.
+GitHub actions for the Locus Triage stage.
 
 ## Actions
 
@@ -21,6 +21,6 @@ GitHub actions for the Locus Triage phase.
 
 - Never create a Project draft for a Bug. Without required tracking, leave
   GitHub unchanged.
-- Omit empty optional sections. Keep URLs, phase, Project fields, local Tracking
+- Omit empty optional sections. Keep URLs, stage, Project fields, local Tracking
   metadata, design, and plan out of the initial body.
 - Remove intake-only labels after acceptance; preserve orthogonal labels.

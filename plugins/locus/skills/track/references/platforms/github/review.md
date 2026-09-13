@@ -1,10 +1,10 @@
 # Review
 
-GitHub actions for the Locus Review phase.
+GitHub actions for the Locus Review stage.
 
 ## Actions
 
-- Complete the Review phase's required local checkpoint and delivery authority
+- Complete the Review stage's required local checkpoint and delivery authority
   check before creating or updating the pull request.
 - Create or update the pull request and move its Project item to the mapped
   review state.

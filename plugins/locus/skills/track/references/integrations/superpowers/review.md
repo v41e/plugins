@@ -1,6 +1,6 @@
 # Review
 
-Superpowers skills for the Locus Review phase.
+Superpowers skills for the Locus Review stage.
 
 ## Skills
 

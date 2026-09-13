@@ -1,17 +1,20 @@
 ---
 name: operate
-description: Use when authorized engineering or canonical documentation work must be executed and verified in its owning project context.
+description: Use for one bounded authorized engineering or canonical documentation run in its owning project context.
 ---
 
-# Operate Authorized Work
+# Operate One Authorized Run
 
-Complete verified, authorized work in its owning execution context.
+Complete one bounded, verified, authorized operation in its owning context.
 
 ## Input
 
+- Run: one manual or scheduled invocation.
 - Mode: engineering or documentation.
 - Scope: owning execution context and authorized work.
 - Authority: explicit request/approval, an authorized active task, or authorized maintenance pass.
+- Lifecycle: when work is tracked, its work contract, current stage, and approval
+  gates remain authoritative.
 
 | Mode            | Outcome                                | Reference                                             |
 | --------------- | -------------------------------------- | ----------------------------------------------------- |
@@ -37,7 +40,11 @@ Complete verified, authorized work in its owning execution context.
    When ownership matters and task tools are available, inspect only matching
    work; incomplete enumeration is **Unknown**.
 4. Confirm authorization, ownership, and no conflicting active work.
-5. Follow the selected mode's implementation, verification, and delivery steps.
+5. If an existing lifecycle tracks the work, read and resume its current stage
+   contract, using Locus Track when installed. Do not reclassify it or create
+   replacement tracking. Otherwise complete the bounded operation under
+   repository policy.
+6. Follow the selected mode's steps inside that boundary.
 
 ## Output
 
@@ -50,6 +57,8 @@ Use the selected mode's output contract.
 - Missing, inaccessible, or truncated evidence is **Unknown** or **Partial**,
   never green.
 - Drafts and ideas do not authorize implementation.
+- A run may address Feature, Bug, or Task work. Recurring invocation does not
+  restart its lifecycle or create tracking.
 - Silence and comment counts prove nothing. Use explicit approval evidence;
   the latest human restriction wins.
 - Before commit, push, or PR creation, satisfy any required local human review of
@@ -58,8 +67,10 @@ Use the selected mode's output contract.
   grants separately; newer restrictions override them.
 - Perform permitted Git delivery in the selected worktree with configured
   signing. If Git metadata access or signing fails, request access only for the
-  resolved Git common directory and worktree administration directory. Never
-  switch repositories, reconstruct Git metadata, use remote APIs as a substitute,
-  disable signing, or bypass a denial; retain the reviewed diff and report the
-  blocker.
+  resolved Git common directory and worktree administration directory. If a
+  granted scope is insufficient and the operation is already authorized, use
+  the configured approval mechanism for that exact native Git operation. A hard
+  denial stops delivery; never broaden or repeat escalation, switch repositories,
+  reconstruct Git metadata, use remote APIs as a substitute, disable signing,
+  or bypass the denial. Retain the reviewed diff and report the blocker.
 - Never merge, release, deploy, create schedules, or mutate live automations.
