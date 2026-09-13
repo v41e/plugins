@@ -1,6 +1,6 @@
 ---
 name: operate
-description: Use for one bounded authorized engineering or canonical documentation run in its owning project context.
+description: Use when authorized engineering or canonical documentation needs one bounded run in its owning project context.
 ---
 
 # Operate One Authorized Run
@@ -13,8 +13,6 @@ Complete one bounded, verified, authorized operation in its owning context.
 - Mode: engineering or documentation.
 - Scope: owning execution context and authorized work.
 - Authority: explicit request/approval, an authorized active task, or authorized maintenance pass.
-- Lifecycle: when work is tracked, its work contract, current stage, and approval
-  gates remain authoritative.
 
 | Mode            | Outcome                                | Reference                                             |
 | --------------- | -------------------------------------- | ----------------------------------------------------- |
@@ -40,8 +38,8 @@ Complete one bounded, verified, authorized operation in its owning context.
    When ownership matters and task tools are available, inspect only matching
    work; incomplete enumeration is **Unknown**.
 4. Confirm authorization, ownership, and no conflicting active work.
-5. If an existing lifecycle tracks the work, read and resume its current stage
-   contract, using Locus Track when installed. Do not reclassify it or create
+5. For tracked work, read its work and current-stage contracts, then resume using
+   Locus Track when installed. Do not reclassify it or create
    replacement tracking. Otherwise complete the bounded operation under
    repository policy.
 6. Follow the selected mode's steps inside that boundary.

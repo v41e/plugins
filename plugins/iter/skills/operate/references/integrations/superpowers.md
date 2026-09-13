@@ -29,5 +29,3 @@ lifecycle stage and run boundary.
 
 Do not add delegation, worktrees, plans, or review ceremony unless the task and
 repository policy require them.
-When Track owns the lifecycle, its stage order and gates remain authoritative.
-Otherwise the selected mode owns the bounded run's order.

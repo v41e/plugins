@@ -37,10 +37,7 @@ If setup advice is requested, suggest these fields in an existing `AGENTS.md`:
    do not run the selected workflow.
 3. Execution requested: read the selected skill and references completely, then act.
    Attached setup questions do not replace or delay the action.
-4. An `operate` run may address a Feature, Bug, or Task. When work is already
-   tracked, its current stage, work contract, and approval gates remain
-   authoritative.
-5. For explicit dispatch across ordered saved projects, use `orchestrate`;
+4. For explicit dispatch across ordered saved projects, use `orchestrate`;
    preserve the caller's assignment. Otherwise keep cross-project discussion
    read-only or hand off to its owning umbrella project.
 

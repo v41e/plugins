@@ -15,11 +15,8 @@ workflow attempts.
    otherwise retain blocked, owned, and **Unknown** candidates for reporting.
 2. Reconcile every candidate with current code, active ownership, and newer
    workflow attempts for the same workflow, branch, and commit.
-3. For tracked work, use Locus Track when installed, or its existing lifecycle
-   contract otherwise, to read the work contract, current stage contract, and
-   approval state. Perform only that stage's permitted steps. Do not implement a
-   candidate waiting for Design or Plan approval; continue other independent
-   authorized candidates only when the pass scope permits it.
+3. Do not implement a candidate waiting for Design or Plan approval. Continue
+   other independent authorized candidates only when the pass scope permits it.
 4. Record a superseded failure as skipped and continue with the remaining
    candidates. Supersession ends only that candidate, never the whole pass.
 5. For the next unresolved, authorized, unowned candidate, establish the change:
