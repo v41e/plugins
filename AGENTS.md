@@ -33,7 +33,7 @@ owning directory under `plugins/`.
   this public repository.
 - Treat marketplace and plugin distribution changes as supply-chain changes.
 - Keep implementations and plugin-specific guidance inside the owning plugin.
-- Skills, modes, workflows, and phases use `Input`, `Workflow`, `Output`, and
+- Skills, modes, workflows, and stages use `Input`, `Workflow`, `Output`, and
   `Rules` in that order. Add routing sections only where needed.
 - Platform and integration references map concepts or conditions to concrete
   capabilities and their semantics; they do not define a second workflow.

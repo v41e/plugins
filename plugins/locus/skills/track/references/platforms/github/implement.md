@@ -1,6 +1,6 @@
 # Implement
 
-GitHub actions for the Locus Implement phase.
+GitHub actions for the Locus Implement stage.
 
 ## Actions
 

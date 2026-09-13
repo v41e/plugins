@@ -1,6 +1,6 @@
 ---
 name: using
-description: Use when the requested engineering workflow or repository scope is unclear.
+description: Use when choosing among a read-only brief, one bounded authorized run, or explicit saved-project dispatch.
 ---
 
 # Using Iter
@@ -9,16 +9,18 @@ Route to the smallest matching skill.
 
 ## Input
 
-Request, outcome, scope, and whether task dispatch is explicit.
+Request, outcome, scope, and whether mutation or saved-project dispatch is
+explicitly authorized.
 
 ## Workflow
 
 | Request                                                      | Route                     |
 | ------------------------------------------------------------ | ------------------------- |
 | Current status, plan, or retrospective                       | `brief` mode              |
-| Authorized engineering or documentation                      | `operate` mode            |
+| One bounded authorized engineering or documentation run      | `operate` mode            |
 | Explicit sequential task dispatch across saved projects      | `orchestrate`             |
-| Work lifecycle or durable knowledge when Locus is installed  | Matching Locus capability |
+| Classify or advance a work lifecycle when Locus is installed | Matching Locus capability |
+| Maintain durable knowledge when Locus is installed           | Matching Locus capability |
 | Cross-project discussion, comparison, interview, or proposal | Remain read-only here     |
 
 If setup advice is requested, suggest these fields in an existing `AGENTS.md`:

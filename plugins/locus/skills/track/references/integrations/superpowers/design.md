@@ -1,6 +1,6 @@
 # Design
 
-Superpowers skills for the Locus Design phase.
+Superpowers skills for the Locus Design stage.
 
 ## Skills
 

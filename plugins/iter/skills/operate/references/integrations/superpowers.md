@@ -15,7 +15,8 @@ Missing paths need no setup. Reading artifacts requires no installed skills.
 
 ## Skills
 
-Use installed skills for every matching condition. The mode owns order and gates.
+Use installed skills for every matching condition inside the authoritative
+lifecycle stage and run boundary.
 
 | Condition                                              | Skill                                         |
 | ------------------------------------------------------ | --------------------------------------------- |

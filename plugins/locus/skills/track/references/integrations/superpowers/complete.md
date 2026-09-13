@@ -1,6 +1,6 @@
 # Complete
 
-Superpowers skills for the Locus Complete phase.
+Superpowers skills for the Locus Complete stage.
 
 ## Skills
 

@@ -1,6 +1,6 @@
 # Ideate
 
-GitHub actions for the Locus Ideate phase.
+GitHub actions for the Locus Ideate stage.
 
 ## Actions
 
