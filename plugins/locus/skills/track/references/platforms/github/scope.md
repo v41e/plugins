@@ -1,6 +1,6 @@
 # Scope
 
-GitHub actions for the Locus Scope phase.
+GitHub actions for the Locus Scope stage.
 
 ## Actions
 
@@ -20,6 +20,6 @@ GitHub actions for the Locus Scope phase.
 ## Boundaries
 
 - Without required tracking, leave GitHub unchanged.
-- Omit empty optional sections. Keep URLs, phase, Project fields, local Tracking
+- Omit empty optional sections. Keep URLs, stage, Project fields, local Tracking
   metadata, design, and plan out of the initial body.
 - Remove intake-only labels after acceptance; preserve orthogonal labels.

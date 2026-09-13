@@ -1,6 +1,6 @@
 ---
 name: track
-description: Use when repository work must be classified, resumed, or synchronized through Feature, Bug, or Task phases and optional remote tracking.
+description: Use when repository work must be classified, resumed, or synchronized through Feature, Bug, or Task stages and optional remote tracking.
 ---
 
 # Track
@@ -21,7 +21,7 @@ any existing work contract, approval evidence, or tracked artifacts.
    context remains unclear.
 2. Compare the newest explicit human intent and current repository state with
    tracked artifacts. If they differ materially, return to the earliest affected
-   phase and update or retire stale artifacts.
+   stage and update or retire stale artifacts.
 3. Classify the work and read one workflow.
 
    | Work    | Trigger                                      | Workflow                                      |
@@ -30,23 +30,23 @@ any existing work contract, approval evidence, or tracked artifacts.
    | Bug     | Observed behavior contradicts an expectation | [bug.md](references/workflows/bug.md)         |
    | Task    | Maintenance is neither a Feature nor a Bug   | [task.md](references/workflows/task.md)       |
 
-4. Follow the workflow's order and read its linked first incomplete phase.
+4. Follow the workflow's order and read its linked first incomplete stage.
 5. When GitHub owns remote state, read the [GitHub adapter](references/platforms/github.md)
-   and its current phase reference.
+   and its current stage reference.
 6. When matching Superpowers skills are installed, read the
    [Superpowers integration](references/integrations/superpowers.md) and its
-   current phase reference.
+   current stage reference.
 
-7. Apply only the current phase's approved local and remote mutations.
+7. Apply only the current stage's approved local and remote mutations.
 8. Preserve the selected checkout or worktree and follow repository Git policy.
-9. Stop when human approval or unavailable authority blocks the next phase.
+9. Stop when human approval or unavailable authority blocks the next stage.
 
 ## Output
 
-Report the work type, phase transition, changed artifacts, approval state,
+Report the work type, stage transition, changed artifacts, approval state,
 verification, and smallest next action.
 
 ## Rules
 
-- Use only phases in the selected workflow and preserve their order and gates.
+- Use only stages in the selected workflow and preserve their order and gates.
 - Keep tracking and artifacts proportional to human intent and repository policy.
