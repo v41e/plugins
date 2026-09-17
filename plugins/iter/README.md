@@ -12,8 +12,9 @@ bounded operator, and one Codex-specific cross-project coordinator.
 > act, reassess, and repeat—a loop of deliberate progress.
 
 - **Type**: Agent Plugin.
-- **Local runtime**: current project context and its available local or remote
-  evidence; `operate` completes one bounded authorized run.
+- **Local runtime**: `operate` advances authorized work in the current project.
+  It manages the run; Locus Track governs the work lifecycle when installed and
+  applicable. Iter also works without Locus.
 - **Orchestration runtime**: Codex desktop saved-project and task tools for
   `orchestrate`.
 

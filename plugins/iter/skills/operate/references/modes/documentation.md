@@ -2,34 +2,29 @@
 
 ## Input
 
-Require an authorized documentation scope. Use repository ownership guidance
-to identify the canonical documentation and any source generator that owns it.
+An authorized documentation scope, its audience and purpose, canonical sources,
+and any generators that own the selected surfaces.
 
 ## Workflow
 
-1. Confirm the requested scope and inspect any active PR or task that already
-   owns it.
-2. Use relevant history, diffs, and targeted searches to connect source changes
-   with their owning canonical docs.
-3. Read current code, commands, manifests, tests, approved architecture, and
-   repository guidance that directly define each selected surface.
-4. Update only affected canonical docs; edit their generator when applicable.
-5. Run applicable documentation, link, manifest, generator, and formatting
-   checks. Do not reformat unrelated text.
-6. Deliver through the permitted Git and PR workflow. If all selected surfaces
-   are aligned, report a verified no-op.
+1. Identify where missing, stale, or duplicated knowledge impedes understanding or
+   correct action. Follow relevant source changes, decisions, and ownership links.
+2. Verify selected surfaces against current code, commands, manifests, tests, and
+   approved architecture. Separate implemented behavior from intended direction.
+3. Improve the nearest canonical source through the parent execution workflow.
+   Prefer correcting, consolidating, or removing text to adding another document;
+   edit the generator when it owns the output.
+4. Validate affected links, examples, commands, and applicable generator or
+   formatting checks. If the selected surfaces already serve their purpose,
+   report that result.
 
 ## Output
 
-Report the target and surface, evidence used, changed files or verified no-op,
-validation, delivery state, coordination findings, and unresolved decisions.
+Explain what became clearer or more accurate, with verification and remaining
+knowledge gaps or decisions. Use references to the changed sources for detail.
 
 ## Rules
 
-- A draft idea is not documentation drift.
-- Add missing owned documentation when the authorized scope requires it.
-- Inspect domain documentation only when scope and ownership put it in bounds.
-- Report discrepancies outside the authorized execution context as coordination
-  findings; do not edit them.
-- Do not create speculative docs.
-- Keep changes to documentation or its owning generator.
+- Keep changes to authorized documentation or its owning generator.
+- Draft ideas do not establish documentation drift. Propose out-of-scope changes
+  separately; do not create speculative documentation.

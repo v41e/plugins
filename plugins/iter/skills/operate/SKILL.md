@@ -5,70 +5,60 @@ description: Use when authorized engineering or canonical documentation needs on
 
 # Operate One Authorized Run
 
-Complete one bounded, verified, authorized operation in its owning context.
+Make useful, verified progress toward the caller's goal. Operate manages the
+execution pass; the applicable work lifecycle governs each change.
 
 ## Input
 
-- Run: one manual or scheduled invocation.
-- Mode: engineering or documentation.
-- Scope: owning execution context and authorized work.
-- Authority: explicit request/approval, an authorized active task, or authorized maintenance pass.
+Intended outcome, owning context, authorized scope, delivery permissions, and
+budget or stopping conditions for this manual or scheduled run.
 
-| Mode            | Outcome                                | Reference                                             |
-| --------------- | -------------------------------------- | ----------------------------------------------------- |
-| `engineering`   | Implement, fix, test, and deliver code | [engineering.md](references/modes/engineering.md)     |
-| `documentation` | Align owned canonical documentation    | [documentation.md](references/modes/documentation.md) |
+| Mode            | Purpose                                  | Reference                                             |
+| --------------- | ---------------------------------------- | ----------------------------------------------------- |
+| `engineering`   | Advance capabilities and reliability     | [engineering.md](references/modes/engineering.md)     |
+| `documentation` | Keep owned knowledge accurate and useful | [documentation.md](references/modes/documentation.md) |
 
 ## Workflow
 
-1. Read the selected mode completely. Identify the owned sources in scope. For
-   each local Git source, establish its root and state:
-
-   ```sh
-   git rev-parse --show-toplevel
-   git status --short --branch
-   ```
-
-2. Read applicable `AGENTS.md`, `CONTRIBUTING.md`, and linked work artifacts.
-   Preserve unrelated work. For Superpowers artifacts or matching installed
-   skills, read the [Superpowers integration](references/integrations/superpowers.md).
-3. Gather relevant remote evidence. For GitHub, read the
-   [GitHub adapter](references/platforms/github.md) and its selected-mode references.
-   Missing, unsupported, or ambiguous providers leave remote coverage **Unknown**.
-   When ownership matters and task tools are available, inspect only matching
-   work; incomplete enumeration is **Unknown**.
-4. Confirm authorization, ownership, and no conflicting active work.
-5. For tracked work, read its work and current-stage contracts, then resume using
-   Locus Track when installed. Do not reclassify it or create
-   replacement tracking. Otherwise complete the bounded operation under
-   repository policy.
-6. Follow the selected mode's steps inside that boundary.
+1. Read the selected mode, project instructions, contribution policy, and work
+   contracts. Establish the Git root, working state, and ownership.
+2. Gather relevant evidence using the [GitHub adapter](references/platforms/github.md)
+   and its selected-mode references when applicable. Use the
+   [Superpowers integration](references/integrations/superpowers.md) for artifacts
+   and engineering methods.
+3. Identify worthwhile work within scope, reconciling source, prior decisions,
+   tasks, PRs, and newer results. Resume this assignment's work; do not duplicate
+   another active owner's work.
+4. Execute through one applicable workflow:
+   - When Locus Track is installed and tracking applies, use it to classify new
+     work or resume the current stage. It governs implementation, review, and
+     delivery; do not repeat those steps through Operate.
+   - Otherwise follow repository policy: establish the cause or acceptance
+     criteria, make the smallest complete change, verify changed behavior and
+     required checks, then follow the authorized review and delivery path.
+5. Reassess after each outcome. Continue independent authorized work; hold blocked
+   or unapproved work. Stop when scope is covered, the budget is reached, or no
+   eligible work remains.
 
 ## Output
 
-Use the selected mode's output contract.
+Explain progress, verification, delivery state, and remaining scope or decisions,
+including skipped, already-owned, blocked, or unexamined work. A verified no-op
+requires adequate evidence. Keep opportunities outside authority as proposals.
 
 ## Rules
 
-- Work only inside the caller-authorized owning execution context. Never list
-  saved projects, create tasks, or edit unrelated projects.
-- Missing, inaccessible, or truncated evidence is **Unknown** or **Partial**,
-  never green.
-- Drafts and ideas do not authorize implementation.
-- A run may address Feature, Bug, or Task work. Recurring invocation does not
-  restart its lifecycle or create tracking.
-- Silence and comment counts prove nothing. Use explicit approval evidence;
-  the latest human restriction wins.
-- Before commit, push, or PR creation, satisfy any required local human review of
-  the verified uncommitted diff and material decisions. Access approval is not
-  delivery authority. Preserve standing task-specific commit, push, and PR
-  grants separately; newer restrictions override them.
-- Perform permitted Git delivery in the selected worktree with configured
-  signing. If Git metadata access or signing fails, request access only for the
-  resolved Git common directory and worktree administration directory. If a
-  granted scope is insufficient and the operation is already authorized, use
-  the configured approval mechanism for that exact native Git operation. A hard
-  denial stops delivery; never broaden or repeat escalation, switch repositories,
-  reconstruct Git metadata, use remote APIs as a substitute, disable signing,
-  or bypass the denial. Retain the reviewed diff and report the blocker.
-- Never merge, release, deploy, create schedules, or mutate live automations.
+- Stay in the authorized owning context and selected checkout; preserve unrelated
+  changes. Do not list saved projects, dispatch tasks, or edit other projects.
+- Approval requires explicit evidence; drafts, status, silence, and access grants
+  do not authorize work. Preserve commit, push, and PR grants separately; the
+  latest human restriction wins.
+- Honor required human review before delivery. Use configured signing and the
+  approval mechanism for exact authorized Git operations; request only the
+  necessary Git metadata access. A denial stops delivery. Never bypass it,
+  broaden escalation, switch repositories, reconstruct Git metadata, substitute
+  remote APIs, or disable signing. Retain the diff and report the blocker.
+- Missing or incomplete evidence is **Unknown** or **Partial**, not success.
+- A new run resumes existing work; it does not restart its lifecycle. Ending a
+  run does not establish that the work is complete.
+- Never merge, release, deploy, create schedules, or modify live automations.

@@ -2,34 +2,25 @@
 
 ## Input
 
-Use the normalized historical `status_window`, `as_of`, current open state,
-relevant task and worktree progress, and the requested audience or cadence.
+Historical `status_window`, current open state, relevant task/worktree progress,
+and the requested audience or cadence.
 
 ## Workflow
 
-1. Separate current open work from material progress completed in the window.
-2. Identify active work, genuine blockers, and human approval, review, or
-   decision gates from verified evidence.
-3. Reconcile each failure with newer attempts for the same workflow, branch,
-   and commit.
-4. Reserve human attention for verified approval, review, or choice gates. Keep
-   autonomous investigation with active work or blockers.
-5. Select one evidence-backed next action. Recommend nothing when the verified
-   state is healthy and no decision is due.
+1. Relate meaningful changes to current goals: what moved forward, what became
+   possible or blocked, and whether priorities need reconsideration.
+2. Reconcile apparent failures with newer evidence for the same work.
+3. Identify decisions and reviews actually due, separating them from ongoing
+   autonomous investigation.
 
 ## Output
 
-Lead with material progress and active work, followed by human attention,
-blockers, and the next action when present. Omit empty sections and boilerplate;
-use `Unknown` or `Partial` only where missing coverage matters.
+Explain where the work stands and why it matters now, supported by relevant
+changes, risks, and decisions. Show where human attention would change the
+outcome, keeping independent actions visible. Scale detail to significance;
+if healthy with no action due, say so briefly.
 
 ## Rules
 
-- Prefer identifiers and links for Issues, PRs, runs, and releases.
-- Keep interval activity separate from current state at its observation time.
-- A successful newer attempt supersedes an older failure only when workflow,
-  branch, and commit identity match.
-- A dirty file is not proof of activity in the window. Relevant task or worktree
-  progress may establish active work.
-- A review notification is human attention; routine autonomous investigation is
-  not.
+- A newer successful attempt supersedes a failure only when workflow, branch,
+  and commit match.
