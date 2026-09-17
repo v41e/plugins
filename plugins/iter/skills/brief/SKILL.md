@@ -5,79 +5,56 @@ description: Use when preparing a read-only status brief, focus plan, or retrosp
 
 # Brief Current Work
 
-Report verified work state without coordinating tasks or doing the work.
+Turn project evidence into useful judgments about outcomes and decisions.
 
 ## Input
 
-- Modes: one or more from the table below.
-- Scope: subject and sources from the request and project context.
-- Windows: explicit or relative for each selected mode.
-- Timezone: caller or runtime IANA zone.
-- `as_of`: capture once; resolve all relative windows against it.
+- Scope, available direction, constraints, and relevant prior decisions.
+- Selected modes and explicit or relative windows below.
+- Caller or runtime IANA timezone and one captured `as_of`.
 
-| Mode            | Required windows                          | Reference                                             |
-| --------------- | ---------------------------------------------- | ----------------------------------------------------- |
-| `status`        | Historical `status_window`                     | [status.md](references/modes/status.md)               |
-| `plan`          | Future `planning_horizon`; optional `lookback` | [plan.md](references/modes/plan.md)                   |
-| `retrospective` | Historical `retrospective_window`              | [retrospective.md](references/modes/retrospective.md) |
+| Mode            | Windows                                                   | Reference                                             |
+| --------------- | --------------------------------------------------------- | ----------------------------------------------------- |
+| `status`        | Historical `status_window`                                | [status.md](references/modes/status.md)               |
+| `plan`          | Future `planning_horizon`; optional historical `lookback` | [plan.md](references/modes/plan.md)                   |
+| `retrospective` | Historical `retrospective_window`                         | [retrospective.md](references/modes/retrospective.md) |
 
-Daily, weekly, and monthly are cadences, not modes. If an unattended request
-omits a required input, return an incomplete-input result naming it; never
-guess or wait indefinitely.
+Daily, weekly, and monthly are cadences, not modes. For unattended runs, report
+missing required inputs instead of guessing or waiting indefinitely.
 
 ## Workflow
 
-1. Read every selected mode completely.
-2. Read project instructions, ownership, and source links. Non-Git contexts are
-   valid. For each local Git checkout, establish its root and read the nearest
-   `AGENTS.md` and `CONTRIBUTING.md`:
-
-   ```sh
-   git rev-parse --show-toplevel
-   ```
-
-3. Resolve each mode's relative windows against `as_of`. Convert named-zone
-   calendar boundaries to explicit half-open instants `[start, end)` with local offsets
-   and UTC equivalents. Let the timezone database determine each boundary's
-   offset; never assume every local day is 24 hours.
-4. Gather relevant remote, local, task, and worktree evidence.
-   For GitHub, read the [GitHub adapter](references/platforms/github.md) and
-   its references for every selected mode. Missing, unsupported, or ambiguous
-   providers leave remote coverage **Unknown**.
-
-5. For local Git sources, use relevant commands such as:
-
-   ```sh
-   git status --short --branch
-   git log --since-as-filter=START_UTC --until=END_UTC --format='%H%x09%cI%x09%s'
-   ```
-
-   Apply the exact `[start, end)` filter to emitted committer timestamps so a
-   commit at `end` is excluded; use `--since` if `--since-as-filter` is not
-   supported. Do not run a historical Git log against a future
-   planning horizon; use only `lookback` for past activity in `plan`. A dirty
-   file is current state, not recent work.
-
-6. Follow project artifact links and conventions. For Superpowers artifacts,
-   read the [Superpowers integration](references/integrations/superpowers.md).
-7. Reconcile newer evidence, distinguish current state from interval activity,
-   then produce each selected mode's output using its own windows.
+1. Read the selected modes, project instructions, and linked context: purpose,
+   ownership, canonical docs, and relevant task or conversation history.
+   Establish each local Git root and its contribution policy; non-Git contexts
+   are valid.
+2. Resolve windows against `as_of` in the supplied timezone, respecting calendar
+   boundaries and daylight-saving changes. Filter historical events using exact
+   UTC bounds `start <= event < end`; keep future horizons separate.
+3. Gather relevant local, remote, task, and worktree evidence across the requested
+   scope. Use the [GitHub adapter](references/platforms/github.md) for GitHub and
+   the [Superpowers integration](references/integrations/superpowers.md) for its
+   artifacts. Inspect Git status and historical commit timestamps when relevant.
+4. Reconcile evidence with prior decisions and stated direction. Account for
+   every requested project, concentrating investigation where uncertainty could
+   change the recommendation. Continue supported analysis when context is missing.
 
 ## Output
 
-State the subject, selected modes, `as_of`, timezone, and each mode's normalized
-local and UTC intervals and evidence coverage. Separate verified facts,
-inferences, unknowns, proposals, and human decisions.
+Explain what the evidence means for the caller's goals and decisions, with
+supporting links. Make the time period and material coverage limits clear.
+Choose the structure and depth for the audience; distinguish facts, inferences,
+and proposals without requiring a fixed report template.
 
 ## Rules
 
-- Work only within the current task and caller-provided project context. Do not
-  create, continue, or dispatch tasks.
-- Remain read-only; do not mutate files, Git, remote records or metadata,
-  tasks, schedules, automations, or live systems.
-- Current open backlog is a live observation. If `as_of` is in the past, never
-  present today's open state as the exact state at that earlier instant.
-- Missing, inaccessible, or truncated evidence is **Unknown** or **Partial**,
-  never green.
+- Remain read-only in the current task: no file, Git, remote, task, schedule, or
+  live-system mutations, including task creation or continuation.
+- Report missing, inaccessible, or truncated evidence as **Unknown** or
+  **Partial** for the affected conclusions.
+- Distinguish interval activity from current state observed at collection time;
+  a dirty file or today's backlog does not establish historical activity/state.
 - Approval requires explicit evidence, not artifact existence or status.
-- Never infer release, deployment, impact, ownership, or commitment.
+  Proposals do not authorize work; preserve existing approvals and ownership.
+- Human attention means an evidenced decision or reserved review. Do not infer
+  commitments, release, deployment, or impact from activity alone.
