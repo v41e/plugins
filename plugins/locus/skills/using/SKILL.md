@@ -13,22 +13,22 @@ The user's requested outcome, known ownership, and available installed skills.
 
 ## Route
 
-| Need                          | Route           | Boundary          |
-| ----------------------------- | --------------- | ----------------- |
-| Explain Locus or select skill | Answer here     | No child skill    |
-| Find owner or active work     | `locus:find`    | Read only         |
-| Maintain canonical docs       | `locus:init`    | Verified owner    |
-| Track repository work         | `locus:track`   | Lifecycle only    |
-| Promote durable evidence      | `locus:distill` | Authorized writes |
+| Need                                   | Route           | Boundary          |
+| -------------------------------------- | --------------- | ----------------- |
+| Explain Locus or select skill          | Answer here     | No child skill    |
+| Find owner or active work              | `locus:find`    | Read only         |
+| Maintain canonical docs                | `locus:init`    | Verified owner    |
+| Track repository work                  | `locus:track`   | Lifecycle only    |
+| Reconcile or promote durable knowledge | `locus:distill` | Authorized writes |
 
 ## Workflow
 
 - For orientation, answer here; invoke no child skill.
 - For an action with unclear ownership or active state, use `locus:find`
   first, then route again with verified context.
-- Route completed evidence to `locus:distill` directly. It writes only when
-  explicitly authorized; otherwise it proposes. After `locus:track`, use it
-  only for a separate durable-knowledge update.
+- Route durable evidence or overlapping guidance to `locus:distill` directly.
+  It writes only when explicitly authorized; otherwise it proposes. After
+  `locus:track`, use it only for a separate durable-knowledge update.
 
 ## Output
 

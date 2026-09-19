@@ -2,7 +2,8 @@
 
 ## Input
 
-The work contract is approved at the depth required by its workflow.
+The work contract is understood, execution is authorized, and any approvals
+required by the workflow or repository policy are satisfied.
 
 ## Workflow
 
@@ -11,9 +12,12 @@ The work contract is approved at the depth required by its workflow.
 2. Continue in the selected checkout or worktree and follow the nearest Git
    policy.
 3. Choose direct, plan-execution, or parallel topology based on coupling.
-4. Implement the smallest approved change with a failing check first when code
-   behavior changes.
-5. Integrate once in the main agent and run deterministic affected checks.
+4. Implement the complete requested change, using a failing check for changed
+   behavior when it provides meaningful regression or acceptance evidence.
+5. Reconcile code, tests, canonical docs, and owning configuration; retire stale
+   temporary artifacts before Review.
+6. Integrate once in the main agent, inspect the result, and run affected and
+   repository-required checks. Fix task-caused failures within scope.
 
 ## Output
 

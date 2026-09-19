@@ -15,12 +15,14 @@ broaden only when the task requires context outside local files.
 
 ## Route
 
-Load at most one platform when the task requires context outside local files.
+Read one source at a time when the task requires context outside local files.
+Continue to another only when the original question still needs it; a knowledge
+map may locate the owner before GitHub supplies its work context.
 
-| Platform      | Use when                                               | Reference                                                 |
-| ------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-| GitHub        | Remote shaping, delivery, or review context is needed  | [github.md](references/platforms/github.md)               |
-| Knowledge map | A destination outside the current repository is needed | [knowledge-map.md](references/platforms/knowledge-map.md) |
+| Platform      | Use when                                                            | Reference                                                 |
+| ------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
+| GitHub        | Remote shaping, coordination, delivery, or review context is needed | [github.md](references/platforms/github.md)               |
+| Knowledge map | A destination outside the current repository is needed              | [knowledge-map.md](references/platforms/knowledge-map.md) |
 
 ## Workflow
 
@@ -29,10 +31,11 @@ Load at most one platform when the task requires context outside local files.
    to the selected owner. At each level, follow only the matching immediate child
    and continue through nested boundaries when needed.
 3. Read only the selected owner's relevant code, tests, `README.md`, or `docs/`.
-4. Follow explicit issue or pull-request links from the selected local artifact,
-   regardless of remote state.
-5. When the task requires non-local context, load only the matching platform
-   reference.
+4. Follow issue or pull-request links from the selected local artifact when
+   needed to answer the original question, regardless of remote state.
+5. When the task requires non-local context, read the matching platform reference
+   and retrieve the needed evidence. After locating an owner, read its local
+   context and select another source only if the original question is unanswered.
 6. Stop as soon as the minimum verified owner set answers the task.
 
 ## Output

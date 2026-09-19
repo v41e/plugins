@@ -6,7 +6,8 @@ Stage-specific GitHub synchronization for Locus Track.
 
 Before any mutation:
 
-1. Inspect available repository, organization, and owning Project metadata.
+1. Inspect only repository, organization, and owning Project metadata needed for
+   the selected stage action.
 2. Map a logical concept only when a rename, description, policy, automation, or
    one-to-one meaning establishes the equivalent.
 3. Record `logical -> existing [GitHub surface] (evidence)`. Record unmapped

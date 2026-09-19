@@ -37,6 +37,7 @@ Select exactly one mode and one target. Read both selected references completely
 
 - `README.md` is human-facing; `AGENTS.md` is the concise semantic and
   procedural entrypoint. Give both a `Structure` section.
+- `Structure` covers local boundaries and canonical local documentation.
 - Describe only the current boundary and its immediate children. Repository
   roots route to direct packages or plugins; child documents own their internals.
 - Prefer small README and AGENTS pairs at meaningful child boundaries. Keep a
@@ -53,12 +54,14 @@ Select exactly one mode and one target. Read both selected references completely
 1. Identify the selected documents, mode, and target.
 2. Read exactly that mode reference, target reference, selected templates, and
    existing selected documents completely.
-3. Use current source, manifests, configuration, commands, nearest instructions,
-   and canonical docs for facts; use the selected templates for structure and
-   ownership, not wording. Report conflicts between verified sources.
+3. Establish facts from current source, manifests, configuration, commands, and
+   canonical docs. Verify new or changed dependency claims against official docs
+   for the actual version and mode. Prefer available Markdown or agent-oriented
+   pages; use `llms.txt` for discovery and official HTML when needed. Verify URLs.
+   Templates own structure, not facts or wording; report evidence gaps and conflicts.
 4. Apply the selected mode without changing unselected documents.
-5. Replace every retained placeholder with a verified fact; report unresolved
-   content instead of guessing.
+5. Replace retained placeholders with verified facts; remove authoring notes and
+   unused optional sections. Report unresolved content instead of guessing.
 6. Re-read related documents together and verify facts, links, commands, and
    ownership boundaries.
 
@@ -70,7 +73,20 @@ unresolved facts, and smallest useful follow-up.
 ## Rules
 
 - Do not invent project, package, workflow, architecture, or command facts.
-- Do not treat placeholders as a license to guess.
 - Keep diffs minimal and focused.
+- Preserve useful existing custom sections during Refresh. For repository
+  `AGENTS.md`, add optional sections only when the corresponding need is verified:
+
+  | Optional section          | Include when                                                                                   |
+  | ------------------------- | ---------------------------------------------------------------------------------------------- |
+  | Tech Stack                | Decision-relevant runtime, framework, or tooling choices lack an existing documentation owner. |
+  | Local Setup               | Non-obvious agent setup is missing from the README.                                            |
+  | Generated Files           | Source-to-output mappings need more than one Guardrails entry.                                 |
+  | Compatibility & Contracts | API, schema, or platform constraints affect edits; link their specification.                   |
+  | Troubleshooting           | Recurring failures have verified diagnosis or recovery steps.                                  |
+  | Work Tracking             | An owning Project is verified under the repository-root target's conditions.                   |
+
+  Preserve core section order; prefer an existing entry or owner link to repetition.
+
 - Do not decide where long-lived knowledge should live; use `locus:distill` for
   placement decisions.

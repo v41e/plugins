@@ -21,7 +21,7 @@
 
 ## Quickstart
 
-<!-- Use the real primary action label, such as Build or Run. -->
+<!-- Show the shortest working path for this package's user: a library call, CLI invocation, service startup, or plugin installation. Include setup and verification only as needed; replace these example actions. -->
 
 - **Build**:
 
@@ -37,4 +37,4 @@
 
 ## Configuration
 
-<!-- Add local configuration notes only when they exist. Remove this section if there is no package- or plugin-local configuration. -->
+<!-- Document only configuration users supply: verified names, purpose, required/default values, and safe examples. Remove this section when there is no local configuration. -->

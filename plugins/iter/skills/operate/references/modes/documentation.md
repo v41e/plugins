@@ -11,9 +11,12 @@ and any generators that own the selected surfaces.
    correct action. Follow relevant source changes, decisions, and ownership links.
 2. Verify selected surfaces against current code, commands, manifests, tests, and
    approved architecture. Separate implemented behavior from intended direction.
-3. Improve the nearest canonical source through the parent execution workflow.
-   Prefer correcting, consolidating, or removing text to adding another document;
-   edit the generator when it owns the output.
+3. For explicitly requested creation, structural refresh, or reset of supported
+   canonical documents, use installed `locus:init`; for requested durable-knowledge
+   placement, promotion, or overlapping-guidance reconciliation, use installed
+   `locus:distill`. Otherwise improve the selected canonical source through the
+   parent execution workflow. Prefer correcting, consolidating, or removing text
+   to adding another document; edit the generator when it owns the output.
 4. Validate affected links, examples, commands, and applicable generator or
    formatting checks. If the selected surfaces already serve their purpose,
    report that result.

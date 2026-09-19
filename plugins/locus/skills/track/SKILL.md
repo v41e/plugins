@@ -5,8 +5,8 @@ description: Use when repository work must be classified, resumed, or synchroniz
 
 # Track
 
-Keep work proportional and resumable without making temporary scaffolding
-canonical.
+Complete the requested repository outcome through its applicable stages. Keep
+work proportional and resumable without making temporary scaffolding canonical.
 
 ## Input
 
@@ -37,9 +37,12 @@ any existing work contract, approval evidence, or tracked artifacts.
    [Superpowers integration](references/integrations/superpowers.md) and its
    current stage reference.
 
-7. Apply only the current stage's approved local and remote mutations.
+7. Apply the current stage's authorized local and remote changes, then advance
+   within the requested scope when its exit conditions are met.
 8. Preserve the selected checkout or worktree and follow repository Git policy.
-9. Stop when human approval or unavailable authority blocks the next stage.
+9. Reuse settled decisions and approvals. Pause for a material decision that
+   cannot be resolved from the request or evidence, a required approval, or a
+   blocked required step; distinguish that boundary from completion.
 
 ## Output
 

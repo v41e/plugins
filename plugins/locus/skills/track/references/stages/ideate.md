@@ -21,7 +21,8 @@ A Feature idea exists without an approved repository contract.
 
 ## Output
 
-Stop at Design readiness. Missing drafts or backlog records do not block Design.
+Return the refined idea for an ideation-only request; otherwise continue to
+Design. Missing drafts or backlog records do not block Design.
 
 ## Rules
 
