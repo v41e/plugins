@@ -20,6 +20,6 @@ GitHub actions for the Locus Scope stage.
 ## Boundaries
 
 - Without required tracking, leave GitHub unchanged.
-- Omit empty optional sections. Keep URLs, stage, Project fields, local Tracking
-  metadata, design, and plan out of the initial body.
+- Omit empty optional sections. Keep Issue and Project tracking URLs, stage,
+  Project fields, local Tracking metadata, design, and plan out of the initial body.
 - Remove intake-only labels after acceptance; preserve orthogonal labels.

@@ -25,7 +25,7 @@ lifecycle stage and run boundary.
 | Executing an approved written plan                     | `$superpowers:executing-plans`                |
 | Applying review feedback                               | `$superpowers:receiving-code-review`          |
 | Material pre-merge review without an equivalent review | `$superpowers:requesting-code-review`         |
-| About to claim completion                              | `$superpowers:verification-before-completion` |
+| Completion claims lack current verification evidence   | `$superpowers:verification-before-completion` |
 
 Do not add delegation, worktrees, plans, or review ceremony unless the task and
 repository policy require them.

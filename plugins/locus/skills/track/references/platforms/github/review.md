@@ -6,8 +6,10 @@ GitHub actions for the Locus Review stage.
 
 - Complete the Review stage's required local checkpoint and delivery authority
   check before creating or updating the pull request.
-- Create or update the pull request and move its Project item to the mapped
-  review state.
+- Create or update a pull request only when the selected delivery path requires
+  one.
+- Move the existing tracked work item's Project item to the mapped review status
+  only when both the item and mapping exist.
 - Follow the repository pull-request template when present. Otherwise include a
   related-Issue link, `Summary`, `Verification`, and material `Notes`.
 - When the pull request targets a non-default branch, link its Issue manually;

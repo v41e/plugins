@@ -20,8 +20,6 @@ bounded operator, and one Codex-specific cross-project coordinator.
 
 ## Structure
 
-- [`plugin.json`](plugin.json): portable Agent Plugins v1 identity metadata
-- [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
   - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
@@ -31,8 +29,10 @@ bounded operator, and one Codex-specific cross-project coordinator.
 
 ## Quickstart
 
-1. Add this directory through a compatible client's plugin installation flow.
-2. Start a new task so the client loads the skills.
+1. Install this package through a compatible client; in Codex, select `iter`
+   from the `v41e` marketplace.
+2. Reload plugins as required by the client; restart Codex desktop after local
+   plugin changes.
 3. Use `iter:using` when selection is unclear, or invoke `iter:brief`,
    `iter:operate`, or `iter:orchestrate` for the matching need.
 

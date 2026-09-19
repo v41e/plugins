@@ -5,8 +5,9 @@ description: Use when authorized engineering or canonical documentation needs on
 
 # Operate One Authorized Run
 
-Make useful, verified progress toward the caller's goal. Operate manages the
-execution pass; the applicable work lifecycle governs each change.
+Carry the authorized outcome through implementation, inspection, and appropriate
+verification within the run's limits. The applicable work lifecycle governs each
+change; Operate owns continuation and stopping.
 
 ## Input
 
@@ -21,22 +22,26 @@ budget or stopping conditions for this manual or scheduled run.
 ## Workflow
 
 1. Read the selected mode, project instructions, contribution policy, and work
-   contracts. Establish the Git root, working state, and ownership.
-2. Gather relevant evidence using the [GitHub adapter](references/platforms/github.md)
-   and its selected-mode references when applicable. Use the
-   [Superpowers integration](references/integrations/superpowers.md) for artifacts
-   and engineering methods.
-3. Identify worthwhile work within scope, reconciling source, prior decisions,
-   tasks, PRs, and newer results. Resume this assignment's work; do not duplicate
+   contracts. Establish the Git root, working state, and execution ownership.
+2. Gather current relevant read-only local and remote evidence before selecting
+   work. When GitHub is needed, read the [GitHub adapter](references/platforms/github.md)
+   and its selected-mode references. Reconcile source, prior decisions, tasks,
+   PRs, and newer results; resume this assignment's work and do not duplicate
    another active owner's work.
-4. Execute through one applicable workflow:
-   - When Locus Track is installed and tracking applies, use it to classify new
-     work or resume the current stage. It governs implementation, review, and
-     delivery; do not repeat those steps through Operate.
-   - Otherwise follow repository policy: establish the cause or acceptance
-     criteria, make the smallest complete change, verify changed behavior and
-     required checks, then follow the authorized review and delivery path.
-5. Reassess after each outcome. Continue independent authorized work; hold blocked
+3. Resolve the lifecycle owner before selecting execution integrations:
+   - When installed Locus Track applies, read Track. It classifies new work or
+     resumes its current stage, selects the stage methods, and owns
+     implementation, review, and delivery. Operate retains run scope,
+     reassessment, continuation, and stopping.
+   - Otherwise, Iter owns this run's execution workflow.
+4. In Iter's independent fallback, read the
+   [Superpowers integration](references/integrations/superpowers.md) only for
+   matching artifacts or engineering methods.
+5. In Iter's independent fallback, follow repository policy: establish the
+   cause or acceptance criteria, make the smallest complete change, inspect the
+   result, and complete affected and required checks. Fix task-caused failures
+   within scope, then follow the authorized review and delivery path.
+6. Reassess after each outcome. Continue independent authorized work; hold blocked
    or unapproved work. Stop when scope is covered, the budget is reached, or no
    eligible work remains.
 

@@ -1,6 +1,6 @@
 ---
 name: distill
-description: Use when completed work, conversations, reviews, drafts, or conflicting sources may contain durable knowledge whose owner or required update is unclear.
+description: Use when work or conversations reveal durable knowledge to place or promote, or overlapping guidance needs reconciliation.
 ---
 
 # Distill
@@ -12,8 +12,9 @@ Distill the smallest verified durable signal into its narrowest owner.
 - Evidence, requested action, selected destination, and nearest `AGENTS.md`.
 - Relevant code, tests, docs, configuration, or linked work records.
 
-Chat and agent memory are discovery leads. Verify their claims against the
-selected owner before promoting anything.
+Recalled facts in chat and memory are discovery leads to verify against their
+owner. Current explicit user decisions establish intent; record them separately
+from implemented behavior.
 
 ## Route
 
@@ -37,14 +38,18 @@ owning workflow.
 1. Extract each independent durable signal; reject speculation, duplication,
    and temporary narration.
 2. Read its current owner and verify each claim against the surface owning that
-   dimension. Return `needs-human-judgment` for unresolved contradictions.
+   dimension. Resolve contradictions from that evidence; continue independent
+   verified signals when one needs human judgment.
 3. Retrieve missing local or remote evidence with `locus:find`.
-4. Prefer the nearest existing destination. If none exists, propose the
-   narrowest new destination; create it only when explicitly requested and its
-   placement is verified. Promote the signal once.
+4. Prefer the nearest existing destination. Create the smallest necessary new
+   document within an authorized update only when ownership and placement are
+   verified; use `locus:init` when its repository or vault target and canonical
+   document contract apply. Promote the signal once.
 5. Preserve provenance for external, time-sensitive, or historical claims.
-6. Apply an explicitly requested narrow update; propose broad, sensitive, or
-   ambiguous writes first.
+6. A requested update authorizes reconciliation of its verified subject and
+   scope. Rewrite the smallest coherent passage, merging overlapping guidance
+   and removing superseded text. Preserve valid constraints, unresolved
+   decisions, and explicit approval gates.
 
 ## Output
 
@@ -53,19 +58,19 @@ applicable, one-line summary, provenance when relevant, and verification for a
 write. When the user requests promotion advice without authorizing writes,
 return proposals only.
 
-| Status                 | Use when                                                      |
-| ---------------------- | ------------------------------------------------------------- |
-| `updated`              | An authorized update was applied to a verified existing owner |
-| `created`              | An authorized destination was created at a verified placement |
-| `already-known`        | The verified owner already contains the signal                |
-| `update-needed`        | The signal and owner path are verified, but no write occurred |
-| `wrong-place`          | The signal exists outside its verified owner                  |
-| `too-weak`             | The evidence is speculative or insufficient                   |
-| `needs-human-judgment` | A contradiction, owner, or exact placement cannot be verified |
+| Status                 | Use when                                                                                                 |
+| ---------------------- | -------------------------------------------------------------------------------------------------------- |
+| `updated`              | An authorized update was applied to a verified existing owner                                            |
+| `created`              | An authorized destination was created at a verified placement                                            |
+| `already-known`        | The verified owner already contains the signal                                                           |
+| `update-needed`        | The signal and owner path are verified, but no write occurred                                            |
+| `wrong-place`          | The signal exists outside its verified owner                                                             |
+| `too-weak`             | The evidence is speculative or insufficient                                                              |
+| `needs-human-judgment` | Meaning, ownership, placement, a material undelegated decision, or required authority remains unresolved |
 
 ## Rules
 
-- Default to detection unless the user requested the narrow update.
+- Default to detection unless the user requested an update.
 - If a useful note is incomplete and the destination exposes an inbox or review
   area, return `update-needed` and name it.
 - If placement cannot be verified, return `needs-human-judgment` instead of

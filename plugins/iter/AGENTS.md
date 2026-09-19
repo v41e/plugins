@@ -8,8 +8,6 @@ dispatch, and client metadata adapts package discovery.
 
 ## Structure
 
-- [`plugin.json`](plugin.json): portable Agent Plugins v1 identity metadata
-- [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
   - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
@@ -19,21 +17,29 @@ dispatch, and client metadata adapts package discovery.
 
 ## Tech Stack
 
-- **Plugin**: Agent Plugins v1 with Codex compatibility metadata.
-- **Agentic runtime**: Agent Skills with Git, GitHub CLI, repository context,
-  and Codex desktop saved-project tools.
+- **Packaging**: [Agent Plugins v1.0.0](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md)
+  in `plugin.json`; consult when changing portable metadata or package layout.
+- **Instructions**: Markdown [Agent Skills](https://agentskills.io/llms.txt);
+  use the agent index when changing skill format or resource-loading guidance.
+- **Codex compatibility**: [Plugin format](https://developers.openai.com/plugins/build/plugins)
+  in `.codex-plugin/plugin.json`; consult when changing skill discovery or
+  interface metadata.
+- **Execution tools**: the host supplies Git and GitHub access when required.
+  `orchestrate` requires Codex desktop saved-project tools; use live tool
+  schemas with its [Codex adapter](skills/orchestrate/references/platforms/codex.md).
 
 ## Commands
 
-- Metadata: `jq empty plugin.json .codex-plugin/plugin.json`.
+Run from this directory:
+
+- Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
 
 ## Verification
 
-- For manifest changes, validate and inspect both metadata files.
-- Validate each skill entrypoint and every referenced mode, platform, or
-  integration mapping.
-- Confirm each skill's relative reference links resolve inside that skill.
-- Check local Markdown links and inspect the complete plugin diff.
+- For manifest changes, check both manifests' identity fields and discovery paths.
+- For skill changes, read the entrypoint and affected references together; check
+  brief, execution, and dispatch boundaries. Reference links stay inside their
+  owning skill.
 
 ## Guardrails
 
@@ -50,7 +56,7 @@ dispatch, and client metadata adapts package discovery.
   Iter remains independently installable and does not depend on Locus.
 - Keep briefs read-only and treat ideas or drafts as human triggers, not
   authorization to act.
-- Local executors may not merge, release, deploy, create schedules, or modify live
-  automations.
+- Local `operate` runs may not merge, release, deploy, create schedules, or modify
+  live automations.
 - Keep package content generic and safe to publish; preserve unrelated worktree
   changes.

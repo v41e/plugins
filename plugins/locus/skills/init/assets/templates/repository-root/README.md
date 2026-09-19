@@ -32,6 +32,8 @@ Ensure you have the following installed:
 
 ### How To Use
 
+<!-- Keep only the steps needed for the repository's primary use. A CLI invocation, library example, or plugin installation may replace these examples; environment initialization is not mandatory. -->
+
 1. **Install Dependencies**:
 
    ```sh

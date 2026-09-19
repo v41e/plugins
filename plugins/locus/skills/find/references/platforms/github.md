@@ -1,6 +1,6 @@
 # GitHub Adapter
 
-Use GitHub only when the task needs remote shaping, delivery, or review context.
+Use GitHub only when the task needs remote shaping, coordination, delivery, or review context.
 
 ## Concept mapping
 
@@ -13,8 +13,10 @@ Use GitHub only when the task needs remote shaping, delivery, or review context.
 ## Evidence resolution
 
 1. Follow an explicitly named issue or pull request regardless of state.
-2. Otherwise read the repository-root `Work Tracking` section. If it declares
-   no Project, search repository-scoped open issues only when useful.
+2. Otherwise read the repository-root `Work Tracking` section when present. If
+   the section or Project declaration is absent, or it declares no Project,
+   search repository-scoped open issues when useful. Missing tracking context
+   is not evidence that no work exists.
 3. Resolve the current repository from its remote. In a cross-repository
    Project, filter items to that repository before loading their content.
 4. Resolve Project status semantics from Project metadata or repository policy.
