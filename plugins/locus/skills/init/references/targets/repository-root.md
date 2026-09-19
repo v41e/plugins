@@ -46,21 +46,41 @@ be verified from repository remotes or existing tracker documentation.
 - Keep it focused on what the repository is, its important structure, how to get started, and where the canonical root docs live.
 - In a package or plugin repository, use a compact Overview list or table for direct children and link their README when useful. Keep `Structure` at directory boundaries and defer child details.
 - Prefer links to existing canonical docs over duplication.
+- Choose setup and usage steps for the actual repository type; omit inapplicable
+  installation or environment steps.
 
 ### AGENTS
 
 - Keep it short, additive, and agent-only.
 - Include the operational essence agents need before acting: source layout, commands, verification, generated boundaries, protected paths, and docs-to-read triggers.
 - Keep repository-wide rules at the root and route package- or plugin-specific work to the owning child `AGENTS.md`.
-- Put structural and documentation links in `Structure`; avoid a separate section for them.
+- Put local boundaries and canonical local documentation links in `Structure`.
+- `Commands` lists entrypoints; `Verification` explains coverage and necessary extra
+  checks from task definitions and CI. Keep it brief and repository-specific.
+- Keep dependency links with their `Tech Stack` or architecture owner; retain
+  relevant version/mode constraints and when to consult them. Use optional `References`
+  for useful sources without an existing owner. Follow `SKILL.md` source guidance.
 - Do not copy README prose; repeat only stable facts that change agent behavior.
 - Include Work Tracking only under the verified conditions above.
 - Add deployment safety and sharp edges only when they materially help.
+- Select any additional sections using the optional-section criteria in `SKILL.md`.
 
 ### ARCHITECTURE
 
 - Create it only when the user explicitly requests it or the repository has non-obvious cross-package, polyglot, runtime, data, deployment, or security relationships.
 - Do not create it merely because a repository has large files.
-- Keep every numbered template section in order. When a section is not relevant,
-  say so briefly instead of removing it.
+- Keep all eight numbered template sections in order with stable numbering.
+  Leave an inapplicable section empty or say so briefly.
 - Use it to explain subsystem relationships, major flows, and high-level boundaries; keep path inventory in `README.md` and `AGENTS.md`.
+- State system scope and consequential constraints in the overview; add a short
+  Terminology subsection only for unfamiliar local terms. Keep project identity
+  in the introduction and README, and moving roadmap items in their tracker.
+- Keep component technologies with `Core Components`; use
+  `External Integrations / APIs` for external services, their purpose, and
+  integration contracts. Avoid a separate technology inventory.
+  Describe actual storage and delivery surfaces, including files, local tools,
+  libraries, and plugins; do not assume a cloud service or database.
+- Keep `References` for verified sources recording why the design was chosen,
+  such as decision records or evaluated alternatives. When none is verified,
+  leave it empty or state that briefly. Technology and API documentation belongs
+  with the relevant component, store, deployment surface, or external integration.

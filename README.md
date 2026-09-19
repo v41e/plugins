@@ -21,7 +21,12 @@ The marketplace distributes two independently installable plugins:
 
 ## Getting Started
 
-### Installation
+### Prerequisites
+
+Use an agent client that supports Agent Plugins v1 and Agent Skills. The Codex
+commands below require a CLI installation with plugin support.
+
+### How To Use
 
 Point a compatible client at the selected package root under [`plugins/`](plugins/)
 using the client's installation process.
@@ -34,7 +39,8 @@ codex plugin add locus@v41e
 codex plugin add iter@v41e
 ```
 
-Start a new task after installation or upgrade so the plugin skills are loaded.
+Install either or both plugins as needed. Follow the client's reload process
+after installation or updates; restart the desktop app for Codex desktop use.
 
 ## Contributing
 

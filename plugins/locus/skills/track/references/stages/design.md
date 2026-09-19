@@ -2,7 +2,7 @@
 
 ## Input
 
-The Feature is ready for a human design decision.
+The Feature needs a settled design within the requested scope.
 
 ## Workflow
 
@@ -12,7 +12,8 @@ The Feature is ready for a human design decision.
    local specification in the expected owning repository.
 3. Move or retire drafts outside that repository. If ownership is unresolved,
    keep Design in chat or a cross-repository planning surface.
-4. Iterate until the human approves the design.
+4. Resolve material choices from the request and evidence; ask when a decision
+   remains with the human. Obtain any required design approval.
 5. Promote a linked backlog record or create a formal remote record only when a
    repository contract is required. Apply only supported, unambiguous metadata.
 6. When a local specification and formal remote record both exist, publish the
@@ -20,8 +21,9 @@ The Feature is ready for a human design decision.
 
 ## Output
 
-Record approval and continue to Plan.
+Record the settled design and any required approval. Return it for a design-only
+request; otherwise continue to Plan.
 
 ## Rules
 
-- Do not implement an unapproved design.
+- Do not bypass unresolved material decisions or required design approval.

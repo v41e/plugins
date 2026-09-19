@@ -4,6 +4,6 @@ Superpowers skills for the Locus Complete stage.
 
 ## Skills
 
-| Use when                                     | Skill                                        | Boundary                 |
-| -------------------------------------------- | -------------------------------------------- | ------------------------ |
-| Before claiming completion after integration | `superpowers:verification-before-completion` | Use fresh final evidence |
+| Use when                                                                       | Skill                                        | Boundary                           |
+| ------------------------------------------------------------------------------ | -------------------------------------------- | ---------------------------------- |
+| Completion evidence is missing, stale, or does not cover the integrated result | `superpowers:verification-before-completion` | Verify the actual integrated state |

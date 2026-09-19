@@ -7,8 +7,6 @@ workflow behavior; client metadata only adapts package discovery.
 
 ## Structure
 
-- [`plugin.json`](plugin.json): portable Agent Plugins v1 identity metadata
-- [`.codex-plugin/`](.codex-plugin/): Codex identity and interface metadata
 - [`examples/`](examples/): generic, publishable examples:
   - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting point
 - [`skills/`](skills/): shared instruction-driven workflows:
@@ -21,20 +19,27 @@ workflow behavior; client metadata only adapts package discovery.
 
 ## Tech Stack
 
-- **Plugin**: Agent Plugins v1 with Codex compatibility metadata.
-- **Agentic runtime**: Agent Skills.
+- **Packaging**: [Agent Plugins v1.0.0](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md)
+  in `plugin.json`; consult when changing portable metadata or package layout.
+- **Instructions**: Markdown [Agent Skills](https://agentskills.io/llms.txt);
+  use the agent index when changing skill format or resource-loading guidance.
+- **Codex compatibility**: [Plugin format](https://developers.openai.com/plugins/build/plugins)
+  in `.codex-plugin/plugin.json`; consult when changing skill discovery or
+  interface metadata.
 
 ## Commands
 
-- Metadata: `jq empty plugin.json .codex-plugin/plugin.json`.
+Run from this directory:
+
+- Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
 
 ## Verification
 
-- For manifest changes, validate and inspect both metadata files.
-- Check local Markdown links and inspect the complete plugin diff.
-- For skill changes, read the complete `SKILL.md` and every referenced file.
-- For scaffold changes, compare the target reference with its matching templates
-  under `skills/init/assets/templates/`.
+- For manifest changes, check both manifests' identity fields and discovery paths.
+- For skill changes, read the entrypoint and affected references together; check
+  routing, authorization, and completion boundaries.
+- For template changes, compare the target reference, matching templates under
+  `skills/init/assets/templates/`, and resulting document structure.
 
 ## Guardrails
 

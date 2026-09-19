@@ -12,8 +12,9 @@ Maintenance work is neither a new capability nor incorrect behavior.
 
 ## Output
 
-Proceed to Implement when the proportional work contract is understood and
-approved at the depth the Task requires.
+Return the work contract for a scoping-only request. Otherwise continue to
+Implement when scope is understood, execution is authorized, and required
+approvals are satisfied.
 
 ## Rules
 

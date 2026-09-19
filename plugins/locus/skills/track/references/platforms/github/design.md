@@ -4,8 +4,8 @@ GitHub actions for the Locus Design stage.
 
 ## Actions
 
-- After human design approval, promote the linked draft or create an Issue only
-  when a repository contract is required.
+- Once the design is settled and required approvals are satisfied, promote the
+  linked draft or create an Issue only when a repository contract is required.
 - Follow the repository Issue Form when present. Otherwise use `Problem`,
   `Solution`, optional `Alternatives`, and optional `Context`.
 - Apply a mapped Issue Type or repository label. Set mapped Priority and Effort

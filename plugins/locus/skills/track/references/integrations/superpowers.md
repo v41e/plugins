@@ -17,7 +17,8 @@ Stage-specific Superpowers skill selection for Locus Track.
 
 ## Rules
 
-- Read only the current stage; its workflow owns order.
+- Read only the current stage. Track owns transitions, artifacts, and delivery;
+  selected methods operate within that boundary.
 - Apply every matching row; rows may combine.
 - User and repository instructions override this adapter.
 - If Superpowers is unavailable, use equivalent capabilities without weakening

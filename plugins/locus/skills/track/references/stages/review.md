@@ -6,12 +6,13 @@ The integrated implementation passes its affected checks.
 
 ## Workflow
 
-1. Review the contract, diff, generated output, compatibility boundary, and
-   fresh evidence.
+1. Review the contract, relevant working-tree, branch, or commit diff, generated
+   output, compatibility boundary, and fresh evidence.
 2. Satisfy any required local human review checkpoint before the first delivery
-   mutation: present the verified uncommitted diff and material decisions, then
+   mutation: present the verified relevant diff and material decisions, then
    wait unless that checkpoint was already approved or explicitly waived for the
-   task. Access approval is not review approval or delivery authority. Preserve
+   task. Never uncommit resumed work just to produce a working-tree diff.
+   Access approval is not review approval or delivery authority. Preserve
    commit, push, and delivery record grants separately; newer restrictions
    override them.
 3. Follow the delivery path set by repository policy and human direction in the
