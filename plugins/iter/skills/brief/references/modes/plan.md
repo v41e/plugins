@@ -1,5 +1,9 @@
 # Plan Mode
 
+## Purpose
+
+Choose a feasible focus for the future horizon from goals and unfinished work.
+
 ## Input
 
 Future `planning_horizon`, goals, latest decisions, unfinished work, dependencies,

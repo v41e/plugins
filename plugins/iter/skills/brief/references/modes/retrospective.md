@@ -1,5 +1,9 @@
 # Retrospective Mode
 
+## Purpose
+
+Compare outcomes with approved intent and identify what to continue, change, or stop.
+
 ## Input
 
 Historical `retrospective_window`, direction, approved intentions, observed

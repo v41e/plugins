@@ -5,6 +5,8 @@ description: Use when preparing a read-only status brief, focus plan, or retrosp
 
 # Brief Current Work
 
+## Purpose
+
 Turn relevant evidence into judgments about outcomes, priorities, and decisions.
 
 ## Input
@@ -38,10 +40,15 @@ required inputs instead of guessing or waiting indefinitely.
    an evidenced reason. Reconcile newer evidence with old failures or
    recommendations; stop when more detail would not change the brief.
 
-Use the [GitHub adapter](references/platforms/github.md) only for GitHub evidence
-and the [Superpowers artifact mapping](references/integrations/superpowers.md)
-only when those artifacts are relevant. Use the [Codex evidence mapping](references/harnesses/codex.md)
-for Codex project/task discovery and inspection. Supplied local evidence is valid.
+### Evidence sources
+
+| When | Capability | Result |
+| ---- | ---------- | ------ |
+| GitHub work or delivery could affect the judgment | [GitHub](references/platforms/github.md) | Selected contracts, coordination, or delivery evidence |
+| A specification or plan could affect the judgment | [Superpowers artifacts](references/integrations/superpowers.md) | Intent and approval evidence |
+| Codex project or task context could affect the judgment | [Codex](references/harnesses/codex.md) | Compact discovery and selected conversation evidence |
+
+Supplied local evidence is valid.
 
 ## Output
 
