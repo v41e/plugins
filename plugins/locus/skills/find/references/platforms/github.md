@@ -1,14 +1,12 @@
 # GitHub Adapter
 
-Use GitHub only when the task needs remote shaping, coordination, delivery, or review context.
+## Capabilities
 
-## Concept mapping
-
-| Concept | GitHub surface | Semantics |
-| ------- | -------------- | --------- |
-| Work contract | Issue | Shaping, decisions, and approved specification or plan snapshots |
-| Coordination state | Project item | Interpret status from verified metadata or repository policy |
-| Delivery | Pull request | Verification, deviations, and review |
+| When | Capability | Result |
+| ---- | ---------- | ------ |
+| The work contract is needed | Issue | Shaping, decisions, and approved specification or plan snapshots |
+| Coordination state is needed | Project item | Status interpreted from verified metadata or repository policy |
+| Delivery evidence is needed | Pull request | Verification, deviations, and review |
 
 ## Evidence resolution
 

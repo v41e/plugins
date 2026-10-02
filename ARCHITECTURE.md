@@ -41,12 +41,15 @@ through a source-repository URL rather than a path outside their package.
 The implementation is Markdown following the [Agent Skills format](https://agentskills.io/llms.txt).
 Skills are callable entrypoints. Modes select alternative operations; workflows
 order lifecycle stages; stages identify required evidence and a transition gate.
-Each uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections
-where selection is needed.
+Each uses `Purpose`, `Input`, `Workflow`, `Output`, and `Rules`, with routing
+inside the relevant section. Using skills are concise inventories of purpose,
+skills, and requirements.
 
 Platform adapters map logical concepts to concrete tools, commands, and remote
 surfaces. Integration adapters map observed conditions to installed skills.
-Their mappings preserve the selected operation's scope and approval gates.
+Conditional capability tables use `When`, `Capability`, and `Result`; schemas
+and inventories keep columns appropriate to their content. Mappings preserve
+the selected operation's scope and approval gates.
 Target references describe destination structure and templates.
 
 Locus owns content placement and discovery. Iter owns work records and gates,

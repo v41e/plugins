@@ -37,10 +37,12 @@ owning directory under `plugins/`.
   this public repository.
 - Treat marketplace and plugin distribution changes as supply-chain changes.
 - Keep implementations and plugin-specific guidance inside the owning plugin.
-- Skills, modes, workflows, and stages use `Input`, `Workflow`, `Output`, and
-  `Rules` in that order. Add routing sections only where needed.
+- Skills, modes, workflows, and stages use `Purpose`, `Input`, `Workflow`,
+  `Output`, and `Rules` in that order. Put routing inside the relevant section.
+  Using skills are concise inventories: `Purpose`, `Skills`, and `Requirements`.
 - Platform and integration references map concepts or conditions to concrete
   capabilities and their semantics; they do not define a second workflow.
+  Conditional capability tables use `When`, `Capability`, and `Result`.
 - Preserve unrelated worktree changes.
 - Do not release, publish, mutate external systems, or run destructive commands
   unless the user explicitly requests it.

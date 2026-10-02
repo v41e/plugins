@@ -1,15 +1,12 @@
 # Knowledge Map Adapter
 
-Use the knowledge map only to discover a destination outside the current
-repository.
+## Capabilities
 
-## Concept mapping
-
-| Concept | Concrete surface | Semantics |
-| ------- | ---------------- | --------- |
-| Discovery entrypoint | Resolved map directory or its `AGENTS.md` | Locates destination inventories |
-| Destination inventory | Smallest matching map entry | Identifies a candidate owner, not current facts |
-| Verified knowledge | Destination instructions and owned files | Supplies evidence for the answer |
+| When | Capability | Result |
+| ---- | ---------- | ------ |
+| A destination outside the repository is needed | Resolved map directory or its `AGENTS.md` | Destination inventories |
+| An inventory matches the request | Smallest matching map entry | A candidate owner to verify |
+| The owner is selected | Destination instructions and owned files | Current evidence for the answer |
 
 ## Entrypoint resolution
 
