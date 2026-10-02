@@ -32,6 +32,10 @@ flowchart LR
   details remain inside its owning directory.
 - **Versioning**: every plugin manifest shares the repository version.
 
+Plugin-specific documentation stays inside the distributed package's `docs/`.
+Root `docs/` owns cross-plugin guidance; installed packages link to that guidance
+through a source-repository URL rather than a path outside their package.
+
 ### 2.3. Skill Contracts
 
 The implementation is Markdown following the [Agent Skills format](https://agentskills.io/llms.txt).
