@@ -16,12 +16,10 @@ version-sensitive references. Include generator checks only when they apply. -->
 
 ## Code Review Rules
 
-Inherit shared review guidance; add only verified documentation-specific rules.
-
-- Check changed claims, commands, and examples against their owning sources and
-  stated environment; distinguish intended, implemented, and verified live state.
-- Flag consequential drift or conflicting ownership. Keep README navigation
-  useful and detailed guides with their declared owner.
+<!-- Optional. Omit this section unless verified documentation-specific review
+priorities add to inherited review guidance and existing contracts, Sources,
+Guardrails, and Verification. Link owning claim, example, or state rules rather
+than copying them. -->
 
 ## Guardrails
 
