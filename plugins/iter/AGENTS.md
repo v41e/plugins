@@ -11,6 +11,7 @@ dispatch, and client metadata adapts package discovery.
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`using/`](skills/using/): workflow selection and ownership routing
   - [`brief/`](skills/brief/): read-only status, plan, and retrospective modes
+  - [`track/`](skills/track/): proportional work records, approvals, and evidence gates
   - [`operate/`](skills/operate/): authorized engineering and documentation modes
   - [`orchestrate/`](skills/orchestrate/): Codex desktop coordination across saved projects
 - [`README.md`](README.md): human-facing plugin overview and quickstart
@@ -52,8 +53,10 @@ Run from this directory:
   caller work, and never edits a project repository from the umbrella workspace.
 - Enter `orchestrate` only for an explicit request to dispatch, create, or
   continue project-owned tasks across an ordered saved-project list.
-- When installed, Locus owns work-lifecycle and durable-knowledge workflows;
-  Iter remains independently installable and does not depend on Locus.
+- Track owns work records and evidence gates; the owning execution context and
+  Superpowers supply engineering methods. Track never executes or dispatches work.
+- When installed, Locus owns content placement; Iter remains independently
+  installable and does not depend on Locus.
 - Keep briefs read-only and treat ideas or drafts as human triggers, not
   authorization to act.
 - Local `operate` runs may not merge, release, deploy, create schedules, or modify

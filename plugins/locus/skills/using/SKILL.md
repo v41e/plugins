@@ -15,7 +15,6 @@ Requested outcome, known owner, and whether a content update is requested.
 | ---- | ----- |
 | Locate content, sources, or work context | `locus:find` |
 | Create, refresh, relocate, or reconcile content | `locus:write` |
-| Track repository work | `locus:track` |
 
 For orientation, explain the route here. For requested action, read the matching
 skill. Find first only when the owner or evidence is unclear.

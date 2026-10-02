@@ -28,16 +28,15 @@ budget or stopping conditions for this manual or scheduled run.
    and its selected-mode references. Reconcile source, prior decisions, tasks,
    PRs, and newer results; resume this assignment's work and do not duplicate
    another active owner's work.
-3. Resolve the lifecycle owner before selecting execution integrations:
-   - When installed Locus Track applies, read Track. It classifies new work or
-     resumes its current stage, selects the stage methods, and owns
-     implementation, review, and delivery. Operate retains run scope,
-     reassessment, continuation, and stopping.
-   - Otherwise, Iter owns this run's execution workflow.
-4. In Iter's independent fallback, read the
+3. Use `iter:track` when work is already tracked, repository policy requires it,
+   or the outcome is materially undecided or independently prioritizable.
+   Track records contracts, approvals, and evidence gates; the owning execution
+   context supplies implementation, review, and delivery. Operate retains run
+   scope, reassessment, continuation, and stopping.
+4. Read the
    [Superpowers integration](references/integrations/superpowers.md) only for
    matching artifacts or engineering methods.
-5. In Iter's independent fallback, follow repository policy: establish the
+5. Follow repository policy: establish the
    cause or acceptance criteria, make the smallest complete change, inspect the
    result, and complete affected and required checks. Fix task-caused failures
    within scope, then follow the authorized review and delivery path.

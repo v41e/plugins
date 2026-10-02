@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "iter",
   "version": "0.3.0",
-  "description": "Brief current project work, execute authorized changes, or explicitly dispatch caller-supplied work sequentially across saved Codex projects.",
+  "description": "Brief project work, track contracts and evidence, maintain authorized changes, or explicitly dispatch project-owned tasks.",
   "author": {
     "name": "v41e",
     "url": "https://github.com/v41e"

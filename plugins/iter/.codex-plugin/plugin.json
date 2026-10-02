@@ -1,7 +1,7 @@
 {
   "name": "iter",
   "version": "0.3.0",
-  "description": "Brief current project work, execute authorized changes, or explicitly dispatch caller-supplied work sequentially across saved Codex projects.",
+  "description": "Brief project work, track contracts and evidence, maintain authorized changes, or explicitly dispatch project-owned tasks.",
   "author": {
     "name": "v41e",
     "url": "https://github.com/v41e"
@@ -17,8 +17,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Iter",
-    "shortDescription": "Brief, operate, or explicitly dispatch across projects.",
-    "longDescription": "Read current project state, execute authorized engineering or canonical documentation changes in the owning context, and explicitly dispatch arbitrary caller work sequentially across exact saved Codex projects.",
+    "shortDescription": "Brief, track, operate, or dispatch project work.",
+    "longDescription": "Read project state, synchronize work contracts and evidence gates, execute authorized maintenance in the owning context, and explicitly dispatch caller work across exact saved projects.",
     "developerName": "v41e",
     "defaultPrompt": [
       "Prepare a status brief for this repository for the previous local calendar day, using the runtime timezone.",

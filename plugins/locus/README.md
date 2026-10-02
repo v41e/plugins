@@ -11,7 +11,6 @@ explanations and reference material. Writing style remains the caller's choice.
 - [skills/](skills/): portable instruction-driven skills:
   - [find/](skills/find/): read-only ownership and evidence discovery
   - [write/](skills/write/): content placement, reconciliation, and templates
-  - [track/](skills/track/): repository work tracking
   - [using/](skills/using/): skill selection
 - [docs/](docs/): configuration documentation
 - [examples/knowledge-map/](examples/knowledge-map/): generic discovery-map example
