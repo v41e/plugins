@@ -36,7 +36,7 @@ flowchart LR
 
 The implementation is Markdown following the [Agent Skills format](https://agentskills.io/llms.txt).
 Skills are callable entrypoints. Modes select alternative operations; workflows
-order lifecycle stages; stages define execution steps and a transition gate.
+order lifecycle stages; stages identify required evidence and a transition gate.
 Each uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections
 where selection is needed.
 
@@ -45,10 +45,11 @@ surfaces. Integration adapters map observed conditions to installed skills.
 Their mappings preserve the selected operation's scope and approval gates.
 Target references describe destination structure and templates.
 
-Locus owns knowledge and Feature, Bug, or Task work lifecycles. Iter owns
-repository briefs, one bounded authorized operation per run, and explicitly
-requested sequential project-task dispatch. They remain independently
-installable.
+Locus owns content placement and discovery. Iter owns work records and gates,
+repository briefs, bounded maintenance runs, and explicitly requested sequential
+project-task dispatch. The owning project context and installed engineering
+skills supply implementation and review methods. Both packages remain
+independently installable.
 
 ## 3. Data Stores
 
@@ -59,7 +60,7 @@ remain in their selected destinations, GitHub, or the host client.
 
 - **GitHub**: hosts distribution, CI, and releases. Skills also use GitHub tools
   or the CLI for Issues, Projects, and pull requests; the
-  [Locus tracking adapter](plugins/locus/skills/track/references/platforms/github.md)
+  [Iter tracking adapter](plugins/iter/skills/track/references/platforms/github.md)
   and [Iter operation adapter](plugins/iter/skills/operate/references/platforms/github.md)
   define the applicable mappings and write boundaries.
 - **Codex desktop**: Iter's

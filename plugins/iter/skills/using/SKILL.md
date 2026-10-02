@@ -19,12 +19,12 @@ explicitly authorized.
 | Current status, plan, or retrospective | `brief` mode |
 | One bounded authorized engineering run, or documentation work on selected surfaces | `operate` mode |
 | Explicit sequential task dispatch across saved projects | `orchestrate` |
-| Work-lifecycle classification or advancement when Locus is installed | `locus:track` |
+| Classify, resume, or synchronize repository work records | `iter:track` |
 | Content placement, creation, refresh, or reconciliation when installed | `locus:write` |
 | Cross-project discussion, comparison, interview, or proposal | Remain read-only here |
 
-Inside an `operate` run, installed Locus owns its matching lifecycle or
-knowledge workflow.
+Inside an `operate` run, Track owns work records and gates; the owning execution
+context supplies engineering methods. Installed Locus owns content placement.
 
 1. Select the route; preserve an explicitly named valid route.
 2. Orientation only ("Which mode should I use?"): return the routing record;

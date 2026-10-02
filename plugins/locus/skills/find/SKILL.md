@@ -54,6 +54,6 @@ pointers.
   selected child's surfaces for child-local facts.
 - Do not load sibling packages or plugins unless the task crosses their boundary.
 - Load neither the whole map nor unrelated history.
-- If the next action changes tracked work, route it to `locus:track`; do not
+- If the next action changes tracked work, route it to `iter:track` when installed; do not
   perform it during retrieval.
 - If nothing matches clearly, say that instead of guessing.

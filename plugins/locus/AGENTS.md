@@ -12,7 +12,6 @@ workflow behavior; client metadata only adapts package discovery.
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`find/`](skills/find/): owned-knowledge and active-work discovery
   - [`write/`](skills/write/): content ownership, reconciliation, and templates
-  - [`track/`](skills/track/): proportional Feature, Bug, and Task work tracking
   - [`using/`](skills/using/): capability explanation and routing
 - [`README.md`](README.md): human-facing plugin overview and quickstart
 - [`docs/`](docs/): configuration documentation
