@@ -11,7 +11,7 @@ Use only the selected templates:
 | Boundary | README | AGENTS | Architecture |
 | -------- | ------ | ------ | ------------ |
 | Root | [README](../assets/templates/repository-root/README.md) | [AGENTS](../assets/templates/repository-root/AGENTS.md) | [ARCHITECTURE](../assets/templates/repository-root/ARCHITECTURE.md) |
-| Package or plugin | [README](../assets/templates/repository-package/README.md) | [AGENTS](../assets/templates/repository-package/AGENTS.md) | Same architecture template at the package root |
+| Package or plugin | [README](../assets/templates/repository-package/README.md) | [AGENTS](../assets/templates/repository-package/AGENTS.md) | No package-level ARCHITECTURE.md |
 
 Keep Overview to one or two short paragraphs. Structure maps relevant local
 sources, important modules, source configuration, canonical docs, and direct child
@@ -25,9 +25,11 @@ and verified commands, checks, generated boundaries, and docs-to-read triggers.
 Keep dependency constraints only when they affect an edit; link their owner.
 Use [documentation.md](documentation.md) for displaced topic detail.
 Keep Configuration as a link to its topic owner and References as edit-time
-source links with a reason to consult each. Create root or package `ARCHITECTURE.md`
-only when requested or needed for the selected architecture owner; retain its
-eight numbered sections, briefly marking inapplicable sections where appropriate.
+source links with a reason to consult each. `ARCHITECTURE.md` lives only at the
+repository root. Create it when requested or when non-obvious system relationships
+need an overview; retain its eight numbered sections, briefly marking inapplicable
+sections where appropriate. Package-specific detail belongs in its declared docs
+owner; do not create a package-level `ARCHITECTURE.md`.
 
 ## Output
 
