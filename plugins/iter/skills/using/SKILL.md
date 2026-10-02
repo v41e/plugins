@@ -5,33 +5,26 @@ description: Use when choosing between a brief, work tracking, maintenance, or a
 
 # Using Iter
 
-## Input
+## Purpose
 
-Requested outcome, owner, scope, and applicable mutation or dispatch authority.
+Support iteration through evidence, work tracking, maintenance, and authorized
+project dispatch. Tracking records work; the owning execution context performs it.
 
-## Workflow
+## Skills
 
-| Need | Skill |
-| ---- | ----- |
-| Read-only status, focus plan, or retrospective | `iter:brief` |
-| Classify, resume, or synchronize work contracts and evidence | `iter:track` |
-| Reconcile current state and carry authorized maintenance through a bounded run | `iter:maintain` |
-| Explicit sequential creation or continuation of project-owned tasks | `iter:orchestrate` |
-| Find or place owned content when Locus is installed | `locus:find` / `locus:write` |
+| Skill | Use for |
+| ----- | ------- |
+| `iter:brief` | Read-only status, focus plan, or retrospective |
+| `iter:track` | Work contracts, approval gates, and supplied review or delivery evidence |
+| `iter:maintain` | A bounded pass of authorized engineering or documentation maintenance |
+| `iter:orchestrate` | Explicit sequential creation or continuation of project-owned tasks |
 
-Preserve an explicitly named matching route. For orientation, explain the route
-and boundary. When action is requested, read the selected skill and its
-applicable references, then carry out the authorized outcome.
+For requested action, use the matching skill. Discussion and project mentions
+do not authorize dispatch; Brief may discover tasks but never creates or continues them.
 
-## Output
+## Requirements
 
-Selected route, reason, owner, and authority boundary; or the selected skill's
-result when action was requested.
-
-## Rules
-
-- Discussion or mention of projects does not authorize dispatch. Brief may read
-  projects and tasks; only Orchestrate creates or continues them.
-- Tracking does not perform the engineering work it records. Maintain supplies
-  the run; the owning project context supplies methods.
-- No required setup, automatic instruction edits, or maintained status database.
+No setup or maintained status database is required. Host and GitHub adapters
+depend on the capabilities available in the execution context. Orchestrate
+needs project-owned task capabilities and explicit dispatch authority. Locus
+placement and Superpowers engineering methods are optional integrations.

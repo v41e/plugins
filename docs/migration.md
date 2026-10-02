@@ -11,9 +11,10 @@ bundled.
 | `locus:track` | `iter:track` | Work records, approvals, evidence gates, and synchronization |
 | `iter:operate` | `iter:maintain` | Bounded engineering or documentation maintenance |
 
-`locus:find`, `iter:brief`, and `iter:orchestrate` retain their names. Small Using
-routers select among them. Track belongs to Iter and adds tracking over the
-owning engineering methods; it does not execute those methods or deliver code.
+`locus:find`, `iter:brief`, and `iter:orchestrate` retain their names. Concise Using
+inventories describe the available skills. Track belongs to Iter and adds
+tracking over the owning engineering methods; it does not execute those methods
+or deliver code.
 
 ## Caller rollout
 

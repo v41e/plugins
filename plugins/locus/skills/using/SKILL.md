@@ -5,25 +5,25 @@ description: Use when choosing a Locus skill for finding or placing owned conten
 
 # Using Locus
 
-## Input
+## Purpose
 
-Requested outcome, known owner, and whether a content update is requested.
+Find authoritative content and place knowledge in its proper owner. Locus owns
+location and structure; writing style and engineering methods stay with their
+owning capabilities.
 
-## Workflow
+## Skills
 
-| Need | Route |
-| ---- | ----- |
-| Locate content, sources, or work context | `locus:find` |
-| Create, refresh, relocate, or reconcile content | `locus:write` |
+| Skill | Use for |
+| ----- | ------- |
+| `locus:find` | Read-only discovery of content, sources, owners, or work context |
+| `locus:write` | Create, refresh, relocate, or reconcile owned content |
 
-For orientation, explain the route here. For requested action, read the matching
-skill. Find first only when the owner or evidence is unclear.
+For requested action, use the matching skill. Find first when the owner or
+evidence is unclear.
 
-## Output
+## Requirements
 
-Selected route, owner when known, and any unresolved scope or authority.
-
-## Rules
-
-- Using routes; the selected skill performs the action.
-- Content placement does not select writing style or authorize engineering work.
+No setup or maintained status database is required. Repository instructions
+and declared owners supply local context. A knowledge map and GitHub access are
+optional discovery sources. Templates target Markdown files; other tools keep
+their own access and editing methods.
