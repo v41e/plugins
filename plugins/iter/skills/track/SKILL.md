@@ -21,15 +21,23 @@ approval evidence, local artifacts, and optional remote records.
 2. Compare current intent and repository evidence with tracked state. Reuse
    settled decisions and approvals; update or retire stale artifacts and return
    to the earliest affected gate after a material change.
-3. Classify Feature, Bug, or Task and read the paths, shared controls, and current
-   gate in [lifecycle.md](references/lifecycle.md). Resume the first unmet gate.
-4. Record the contract, evidence, approval, and delivery state using existing
+3. Classify the work and read one workflow.
+
+   | Work | Trigger | Workflow |
+   | ---- | ------- | -------- |
+   | Feature | New or materially expanded capability | [feature.md](references/workflows/feature.md) |
+   | Bug | Observed behavior contradicts an expectation | [bug.md](references/workflows/bug.md) |
+   | Task | Maintenance, dependencies, configuration, documentation, refactoring, or operations that are neither Feature nor Bug | [task.md](references/workflows/task.md) |
+
+4. Apply the [shared controls](references/lifecycle.md) and read only the
+   workflow's first unmet stage. Resume that gate using existing evidence.
+5. Record the contract, evidence, approval, and delivery state using existing
    surfaces. When GitHub synchronization applies, read the
    [GitHub adapter](references/platforms/github.md).
-5. For missing engineering work, give the owning execution context the contract,
+6. For missing engineering work, give the owning execution context the contract,
    current gate, authorization, and missing evidence. When Superpowers is
    installed, use its [evidence bridge](references/integrations/superpowers.md).
-6. Synchronize authorized tracking changes and advance when evidence and
+7. Synchronize authorized tracking changes and advance when evidence and
    approvals satisfy the gate. Report remaining handoffs or gates.
 
 ## Output
