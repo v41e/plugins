@@ -22,4 +22,7 @@ explanations and reference material. Writing style remains the caller's choice.
 
 Install `locus` from the `v41e` marketplace in a compatible client and reload its
 plugins. Invoke `locus:find` or `locus:write`; use `locus:using` when unsure.
+
+## Configuration
+
 Optional cross-destination discovery uses a [knowledge map](docs/knowledge-map.md).

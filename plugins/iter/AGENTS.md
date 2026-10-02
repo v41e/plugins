@@ -8,11 +8,26 @@ methods in their owning skills.
 
 ## Structure
 
-- [skills/](skills/): callable workflows; read the selected skill and its applicable references
-- [docs/](docs/README.md): workflow documentation
+- [skills/](skills/): callable workflows; read the selected skill and its applicable references:
+  - [brief/](skills/brief/): read-only status, plan, and retrospective
+  - [track/](skills/track/): work contracts, approvals, and evidence gates
+  - [maintain/](skills/maintain/): bounded engineering or documentation maintenance
+  - [orchestrate/](skills/orchestrate/): authorized sequential project dispatch
+  - [using/](skills/using/): skill selection
+- [docs/](docs/): workflow documentation
 - [README.md](README.md): human entrypoint
 - [plugin.json](plugin.json): portable identity
 - [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and interface
+
+## Tech Stack
+
+- **Packaging**: [Agent Plugins v1.0.0](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md)
+  in `plugin.json`; consult when changing portable metadata or package layout.
+- **Instructions**: Markdown [Agent Skills](https://agentskills.io/llms.txt);
+  use the agent index when changing skill format or resource-loading guidance.
+- **Codex compatibility**: [Plugin format](https://developers.openai.com/plugins/build/plugins)
+  in `.codex-plugin/plugin.json`; consult when changing skill discovery or
+  interface metadata.
 
 ## Commands
 
@@ -27,10 +42,6 @@ Run from this directory:
   execution, discovery, and dispatch boundaries.
 - Check affected links and representative decisions or artifacts. Keep private
   evaluation fixtures outside this public package.
-- Follow [Agent Skills](https://agentskills.io/specification),
-  [portable packaging](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md),
-  and [Codex plugin format](https://developers.openai.com/plugins/build/plugins)
-  when changing their contracts.
 
 ## Guardrails
 
