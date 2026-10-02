@@ -11,8 +11,9 @@ A settled Feature design with any required design approval.
 ## Workflow
 
 1. Require settled owners, files, checks, boundaries, and implementation steps.
-2. Record supplied human judgment on sequencing, dependencies, and PR boundaries,
-   execution authority, and any required plan approval.
+2. Record supplied review and author corrections for the exact plan revision
+   against the settled design. Human judgment covers sequencing, dependencies,
+   and PR boundaries; record execution authority and any required plan approval.
 3. Publish an approved local plan when a formal work record exists; synchronize
    mapped ready state.
 

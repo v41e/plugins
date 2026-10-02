@@ -43,6 +43,8 @@ Run from this directory:
   from an umbrella context.
 - Locus placement and Superpowers methods are optional integrations, not package
   dependencies or replacement workflows.
+- Fold recurring generic review feedback into existing Iter guidance; keep
+  domain and compatibility rules in their owning repository.
 - Keep references, including harness mappings, inside their owning skill.
 - Keep client metadata limited to discovery and interface adaptation. Live tool
   schemas own host arguments and response semantics.

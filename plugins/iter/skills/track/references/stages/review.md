@@ -11,8 +11,9 @@ The complete change with passing affected and required checks.
 
 ## Workflow
 
-1. Record supplied code-defect review and verification for the relevant diff,
-   generated output, and compatibility boundary. Human delivery judgment covers
+1. Record final supplied code-defect review, author correction evidence, and
+   verification for the exact diff/revision, generated output, and compatibility
+   boundary. Human delivery judgment covers
    behavior, general logic, API documentation, quality, and readiness; agent
    evidence covers detailed investigation and checks.
 2. Require equivalent review evidence for major, security-sensitive, or

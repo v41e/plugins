@@ -34,7 +34,12 @@ approval evidence, local artifacts, and optional remote records.
 
 4. Resume the first unmet stage in workflow order using its linked contract.
    Existing evidence can satisfy earlier gates without restarting completed
-   methods. At material decision or review checkpoints, briefly identify
+   methods. For a needed Design, Plan, or Review handoff, record the owning
+   context's sequence: author supplies the exact artifact/revision and approved
+   intent → suitable existing reviewer inspects → author validates findings and
+   fixes supported ones → human judges the final result. Reuse equivalent evidence
+   covering the relevant revision and scope; refresh evidence affected by corrections.
+   At material decision or review checkpoints, briefly identify
    **Human decision**, **Agent evidence**, and **Remaining uncertainty** in the
    existing artifact or checkpoint response. Omit this framing for trivial work.
 5. Record the contract, evidence, approval, and delivery state using existing
@@ -56,8 +61,10 @@ approval evidence, local artifacts, and optional remote records.
 
 ## Output
 
-Work type, current gate or transition, changed records, evidence, approval and
-delivery state, and smallest next action or execution handoff.
+Work type, current gate or transition, changed records, final evidence, remaining
+uncertainty, human decisions, approval and delivery state, and smallest next action
+or execution handoff. Keep specs, plans, and PRs concise, with short pointers to
+the interfaces or passages needing human judgment.
 
 ## Rules
 
