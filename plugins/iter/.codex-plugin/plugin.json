@@ -23,7 +23,6 @@
     "developerName": "v41e",
     "defaultPrompt": [
       "Prepare a status brief for this repository for the previous local calendar day, using the runtime timezone.",
-      "Reconcile this work item's contract, approvals, evidence, and current tracking state.",
       "Maintain this repository within the authorized repair or documentation scope: [scope].",
       "Create tasks to run this request sequentially in these saved projects: [projects]. Request: [task]."
     ],
