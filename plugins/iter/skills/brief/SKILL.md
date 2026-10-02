@@ -26,29 +26,22 @@ required inputs instead of guessing or waiting indefinitely.
 ## Workflow
 
 1. Read the selected mode and caller's governing context: goals, latest human
-   decisions, and prior briefs with responses or amendments. Separate
+   decisions, prior briefs with responses or amendments, and relevant
+   [specifications or plans](references/integrations/superpowers.md). Separate
    recommendations from approved commitments; carry unfinished work forward.
 2. Resolve calendar windows against `as_of` in the supplied timezone, including
    daylight saving. Filter historical events using exact UTC bounds
    `start <= event < end`; keep future horizons separate.
-3. Screen the requested scope using compact summaries or existing task and
-   tracker lists. Select meaningful changes and unresolved commitments or
-   reviews; record discovery gaps. Quiet work can still require attention.
+3. Screen the requested scope using supplied local evidence, compact
+   [Codex task summaries](references/harnesses/codex.md), or
+   [GitHub lists](references/platforms/github.md) as relevant. Select meaningful
+   changes and unresolved commitments or reviews; record discovery gaps.
+   Quiet work can still require attention.
 4. Verify details that could change the judgment: selected task turns, decisions,
    PRs, checks, source, or docs. Read child instructions when investigating that
    owner. Compact discovery accounts for scope; deep reads of routine work need
    an evidenced reason. Reconcile newer evidence with old failures or
    recommendations; stop when more detail would not change the brief.
-
-### Evidence sources
-
-| When | Capability | Result |
-| ---- | ---------- | ------ |
-| GitHub work or delivery could affect the judgment | [GitHub](references/platforms/github.md) | Selected contracts, coordination, or delivery evidence |
-| A specification or plan could affect the judgment | [Superpowers artifacts](references/integrations/superpowers.md) | Intent and approval evidence |
-| Codex project or task context could affect the judgment | [Codex](references/harnesses/codex.md) | Compact discovery and selected conversation evidence |
-
-Supplied local evidence is valid.
 
 ## Output
 

@@ -16,7 +16,6 @@ The marketplace distributes two independently installable plugins:
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus content ownership plugin
   - [`iter/`](plugins/iter/): Iter work tracking and maintenance plugin
-- [`docs/`](docs/README.md): migration guidance
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): repository relationships and distribution boundaries
 - [`AGENTS.md`](AGENTS.md): repository operating contract
 
