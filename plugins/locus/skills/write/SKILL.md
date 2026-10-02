@@ -5,74 +5,71 @@ description: Use when creating, refreshing, relocating, or reconciling documenta
 
 # Write
 
+## Purpose
+
 Put verified content in its proper owner and integrate it with what is already
 there. Locus owns placement and structure; the caller's writing style owns prose.
 
 ## Input
 
-Requested content or evidence, destination, document scope, and nearest instructions.
-Use `locus:find` when the owner or source is unclear.
+Requested content or evidence, destination, document scope, editing instructions,
+and nearest local instructions. Use `locus:find` when the owner or source is unclear.
 
-| Operation | Contract |
-| --------- | -------- |
-| Create | Create selected missing documents; refresh any selected document that already exists. |
-| Refresh | Default for existing documents: preserve useful content and custom sections, map them to the matching template's purpose and order. |
-| Replace | Explicit request for exact named documents: rebuild from the matching template, report useful or uncertain content that will be discarded, and resolve ambiguous scope before replacing. |
+## Workflow
 
-Detection and advice requests return proposed placements without writing.
-
-## Ownership
+### Ownership
 
 | Surface | Content |
 | ------- | ------- |
-| README.md | Human entrypoint: purpose, shortest working start, source navigation, owner links. |
-| AGENTS.md | Working instructions: boundaries, routing, commands, checks, source/generator rules. |
+| README.md; `packages/**/README.md` | Human entrypoints: purpose, shortest working start, source navigation, owner links. |
+| AGENTS.md; `packages/**/AGENTS.md` | Working instructions: boundaries, routing, commands, checks, source/generator rules. |
 | docs/README.md | Documentation index: subjects and one-line owner links. |
 | docs/AGENTS.md | Instructions for maintaining docs and their sources. |
-| ARCHITECTURE.md at the repository root | Standard architecture overview: system boundaries, components, flows, constraints, and design sources. |
+| ARCHITECTURE.md | Standard architecture overview: system boundaries, components, flows, constraints, and design sources. |
 | Topic pages under docs/ | Explanations, architecture, reference contracts, guides, durable decisions. |
 | Code, tests, configuration | Runtime behavior, executable expectations, configuration truth. |
 | Drafts, specs, plans | Temporary proposals and work contracts with explicit approval state. |
 | Skills, scripts, hooks | Reusable procedures and deterministic automation. |
-| Vault notes | Knowledge in the narrowest established topic or lane. |
+| Vault notes | Knowledge in the narrowest established topic or PARA lane. |
 
-README and AGENTS are entrypoints, not topic documentation. Link to the topic
-owner instead of copying explanations or configuration reference into them.
-
-## Workflow
+README and AGENTS are entrypoints, not topic documentation. The same ownership
+applies to other package or plugin boundaries. Link to the topic owner instead
+of copying explanations or configuration reference into them.
 
 1. Read the current owner and verify claims against their sources. Distinguish
    agreed intent from implemented behavior; treat chat and memory as leads.
-2. Select the relevant reference for document creation or structural refresh:
+2. For creation or structural refresh, use the selected target and its templates:
 
    | Destination | Reference |
    | ----------- | --------- |
-   | Repository root or package entrypoints | [repository.md](references/repository.md) |
-   | Documentation index, instructions, or topic page | [documentation.md](references/documentation.md) |
-   | Vault root, lane, or note | [vault.md](references/vault.md) |
+   | Repository root or package entrypoints | [repository.md](references/targets/repository.md) |
+   | Documentation index, instructions, or topic page | [documentation.md](references/targets/documentation.md) |
+   | Vault root, lane, or note | [vault.md](references/targets/vault.md) |
 
-   For a focused passage update, use the ownership table without loading templates.
-3. Reconcile the smallest coherent passage. Merge overlap, preserve valid
-   constraints and provenance, and remove superseded text. Update the generator
-   when it owns the output. Create missing documents only when they serve the request.
+   Focused passage updates use the ownership table and existing document structure.
+3. Default to reconciling the smallest coherent passage. Merge overlap, preserve
+   useful custom sections, valid constraints, and provenance; remove superseded text. Create
+   selected missing documents when needed. Explicit replacement applies only to
+   named documents: identify useful or uncertain content it would discard and
+   resolve ambiguous scope before replacing. Detection, advice, and dry runs return
+   placements without writing. Update the generator when it owns the output.
 4. Check affected facts, links, commands, examples, and generated output together.
 
 ## Output
 
-Changed owners and paths, operation, what was reconciled, verification, and
-unresolved facts or decisions. For Replace, identify material discarded content.
-For detection or advice, return placements without writing.
+Changed owners and paths, what was reconciled, verification, and unresolved facts
+or decisions. Identify material discarded content for an explicit replacement;
+return proposed placements for detection, advice, or dry runs.
 
 ## Rules
 
 - Preserve authorized scope. If moving detail requires a destination outside
   named editable files, propose the move and keep the content pending authorization.
 - Templates supply structure, not facts. Keep applicable headings in template
-  order and useful custom sections; omit unused optional sections. The standard
-  architecture template retains all eight numbered sections.
-- New repository topic docs default to `docs/`; standard `ARCHITECTURE.md` belongs
-  only at the repository root, never at a package or plugin boundary. Follow
-  explicit destinations and existing declared owners; relocate only within
-  authorized scope. Retain established vault organization.
-- Do not turn a knowledge update into runtime, configuration, or work-record
-  changes. Use the owning engineering or tracking workflow for those changes.
+  order and useful custom sections; remove authoring notes and unused optional
+  sections. The standard architecture template retains all eight numbered sections.
+- New repository topic docs default to `docs/`. Follow explicit destinations and
+  existing declared owners; relocate only within authorized scope. Preserve
+  established vault organization unless migration or structural reset is requested.
+- Use the owning engineering or tracking workflow for runtime, configuration,
+  or work-record changes.

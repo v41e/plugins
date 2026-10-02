@@ -8,7 +8,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified downward directory boundaries. Follow the local navigation contract in references/repository.md. Do not expand child internals here.
+<!-- Replace this example with verified downward directory boundaries. Follow the local navigation contract in references/targets/repository.md. Do not expand child internals here.
 
 - [`packages/`](packages/): package grouping directory
   - [`package-name/`](packages/package-name/): direct package boundary

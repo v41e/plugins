@@ -2,17 +2,23 @@
 
 ## Scope
 
-<!-- What this documentation owns. -->
+<!-- Subjects owned here and links to neighboring owners. Keep instructions local. -->
 
 ## Sources
 
-<!-- Authoritative code, tests, configuration, decisions, and generators. -->
+<!-- Map each documented contract to its actual source: code, tests, configuration,
+approved decisions, or a specification. Name any generator and its editable input. -->
 
 ## Verification
 
-<!-- Affected links, examples, facts, and required generator checks. -->
+<!-- State required checks for changed claims, links, commands, examples, and
+version-sensitive references. Include generator checks only when they apply. -->
 
 ## Guardrails
 
-<!-- Maintenance instructions only. Topic pages own explanations; README owns
-navigation. Preserve approved intent separately from implemented behavior. -->
+- Integrate changes in the existing topic passage; README owns navigation.
+- Preserve approved intent, implemented behavior, and proposals as distinct states.
+- Edit generated documentation through its source and inspect affected output.
+- Reconcile overlapping or superseded guidance while preserving valid constraints
+  and source references.
+<!-- Add verified local maintenance boundaries; avoid repeating inherited rules. -->

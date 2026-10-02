@@ -6,7 +6,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified local boundaries and canonical local docs. Follow the local navigation contract in references/repository.md. Route child work to its local AGENTS.md without expanding child internals here.
+<!-- Replace this example with verified local boundaries and canonical local docs. Follow the local navigation contract in references/targets/repository.md. Route child work to its local AGENTS.md without expanding child internals here.
 
 - [`packages/`](packages/): package grouping directory
   - [`package-name/`](packages/package-name/): direct package boundary; follow its local `AGENTS.md`
