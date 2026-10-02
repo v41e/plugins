@@ -22,16 +22,18 @@ configuration.
 
 ## Synchronization
 
-| Gate | Authorized tracking actions |
-| ---- | --------------------------- |
-| Ideate | Create or consolidate one resumable Feature draft in the mapped backlog state when an owning Project and mapping exist; link any local draft. Set title, body, real assignees, and mapped Project fields; defer repository, Issue Type, labels, milestone, organization Issue fields, and Issue relationships until conversion. Otherwise leave GitHub unchanged. |
-| Design | Once settled and required approvals are satisfied, promote the linked draft or create a Feature Issue only when a repository contract is required. Publish an approved local specification as a separate comment. |
-| Plan | Publish the approved local plan as a separate Issue comment; synchronize mapped ready state and refresh mapped Priority/Effort. |
-| Triage | Create or update a Bug Issue only when policy, human intent, or existing tracking requires it. Record the current triage evidence; publish any approved local design or plan separately. Never create a Bug Project draft. |
-| Scope | Continue an existing Task record unless policy or human intent says otherwise; create a Task Issue only when a formal contract is required. Publish any approved local design or plan separately. |
-| Implement | Synchronize mapped active state and mapped Start Date when implementation actually begins. |
-| Review | Record the existing PR and synchronize the work item's mapped review state. Verify required local checkpoint and delivery authority from supplied evidence. Link its Issue manually when the PR targets a non-default branch: closing keywords create neither a link nor automatic closure there. Collect remote checks and reviews for the exact PR head. Keep delivery open during corrections. |
-| Complete | After authorized integration, verify linked Issues are closed and Project items use mapped done state; correct only authorized state. Non-default-target Issue references or manual links may still need explicit closure. |
+| When | Capability | Result |
+| ---- | ---------- | ------ |
+| A resumable Feature lacks a formal contract and has an owning Project and backlog mapping | Project draft | Consolidate one draft and link any local draft. Set title, body, real assignees, and mapped Project fields; defer repository, Issue Type, labels, milestone, organization Issue fields, and relationships until conversion. |
+| A Feature design is settled, required approvals hold, and a repository contract is required | Feature Issue | Promote its linked draft or create the formal contract. |
+| A Bug requires tracking by policy, human intent, or existing records | Bug Issue | Create or update its triage evidence; never create a Bug Project draft. |
+| A Task already has a record or requires a formal repository contract | Task record or Issue | Reuse the record unless policy or human intent says otherwise; create an Issue only when a formal contract is required. |
+| An approved local specification/design or plan has an owning Issue | Separate Issue comments | Publish each approved snapshot separately, with local-only tracking metadata removed. |
+| The selected workflow is ready for implementation | Mapped ready status and Priority/Effort | Synchronize ready state and understood priority/effort after required gates. |
+| Implementation actually begins | Mapped active status and Start Date | Record actual start; stage names alone do not establish execution. |
+| The delivery owner supplies an existing PR for review | Existing PR and mapped review status | Record its identity, required local checkpoint, and delivery authority from supplied evidence; collect checks and reviews for its exact head. Keep delivery open during corrections. |
+| The PR targets a non-default branch | Manual Issue link | Link its Issue explicitly; closing keywords create neither the link nor automatic closure. |
+| Authorized integration and completion verification are established | Linked Issue and mapped done status | Verify closure and done state; correct only authorized state. Non-default-target links or references may need explicit Issue closure. |
 
 ## Issue contracts
 
@@ -66,7 +68,9 @@ local, browser, or manual validation.
   either. Skip actions whose record, item, field, or mapping is absent.
 - Track does not create pull requests or perform the delivery owner's
   engineering work. Close Issues or mark work done only after authorized
-  integration.
+  integration and completion verification.
+- Automatic merge eligibility follows a separate policy decision; PR types and
+  green checks alone do not establish it.
 
 GitHub's [Issue linking rules](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
 own closing-keyword and branch-target semantics.

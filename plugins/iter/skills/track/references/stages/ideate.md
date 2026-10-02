@@ -1,12 +1,16 @@
 # Ideate
 
+## Purpose
+
+Track one refined outcome and its scope before a repository contract is settled.
+
 ## Input
 
 A Feature idea without a settled repository contract.
 
 ## Workflow
 
-1. Record one refined outcome and ownership when known.
+1. Record one refined outcome, scope, human direction, and ownership when known.
 2. Keep local drafts and mapped backlog records optional. Their absence or
    unresolved ownership does not block Design in chat or a cross-repository
    planning surface.

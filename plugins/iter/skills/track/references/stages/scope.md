@@ -1,5 +1,9 @@
 # Scope
 
+## Purpose
+
+Track a proportional Task contract, including its design and plan when needed.
+
 ## Input
 
 A Task needing a proportional work contract.
@@ -7,7 +11,8 @@ A Task needing a proportional work contract.
 ## Workflow
 
 1. Record the problem, proposed solution, owner, and deterministic acceptance
-   evidence. Include alternatives or context only when useful.
+   evidence. Include design decisions, implementation steps, alternatives, or
+   context when useful.
 2. Record execution authority and any required approvals.
 
 ## Output

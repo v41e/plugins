@@ -1,5 +1,9 @@
 # Triage
 
+## Purpose
+
+Track a confirmed defect and the proportional design and plan for its fix.
+
 ## Input
 
 Observed behavior that may contradict an expectation.
@@ -12,11 +16,13 @@ Observed behavior that may contradict an expectation.
    agent-discovered failure may proceed with sufficient evidence.
 3. Hand missing diagnosis, reproduction, or acceptance work to the execution
    context and record its returned evidence.
+4. Record design decisions and implementation steps when the fix needs them,
+   execution authority, and any required approvals within Triage.
 
 ## Output
 
-Confirmed defect and acceptance evidence, or the missing evidence. Advance to
-Implement only when the gate is satisfied.
+Confirmed defect, acceptance evidence, and authorization, or the unmet gate.
+Advance to Implement only when the gate is satisfied.
 
 ## Rules
 

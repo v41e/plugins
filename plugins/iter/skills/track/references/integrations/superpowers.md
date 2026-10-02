@@ -6,27 +6,23 @@ contract, required approvals, and tracking gates.
 
 ## Evidence mapping
 
-| Stage | Missing work | Method owner when installed | Evidence Track records |
-| ----- | ------------ | --------------------------- | ---------------------- |
-| Ideate | Problem, requirements, or outcome refinement | `superpowers:brainstorming` | One refined outcome and remaining questions |
-| Design | Material design choices | `superpowers:brainstorming` | Settled design, proportional artifact, required approval |
-| Plan | Written multi-step execution plan | `superpowers:writing-plans` | Settled steps, boundaries, checks, execution authority, any required plan approval |
-| Triage | Reproduction or root-cause diagnosis | `superpowers:systematic-debugging` | Confirmed defect, diagnosed cause, acceptance evidence |
-| Triage | Material fix choices or risky execution steps | `superpowers:brainstorming` / `superpowers:writing-plans` | Proportional decisions or plan retained in Triage; no Feature stages |
-| Scope | Material solution choices or complex execution steps | `superpowers:brainstorming` / `superpowers:writing-plans` | Proportional contract and acceptance evidence retained in Scope |
-| Implement | Changed behavior checks or unexpected failures | `superpowers:test-driven-development` / `superpowers:systematic-debugging` | Meaningful regression or acceptance evidence; failures remain unresolved until diagnosed and corrected |
-| Implement | Implementation and execution topology | Owning context selects applicable methods, including `superpowers:dispatching-parallel-agents`, `superpowers:subagent-driven-development`, or `superpowers:executing-plans` | Complete scoped change, reconciliation, passing affected and required checks |
-| Review | Code review or requested changes | `superpowers:requesting-code-review` / `superpowers:receiving-code-review` | Required review findings and outcome, correction evidence, remaining human or integration gate |
-| Review | Integration decision or branch delivery | `superpowers:finishing-a-development-branch` | Human decision and authorized delivery evidence; method completion grants no integration authority |
-| Complete | Missing or stale completion verification | `superpowers:verification-before-completion` | Evidence covering the actual integrated result and environment |
+| When | Capability | Result |
+| ---- | ---------- | ------ |
+| Outcome, requirements, or material design choices are unsettled | `superpowers:brainstorming` | Refined outcome, settled decisions, remaining questions, and required human approval |
+| Work needs a written multi-step plan | `superpowers:writing-plans` | Steps, dependencies, PR boundaries, checks, execution authority, and any required plan approval |
+| A defect or unexpected failure needs diagnosis | `superpowers:systematic-debugging` | Reproduction, root cause, and acceptance evidence before proposing a fix |
+| Changed behavior supports an executable regression or acceptance check | `superpowers:test-driven-development` | Meaningful failing and passing checks under repository verification policy |
+| Independent work warrants parallel execution | `superpowers:dispatching-parallel-agents` | Owner-supplied results, resolved conflicts, and affected and required checks |
+| An approved plan needs execution | `superpowers:subagent-driven-development` / `superpowers:executing-plans` | Owner-selected execution, complete scoped change, reconciliation, and verification |
+| A major, security-sensitive, compatibility-sensitive, or policy-required change lacks equivalent code review | `superpowers:requesting-code-review` | Code-defect findings and review outcome; spec/plan review is a separate checkpoint |
+| Supplied code review requests changes | `superpowers:receiving-code-review` | Verified feedback, correction evidence, and remaining review or integration gate |
+| Integration or branch delivery needs a decision | `superpowers:finishing-a-development-branch` | Human decision and authorized delivery evidence; method completion grants no integration authority |
+| Completion evidence is missing, stale, or does not cover the integrated result | `superpowers:verification-before-completion` | Verification of the actual integrated result and environment |
 
-## Rules
+Design and planning jobs also apply within Bug Triage and Task Scope; they do not
+add Feature stages. Artifact depth and approvals follow human and repository
+instructions. Reuse supplied approvals and equivalent evidence.
 
-- Consult only matching installed methods for missing engineering work. This
-  table is not an itinerary or a requirement to invoke every row.
-- Required approvals, artifact depth, and delivery authority follow human and
-  repository instructions. Reuse existing approvals and equivalent evidence.
-- Track neither chooses executors nor duplicates review or verification
-  procedures. The execution context supplies the evidence.
-- Without Superpowers, hand missing engineering work to the owning execution
-  context and keep the unmet gate explicit; do not invent an engineering fallback.
+Track records results and hands missing engineering work back to the execution
+context, including when Superpowers is unavailable. It neither selects executors
+nor runs these methods or their review procedures.

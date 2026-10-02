@@ -1,5 +1,10 @@
 # Implement
 
+## Purpose
+
+Track supplied implementation progress and verification against the authorized
+contract.
+
 ## Input
 
 An understood authorized contract with required approvals satisfied.
