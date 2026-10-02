@@ -5,6 +5,8 @@ description: Use when an owning project needs a bounded pass of authorized repai
 
 # Maintain
 
+## Purpose
+
 Reconcile one owner's current state, advance real authorized maintenance, and
 reassess after each outcome. Track records work state; the owning execution
 context supplies engineering methods.
@@ -32,9 +34,9 @@ authorization, delivery permissions, and run budget or stopping conditions.
 4. Use `iter:track` when repository policy requires it, the work is already
    tracked, materially undecided, or independently prioritizable. Reconcile the
    contract, approvals, gate, and evidence. Perform authorized work through the
-   owning context's methods; read the [Superpowers mapping](references/integrations/superpowers.md)
-   only for matching installed methods. Reconcile affected code, tests, docs,
-   and owning configuration; complete required checks and authorized review,
+   owning context's methods, mapped in [Superpowers](references/integrations/superpowers.md).
+   Reconcile affected code, tests, docs, and owning configuration; complete
+   required checks and authorized review,
    then follow the separately authorized delivery path. Return results to
    tracking. Track supplies no execution fallback.
 5. Reassess remaining authorized work after each outcome. Continue independent

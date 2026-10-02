@@ -1,5 +1,9 @@
 # Documentation Reconciliation
 
+## Purpose
+
+Reconcile owned documentation with verified current behavior and approved intent.
+
 ## Input
 
 Authorized documentation scope, audience and purpose, current canonical sources,
