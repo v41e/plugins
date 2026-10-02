@@ -11,7 +11,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified downward local paths. Follow the local navigation contract in references/repository.md.
+<!-- Replace this example with verified downward local paths. Follow the local navigation contract in references/targets/repository.md.
 
 - [`src/`](src/): main implementation
   - [`entrypoint.ts`](src/entrypoint.ts): primary entrypoint
