@@ -15,7 +15,6 @@ owning directory under `plugins/`.
   distribution, or cross-plugin integration boundaries
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): repository workflow and contribution requirements
 - [`README.md`](README.md): human-facing repository overview
-- [`docs/`](docs/README.md): cross-plugin migration guidance
 
 ## Commands
 
