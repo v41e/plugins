@@ -1,5 +1,9 @@
 # Status Mode
 
+## Purpose
+
+Explain where work stands, what changed, and which decisions or reviews matter now.
+
 ## Input
 
 Historical `status_window`, current open state, relevant task or worktree
