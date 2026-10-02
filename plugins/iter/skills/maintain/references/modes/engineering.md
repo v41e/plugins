@@ -1,5 +1,9 @@
 # Engineering Maintenance
 
+## Purpose
+
+Repair evidenced engineering problems within the owner's maintenance authority.
+
 ## Input
 
 Authorized repair scope, intended result, current source and checks, and relevant
