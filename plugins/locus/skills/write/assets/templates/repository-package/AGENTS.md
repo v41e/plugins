@@ -35,6 +35,16 @@
 
 <!-- Briefly state build coverage from task definitions and CI, required extra checks, and material side effects or limits. Repeat covered checks only after relevant changes or for diagnosis. Add only package-specific guidance beyond the root policy. -->
 
+## Code Review Rules
+
+Inherit root review guidance; add only verified package-specific rules.
+
+<!-- Identify actual public interfaces, supported versions or formats, affected
+consumers, and their source links. Omit inapplicable boundaries; do not copy root rules. -->
+
+- Check changed package contracts against their supported compatibility
+  boundaries and actual downstream consumers.
+
 ## Guardrails
 
 <!-- Keep only verified package-local constraints and permission boundaries. Distinguish actions permitted within those boundaries from actions requiring additional approval. -->

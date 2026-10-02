@@ -20,6 +20,8 @@ The selected root or package, its actual source layout, and existing entrypoints
 2. **AGENTS.md:** give agents editing boundaries, verified commands and checks,
    generator ownership, and reasons to consult authoritative references. Include
    dependency constraints only when they affect an edit; link their owner.
+   Populate Code Review Rules from verified contracts and checks; packages inherit
+   shared guidance and add actual compatibility boundaries and consumers.
 3. **Structure in both:** map relevant local sources, important modules, source
    configuration, canonical docs, and direct child boundaries with one-line
    responsibilities. Expand grouping directories only to direct owning packages;

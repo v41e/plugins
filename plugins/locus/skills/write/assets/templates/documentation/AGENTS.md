@@ -14,6 +14,15 @@ approved decisions, or a specification. Name any generator and its editable inpu
 <!-- State required checks for changed claims, links, commands, examples, and
 version-sensitive references. Include generator checks only when they apply. -->
 
+## Code Review Rules
+
+Inherit shared review guidance; add only verified documentation-specific rules.
+
+- Check changed claims, commands, and examples against their owning sources and
+  stated environment; distinguish intended, implemented, and verified live state.
+- Flag consequential drift or conflicting ownership. Keep README navigation
+  useful and detailed guides with their declared owner.
+
 ## Guardrails
 
 - Integrate changes in the existing topic passage; README owns navigation.

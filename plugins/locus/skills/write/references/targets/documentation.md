@@ -21,6 +21,8 @@ Subject, audience, verified sources, and the current documentation owner.
 2. **docs/AGENTS.md:** map claims to code, tests, configuration, approved decisions,
    and generators. State maintenance boundaries and the checks needed for changes
    to facts, links, commands, or examples; keep topic explanations in their owners.
+   Add verified local Code Review Rules beyond inherited guidance, including
+   distinctions between intended, implemented, and verified live state.
 3. **Topic pages:** integrate evidence in the nearest existing passage using its
    structure. Keep `docs/` flat until distinct subjects need folders. Follow the
    declared organization: repository docs own cross-package subjects; independently
