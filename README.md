@@ -16,6 +16,9 @@ The marketplace distributes two independently installable plugins:
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus content ownership plugin
   - [`iter/`](plugins/iter/): Iter work tracking and maintenance plugin
+- [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json): package discovery catalog
+- [`release-please-config.json`](release-please-config.json) and [`.release-please-manifest.json`](.release-please-manifest.json): shared release configuration and version
+- [`.github/workflows/`](.github/workflows/): repository checks and release automation
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): repository relationships and distribution boundaries
 - [`AGENTS.md`](AGENTS.md): repository operating contract
 

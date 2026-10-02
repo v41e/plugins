@@ -11,6 +11,9 @@ owning directory under `plugins/`.
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus plugin; follow its local `AGENTS.md`
   - [`iter/`](plugins/iter/): Iter plugin; follow its local `AGENTS.md`
+- [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json): package discovery catalog
+- [`release-please-config.json`](release-please-config.json) and [`.release-please-manifest.json`](.release-please-manifest.json): shared release configuration and version
+- [`.github/workflows/`](.github/workflows/): repository checks and release automation
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): consult before changing package formats,
   distribution, or cross-plugin integration boundaries
 - [`CONTRIBUTING.md`](CONTRIBUTING.md): repository workflow and contribution requirements

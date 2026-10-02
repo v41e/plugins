@@ -1,5 +1,7 @@
 # Iter
 
+## Overview
+
 Iter supports iteration: understand current work, maintain it, track evidence,
 and coordinate authorized tasks. Engineering methods stay with the owning
 project context and installed methods such as Superpowers.
@@ -11,7 +13,7 @@ project context and installed methods such as Superpowers.
 - [skills/maintain/](skills/maintain/): bounded engineering or documentation maintenance
 - [skills/orchestrate/](skills/orchestrate/): authorized sequential project dispatch
 - [skills/using/](skills/using/): skill selection
-- [docs/](docs/README.md): workflow boundaries and integration guidance
+- [docs/](docs/): workflow boundaries and integration guidance
 - [AGENTS.md](AGENTS.md): package instructions
 - [plugin.json](plugin.json): portable package identity
 - [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and interface
