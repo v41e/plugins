@@ -29,7 +29,7 @@ Detection and advice requests return proposed placements without writing.
 | AGENTS.md | Working instructions: boundaries, routing, commands, checks, source/generator rules. |
 | docs/README.md | Documentation index: subjects and one-line owner links. |
 | docs/AGENTS.md | Instructions for maintaining docs and their sources. |
-| ARCHITECTURE.md at a repository or package root | Standard architecture overview: system boundaries, components, flows, constraints, and design sources. |
+| ARCHITECTURE.md at the repository root | Standard architecture overview: system boundaries, components, flows, constraints, and design sources. |
 | Topic pages under docs/ | Explanations, architecture, reference contracts, guides, durable decisions. |
 | Code, tests, configuration | Runtime behavior, executable expectations, configuration truth. |
 | Drafts, specs, plans | Temporary proposals and work contracts with explicit approval state. |
@@ -71,8 +71,8 @@ For detection or advice, return placements without writing.
   order and useful custom sections; omit unused optional sections. The standard
   architecture template retains all eight numbered sections.
 - New repository topic docs default to `docs/`; standard `ARCHITECTURE.md` belongs
-  at the selected repository or package root. Follow explicit destinations and
-  existing declared owners; relocate only within authorized scope. Retain established
-  vault organization.
+  only at the repository root, never at a package or plugin boundary. Follow
+  explicit destinations and existing declared owners; relocate only within
+  authorized scope. Retain established vault organization.
 - Do not turn a knowledge update into runtime, configuration, or work-record
   changes. Use the owning engineering or tracking workflow for those changes.
