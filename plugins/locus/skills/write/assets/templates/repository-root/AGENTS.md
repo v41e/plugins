@@ -29,6 +29,19 @@
 
 <!-- Briefly state build coverage from task definitions and CI, required extra checks, and material side effects or limits. Repeat covered checks only after relevant changes or for diagnosis. Document project policy, not historical pass claims. -->
 
+## Code Review Rules
+
+<!-- Add only verified repository review constraints; link their owning contracts
+and checks. Child instructions inherit these rules and add local boundaries. -->
+
+- Review changed shared contracts and affected callers against approved intent
+  and the relevant architecture and configuration owners.
+- Check editable generator inputs and affected outputs together; use the required
+  checks in Verification and report material coverage limits.
+- Preserve standard root file roles and useful package README entrypoints;
+  detailed guides belong with their declared owner. Flag consequential drift or
+  ownership gaps; leave mechanical style to CI.
+
 ## Work Tracking
 
 <!-- Remove this section when no owning GitHub Project is verified. -->
