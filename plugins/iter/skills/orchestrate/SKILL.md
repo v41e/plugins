@@ -1,6 +1,6 @@
 ---
 name: orchestrate
-description: Use when the caller explicitly requests dispatching one task across an ordered list of saved projects.
+description: Use when the caller explicitly requests dispatching project-owned tasks across an ordered project list.
 ---
 
 # Orchestrate Projects
@@ -17,8 +17,8 @@ mutation, delivery, and production boundaries.
 
 1. Read local project guidance needed to resolve project identities and
    boundaries. Do not copy umbrella instructions wholesale into task prompts.
-2. For Codex project and task operations, read the
-   [Codex adapter](references/platforms/codex.md).
+2. Resolve the harness's project, task, and progress capabilities. For Codex,
+   read the shared [harness adapter](../../references/harnesses/codex.md).
 3. Resolve every requested project exactly. Report missing or ambiguous
    identities; partial task discovery cannot prove absence.
 4. Process resolved projects in caller order:
