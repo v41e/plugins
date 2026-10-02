@@ -67,10 +67,11 @@ remain in their selected destinations, GitHub, or the host client.
   [Iter tracking adapter](plugins/iter/skills/track/references/platforms/github.md)
   and [Iter maintenance adapter](plugins/iter/skills/maintain/references/platforms/github.md)
   define the applicable mappings and write boundaries.
-- **Codex desktop**: Iter's
-  [harness adapter](plugins/iter/references/harnesses/codex.md) maps read-only
-  project discovery and authorized dispatch to host-provided task tools. The
-  live schemas own invocation details; discovery does not authorize dispatch.
+- **Codex desktop**: Iter's skill-local
+  [Brief mapping](plugins/iter/skills/brief/references/harnesses/codex.md) and
+  [Orchestrate adapter](plugins/iter/skills/orchestrate/references/harnesses/codex.md)
+  map read-only evidence and authorized dispatch to host-provided task tools.
+  Live schemas own invocation details; discovery does not authorize dispatch.
 
 The packages bundle no MCP server or standalone API client. Integrations use
 capabilities and authenticated access supplied by the execution environment.

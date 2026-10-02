@@ -40,7 +40,7 @@ required inputs instead of guessing or waiting indefinitely.
 
 Use the [GitHub adapter](references/platforms/github.md) only for GitHub evidence
 and the [Superpowers artifact mapping](references/integrations/superpowers.md)
-only when those artifacts are relevant. Use the shared [Codex harness adapter](../../references/harnesses/codex.md)
+only when those artifacts are relevant. Use the [Codex evidence mapping](references/harnesses/codex.md)
 for Codex project/task discovery and inspection. Supplied local evidence is valid.
 
 ## Output

@@ -9,7 +9,6 @@ methods in their owning skills.
 ## Structure
 
 - [skills/](skills/): callable workflows; read the selected skill and its applicable references
-- [references/harnesses/](references/harnesses/): shared host capability mappings
 - [docs/](docs/README.md): workflow documentation
 - [README.md](README.md): human entrypoint
 - [plugin.json](plugin.json): portable identity
@@ -44,8 +43,7 @@ Run from this directory:
   from an umbrella context.
 - Locus placement and Superpowers methods are optional integrations, not package
   dependencies or replacement workflows.
-- Keep references inside their owning skill unless multiple skills use the same
-  verified capability mapping; shared harness references live under `references/`.
+- Keep references, including harness mappings, inside their owning skill.
 - Keep client metadata limited to discovery and interface adaptation. Live tool
   schemas own host arguments and response semantics.
 - Keep package content generic; preserve unrelated worktree changes.

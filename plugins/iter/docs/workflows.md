@@ -32,7 +32,8 @@ assignments rather than scanning repositories for work. Periodic documentation
 reconciliation and targeted repair can use the same maintenance skill. No event
 receiver, polling service, or schedule is bundled.
 
-Workflows use available harness capabilities. The shared [Codex adapter](../references/harnesses/codex.md)
-maps project/task discovery, inspection, creation, continuation, and waiting.
-Brief uses its read capabilities; Orchestrate uses authorized dispatch. Another
-harness needs equivalent verified capabilities before dispatch can run.
+Workflows keep harness mappings inside their owning skill. The
+[Brief Codex mapping](../skills/brief/references/harnesses/codex.md) covers read-only
+evidence; the [Orchestrate Codex adapter](../skills/orchestrate/references/harnesses/codex.md)
+covers project/task discovery, inspection, creation, continuation, and waiting.
+Another harness needs equivalent verified capabilities before dispatch can run.

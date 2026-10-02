@@ -1,7 +1,7 @@
 # Codex Harness
 
-Use the host's `codex_app` tools and live schemas. Brief may discover and read;
-only an authorized Orchestrate request may create or continue project tasks.
+Use the host's `codex_app` tools and live schemas. Create or continue project
+tasks only after human-authorized dispatch.
 
 | Capability | Tools and semantics |
 | ---------- | ------------------- |

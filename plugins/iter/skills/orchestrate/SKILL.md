@@ -18,7 +18,7 @@ mutation, delivery, and production boundaries.
 1. Read local project guidance needed to resolve project identities and
    boundaries. Do not copy umbrella instructions wholesale into task prompts.
 2. Resolve the harness's project, task, and progress capabilities. For Codex,
-   read the shared [harness adapter](../../references/harnesses/codex.md).
+   read the [harness adapter](references/harnesses/codex.md).
 3. Resolve every requested project exactly. Report missing or ambiguous
    identities; partial task discovery cannot prove absence.
 4. Process resolved projects in caller order:
