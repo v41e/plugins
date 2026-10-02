@@ -37,13 +37,9 @@
 
 ## Code Review Rules
 
-Inherit root review guidance; add only verified package-specific rules.
-
-<!-- Identify actual public interfaces, supported versions or formats, affected
-consumers, and their source links. Omit inapplicable boundaries; do not copy root rules. -->
-
-- Check changed package contracts against their supported compatibility
-  boundaries and actual downstream consumers.
+<!-- Optional. Omit this section unless verified package-specific review
+priorities add to inherited review guidance and existing contracts, Guardrails,
+and Verification. Link owning compatibility or consumer rules rather than copying them. -->
 
 ## Guardrails
 

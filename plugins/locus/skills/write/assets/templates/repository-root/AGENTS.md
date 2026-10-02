@@ -31,16 +31,9 @@
 
 ## Code Review Rules
 
-<!-- Add only verified repository review constraints; link their owning contracts
-and checks. Child instructions inherit these rules and add local boundaries. -->
-
-- Review changed shared contracts and affected callers against approved intent
-  and the relevant architecture and configuration owners.
-- Check editable generator inputs and affected outputs together; use the required
-  checks in Verification and report material coverage limits.
-- Preserve standard root file roles and useful package README entrypoints;
-  detailed guides belong with their declared owner. Flag consequential drift or
-  ownership gaps; leave mechanical style to CI.
+<!-- Optional. Omit this section unless verified repository-specific review
+priorities add to inherited review guidance and existing contracts, Guardrails,
+and Verification. Link the owning rules rather than copying them. -->
 
 ## Work Tracking
 
