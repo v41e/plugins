@@ -1,5 +1,9 @@
 # Task Workflow
 
+## Purpose
+
+Track a proportional maintenance contract and its authorized delivery.
+
 ## Input
 
 Maintenance, dependencies, configuration, documentation, refactoring, or
@@ -7,11 +11,12 @@ operations that are neither a Feature nor a Bug.
 
 ## Workflow
 
-Read only the first unmet stage's contract.
+Resume the first unmet stage. Scope includes design and plan work when needed;
+it does not add Feature ideation or Bug reproduction.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
-| 1 | [Scope](../stages/scope.md) | Proportional contract and acceptance evidence |
+| 1 | [Scope](../stages/scope.md) | Proportional contract, acceptance evidence, and execution authority |
 | 2 | [Implement](../stages/implement.md) | Complete change and passing required checks |
 | 3 | [Review](../stages/review.md) | Required review and authorized delivery evidence |
 | 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
@@ -22,5 +27,4 @@ Current gate, evidence, approval state, and next transition or execution handoff
 
 ## Rules
 
-- Do not add Feature ideation or Bug reproduction.
 - A scoping-only request ends at Scope.

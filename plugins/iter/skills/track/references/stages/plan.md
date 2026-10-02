@@ -1,5 +1,9 @@
 # Plan
 
+## Purpose
+
+Track implementation steps, planning decisions, and execution authority.
+
 ## Input
 
 A settled Feature design with any required design approval.
@@ -7,7 +11,8 @@ A settled Feature design with any required design approval.
 ## Workflow
 
 1. Require settled owners, files, checks, boundaries, and implementation steps.
-2. Record execution authority and any required plan approval.
+2. Record supplied human judgment on sequencing, dependencies, and PR boundaries,
+   execution authority, and any required plan approval.
 3. Publish an approved local plan when a formal work record exists; synchronize
    mapped ready state.
 
@@ -19,4 +24,5 @@ satisfied.
 
 ## Rules
 
-- The owning execution context chooses how to execute the plan.
+- Plan review judges the proposed steps and boundaries; the owning execution
+  context chooses how to execute them.

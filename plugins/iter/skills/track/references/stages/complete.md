@@ -1,5 +1,9 @@
 # Complete
 
+## Purpose
+
+Track completion against the actual authorized integrated result and environment.
+
 ## Input
 
 Required reviews passed and the authorized integration boundary was reached.
@@ -22,3 +26,5 @@ Completion with current integrated-result evidence, or the unmet gate and handof
 ## Rules
 
 - Integration alone does not satisfy missing verification.
+- Required review and authorized integration precede Done. Completion grants no
+  authority to merge, push a production branch, release, publish, or deploy.

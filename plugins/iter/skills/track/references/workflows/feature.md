@@ -1,12 +1,16 @@
 # Feature Workflow
 
+## Purpose
+
+Track a new or materially expanded capability from outcome through completion.
+
 ## Input
 
 A new or materially expanded capability and its existing contract and evidence.
 
 ## Workflow
 
-Read only the first unmet stage's contract.
+Resume the first unmet stage.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
