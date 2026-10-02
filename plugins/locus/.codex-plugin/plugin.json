@@ -1,7 +1,7 @@
 {
   "name": "locus",
   "version": "0.3.0",
-  "description": "Find, initialize, track, and distill owned knowledge and active repository work.",
+  "description": "Find authoritative content and write verified knowledge in its proper owner.",
   "author": {
     "name": "v41e",
     "url": "https://github.com/v41e"
@@ -11,19 +11,18 @@
   "license": "MIT",
   "keywords": [
     "knowledge",
-    "memory",
+    "ownership",
     "docs"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Locus",
-    "shortDescription": "Find knowledge and track active work.",
-    "longDescription": "Locus finds relevant repository knowledge and active work, creates or refreshes canonical docs, tracks repository work across local and GitHub surfaces, and distills transient evidence into durable owned knowledge.",
+    "shortDescription": "Find content and write it in its proper owner.",
+    "longDescription": "Locus locates authoritative sources and places verified knowledge in the right entrypoint, instructions, documentation, or vault note. It supplies concise structural templates while preserving the caller's writing style.",
     "developerName": "v41e",
     "defaultPrompt": [
-      "Choose the smallest relevant Locus workflow.",
-      "Find or maintain owned knowledge and active work.",
-      "Track repository work or distill verified evidence when needed."
+      "Find the authoritative source for this topic.",
+      "Reconcile this knowledge in its proper owner."
     ],
     "websiteURL": "https://github.com/v41e/plugins/tree/main/plugins/locus",
     "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
@@ -31,9 +30,7 @@
     "category": "Productivity",
     "capabilities": [
       "Read",
-      "Write",
-      "Plan",
-      "Summarize"
+      "Write"
     ]
   }
 }

@@ -11,11 +11,13 @@ workflow behavior; client metadata only adapts package discovery.
   - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting point
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`find/`](skills/find/): owned-knowledge and active-work discovery
-  - [`init/`](skills/init/): knowledge-document creation, refresh, and templates
+  - [`write/`](skills/write/): content ownership, reconciliation, and templates
   - [`track/`](skills/track/): proportional Feature, Bug, and Task work tracking
-  - [`distill/`](skills/distill/): durable-knowledge ownership and promotion
   - [`using/`](skills/using/): capability explanation and routing
 - [`README.md`](README.md): human-facing plugin overview and quickstart
+- [`docs/`](docs/): configuration documentation
+- [`plugin.json`](plugin.json): portable package identity
+- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and interface
 
 ## Tech Stack
 
@@ -39,7 +41,7 @@ Run from this directory:
 - For skill changes, read the entrypoint and affected references together; check
   routing, authorization, and completion boundaries.
 - For template changes, compare the target reference, matching templates under
-  `skills/init/assets/templates/`, and resulting document structure.
+  `skills/write/assets/templates/`, and resulting document ownership and structure.
 
 ## Guardrails
 
@@ -51,3 +53,5 @@ Run from this directory:
 - Add a deterministic runtime only when instructions cannot reliably perform the
   required operation.
 - Keep examples and templates generic and safe to publish.
+- README and AGENTS own entrypoints and instructions; topic docs own explanations.
+- Locus owns content placement and structure; preserve the caller's writing style.
