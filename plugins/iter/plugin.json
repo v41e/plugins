@@ -11,8 +11,9 @@
   "repository": "https://github.com/v41e/plugins",
   "license": "MIT",
   "keywords": [
-    "orchestrate",
-    "operation",
-    "planning"
+    "iteration",
+    "tracking",
+    "maintenance",
+    "orchestration"
   ]
 }

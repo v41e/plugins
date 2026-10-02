@@ -61,12 +61,12 @@ remain in their selected destinations, GitHub, or the host client.
 - **GitHub**: hosts distribution, CI, and releases. Skills also use GitHub tools
   or the CLI for Issues, Projects, and pull requests; the
   [Iter tracking adapter](plugins/iter/skills/track/references/platforms/github.md)
-  and [Iter operation adapter](plugins/iter/skills/operate/references/platforms/github.md)
+  and [Iter maintenance adapter](plugins/iter/skills/maintain/references/platforms/github.md)
   define the applicable mappings and write boundaries.
 - **Codex desktop**: Iter's
-  [saved-project adapter](plugins/iter/skills/orchestrate/references/platforms/codex.md)
-  maps dispatch and progress tracking to host-provided task tools. The live tool
-  schemas own invocation details; dispatch requires the caller's authorization.
+  [harness adapter](plugins/iter/references/harnesses/codex.md) maps read-only
+  project discovery and authorized dispatch to host-provided task tools. The
+  live schemas own invocation details; discovery does not authorize dispatch.
 
 The packages bundle no MCP server or standalone API client. Integrations use
 capabilities and authenticated access supplied by the execution environment.

@@ -10,19 +10,21 @@
   "repository": "https://github.com/v41e/plugins",
   "license": "MIT",
   "keywords": [
-    "orchestrate",
-    "operation",
-    "planning"
+    "iteration",
+    "tracking",
+    "maintenance",
+    "orchestration"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Iter",
-    "shortDescription": "Brief, track, operate, or dispatch project work.",
-    "longDescription": "Read project state, synchronize work contracts and evidence gates, execute authorized maintenance in the owning context, and explicitly dispatch caller work across exact saved projects.",
+    "shortDescription": "Brief, track, maintain, or dispatch project work.",
+    "longDescription": "Read project state, synchronize work contracts and evidence gates, carry out authorized maintenance in the owning context, and explicitly dispatch caller work across exact projects.",
     "developerName": "v41e",
     "defaultPrompt": [
       "Prepare a status brief for this repository for the previous local calendar day, using the runtime timezone.",
-      "Run the authorized engineering task in this repository.",
+      "Reconcile this work item's contract, approvals, evidence, and current tracking state.",
+      "Maintain this repository within the authorized repair or documentation scope: [scope].",
       "Create tasks to run this request sequentially in these saved projects: [projects]. Request: [task]."
     ],
     "websiteURL": "https://github.com/v41e/plugins/tree/main/plugins/iter",
