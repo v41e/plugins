@@ -1,22 +1,65 @@
-# <!-- Project -->
+# <!-- Project Name -->
+
+<!-- One-line description. -->
 
 ## Overview
 
-<!-- Purpose and primary use; one or two short paragraphs. -->
+<!-- Briefly describe this project for humans in 1-3 sentences. Keep it high-level. For a package or plugin repository, add a compact list or table of direct children and link each child's README when useful. -->
 
 ## Structure
 
-<!-- Important sources, configuration, direct owning children, docs, AGENTS.
-Use one-line responsibilities. Link topics; keep their explanation under docs/. -->
+<!-- Replace this example with verified downward directory boundaries. Follow the local navigation contract in references/repository.md. Do not expand child internals here.
+
+- [`packages/`](packages/): package grouping directory
+  - [`package-name/`](packages/package-name/): direct package boundary
+- [`plugins/`](plugins/): plugin grouping directory
+  - [`plugin-name/`](plugins/plugin-name/): direct plugin boundary
+- [`docs/`](docs/): detailed documentation
+- [`ARCHITECTURE.md`](ARCHITECTURE.md): cross-component relationships; include only when this file exists
+- [`AGENTS.md`](AGENTS.md): repository operating contract
+-->
 
 ## Getting Started
 
-<!-- Verified prerequisites and shortest working start. -->
+### Prerequisites
+
+<!-- List only the real prerequisites for this repository. Remove this section if there are none. -->
+
+Ensure you have the following installed:
+
+- **<!-- Tool -->** (<!-- Version or constraint -->)
+- ...
+
+### How To Use
+
+<!-- Keep only the steps needed for the repository's primary use. A CLI invocation, library example, or plugin installation may replace these examples; environment initialization is not mandatory. -->
+
+1. **Install Dependencies**:
+
+   ```sh
+   <!-- install or setup command -->
+   ```
+
+2. **Initialize Environment**:
+
+   ```sh
+   <!-- initialize command -->
+   ```
+
+3. **Verify Setup**:
+
+   ```sh
+   <!-- test, build, or verification command -->
+   ```
 
 ## Contributing
 
-<!-- Link the existing contribution guide; remove when absent. -->
+<!-- Add contribution guidance or link to CONTRIBUTING.md only when it exists. -->
+
+Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for details on how to contribute. Pull requests, bug reports, and feature requests are welcome!
 
 ## License
 
-<!-- Link verified license terms; remove when absent. -->
+<!-- Read the real LICENSE file before naming its terms. -->
+
+This project is licensed under the terms of the [LICENSE](LICENSE).

@@ -6,21 +6,22 @@ Subject, audience, verified sources, and the current documentation owner.
 
 ## Workflow
 
-Prefer the existing topic passage. Keep a flat `docs/` layout until distinct
-subjects need folders. For a new owner, select the smallest matching recipe:
+Prefer the existing topic passage and its structure. Keep a flat `docs/` layout
+until distinct subjects need folders. Templates cover entrypoints and instructions:
 
 | Document | Template | Owns |
 | -------- | -------- | ---- |
 | docs/README.md | [README](../assets/templates/documentation/README.md) | Subject navigation |
 | docs/AGENTS.md | [AGENTS](../assets/templates/documentation/AGENTS.md) | Documentation maintenance instructions |
-| Architecture | [architecture](../assets/templates/documentation/architecture.md) | Components, flows, consequential constraints |
-| Concept | [concept](../assets/templates/documentation/concept.md) | Meaning, relationships, rationale |
-| Reference | [reference](../assets/templates/documentation/reference.md) | Exact fields, defaults, behavior, constraints |
-| Guide | [guide](../assets/templates/documentation/guide.md) | A verified task, prerequisites, actions, result |
 
 Use only sections the subject needs. The index and instructions link to topic
 pages; they do not contain the topic explanation. Link package-local topics to
 their existing root docs owner when that is the declared organization.
+Independently distributed packages can own their own `docs/`; use the nearest
+declared owner rather than creating duplicate pages at both levels. Repository
+docs own cross-package subjects. Standard root `ARCHITECTURE.md` uses the
+[repository reference](repository.md); other topic pages follow their subject
+and existing local conventions without a prescribed topic template.
 
 ## Output
 
