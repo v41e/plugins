@@ -13,12 +13,12 @@ The user's requested outcome, known ownership, and available installed skills.
 
 ## Route
 
-| Need                                   | Route           | Boundary          |
-| -------------------------------------- | --------------- | ----------------- |
-| Explain Locus or select skill          | Answer here     | No child skill    |
-| Find owner or active work              | `locus:find`    | Read only         |
-| Maintain canonical docs                | `locus:init`    | Verified owner    |
-| Track repository work                  | `locus:track`   | Lifecycle only    |
+| Need | Route | Boundary |
+| ---- | ----- | -------- |
+| Explain Locus or select skill | Answer here | No child skill |
+| Find owner or active work | `locus:find` | Read only |
+| Maintain canonical docs | `locus:init` | Verified owner |
+| Track repository work | `locus:track` | Lifecycle only |
 | Reconcile or promote durable knowledge | `locus:distill` | Authorized writes |
 
 ## Workflow

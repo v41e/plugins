@@ -9,12 +9,12 @@ or operations that are neither a new capability nor incorrect behavior.
 
 Resume the first incomplete stage; read its contract before continuing.
 
-| Order | Stage                               | Purpose                                     |
-| ----- | ----------------------------------- | ------------------------------------------- |
-| 1     | [Scope](../stages/scope.md)         | Define the proportional work contract       |
-| 2     | [Implement](../stages/implement.md) | Deliver the complete authorized change      |
-| 3     | [Review](../stages/review.md)       | Review through the authorized delivery path |
-| 4     | [Complete](../stages/complete.md)   | Reconcile and verify the integrated result  |
+| Order | Stage | Purpose |
+| ----- | ----- | ------- |
+| 1 | [Scope](../stages/scope.md) | Define the proportional work contract |
+| 2 | [Implement](../stages/implement.md) | Deliver the complete authorized change |
+| 3 | [Review](../stages/review.md) | Review through the authorized delivery path |
+| 4 | [Complete](../stages/complete.md) | Reconcile and verify the integrated result |
 
 ## Output
 

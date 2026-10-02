@@ -19,10 +19,10 @@ Read one source at a time when the task requires context outside local files.
 Continue to another only when the original question still needs it; a knowledge
 map may locate the owner before GitHub supplies its work context.
 
-| Platform      | Use when                                                            | Reference                                                 |
-| ------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
-| GitHub        | Remote shaping, coordination, delivery, or review context is needed | [github.md](references/platforms/github.md)               |
-| Knowledge map | A destination outside the current repository is needed              | [knowledge-map.md](references/platforms/knowledge-map.md) |
+| Platform | Use when | Reference |
+| -------- | -------- | --------- |
+| GitHub | Remote shaping, coordination, delivery, or review context is needed | [github.md](references/platforms/github.md) |
+| Knowledge map | A destination outside the current repository is needed | [knowledge-map.md](references/platforms/knowledge-map.md) |
 
 ## Workflow
 

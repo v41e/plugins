@@ -18,16 +18,16 @@ from implemented behavior.
 
 ## Route
 
-| Owner                      | Knowledge                                                                     |
-| -------------------------- | ----------------------------------------------------------------------------- |
-| Code                       | Runtime behavior                                                              |
-| Tests                      | Executable expectations                                                       |
-| `README.md`, `docs/`       | Stable intent, architecture, constraints, usage, and durable depth            |
-| `AGENTS.md`                | Concise local semantics for action: entrypoint, routing, boundaries, commands |
-| Owned tool docs and config | Tool capabilities, requirements, and constraints                              |
-| Skills                     | Reusable judgment-driven workflows                                            |
-| Scripts                    | Explicit deterministic operations                                             |
-| Hooks                      | Automatically triggered context, checks, or enforcement                       |
+| Owner | Knowledge |
+| ----- | --------- |
+| Code | Runtime behavior |
+| Tests | Executable expectations |
+| `README.md`, `docs/` | Stable intent, architecture, constraints, usage, and durable depth |
+| `AGENTS.md` | Concise local semantics for action: entrypoint, routing, boundaries, commands |
+| Owned tool docs and config | Tool capabilities, requirements, and constraints |
+| Skills | Reusable judgment-driven workflows |
+| Scripts | Explicit deterministic operations |
+| Hooks | Automatically triggered context, checks, or enforcement |
 
 Drafts, remote work records, and releases are evidence or provenance, not
 default destinations. Update them only when explicitly requested through their
@@ -58,14 +58,14 @@ applicable, one-line summary, provenance when relevant, and verification for a
 write. When the user requests promotion advice without authorizing writes,
 return proposals only.
 
-| Status                 | Use when                                                                                                 |
-| ---------------------- | -------------------------------------------------------------------------------------------------------- |
-| `updated`              | An authorized update was applied to a verified existing owner                                            |
-| `created`              | An authorized destination was created at a verified placement                                            |
-| `already-known`        | The verified owner already contains the signal                                                           |
-| `update-needed`        | The signal and owner path are verified, but no write occurred                                            |
-| `wrong-place`          | The signal exists outside its verified owner                                                             |
-| `too-weak`             | The evidence is speculative or insufficient                                                              |
+| Status | Use when |
+| ------ | -------- |
+| `updated` | An authorized update was applied to a verified existing owner |
+| `created` | An authorized destination was created at a verified placement |
+| `already-known` | The verified owner already contains the signal |
+| `update-needed` | The signal and owner path are verified, but no write occurred |
+| `wrong-place` | The signal exists outside its verified owner |
+| `too-weak` | The evidence is speculative or insufficient |
 | `needs-human-judgment` | Meaning, ownership, placement, a material undelegated decision, or required authority remains unresolved |
 
 ## Rules

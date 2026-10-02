@@ -20,18 +20,18 @@ change, not a runtime map lookup.
 
 Select exactly one mode and one target. Read both selected references completely.
 
-| Mode    | Use when                                                                        | Reference                                 |
-| ------- | ------------------------------------------------------------------------------- | ----------------------------------------- |
-| Create  | Every selected document is missing                                              | [create.md](references/modes/create.md)   |
-| Refresh | Any selected document exists; includes non-destructive migration or alignment   | [refresh.md](references/modes/refresh.md) |
-| Reset   | The user explicitly requests replacement and names the exact selected documents | [reset.md](references/modes/reset.md)     |
+| Mode | Use when | Reference |
+| ---- | -------- | --------- |
+| Create | Every selected document is missing | [create.md](references/modes/create.md) |
+| Refresh | Any selected document exists; includes non-destructive migration or alignment | [refresh.md](references/modes/refresh.md) |
+| Reset | The user explicitly requests replacement and names the exact selected documents | [reset.md](references/modes/reset.md) |
 
-| Target                       | Use when                                             | Reference                                                         |
-| ---------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------- |
-| Repository root              | The knowledge surface is repository-wide             | [repository-root.md](references/targets/repository-root.md)       |
+| Target | Use when | Reference |
+| ------ | -------- | --------- |
+| Repository root | The knowledge surface is repository-wide | [repository-root.md](references/targets/repository-root.md) |
 | Repository package or plugin | The surface is local to a package or plugin boundary | [repository-package.md](references/targets/repository-package.md) |
-| Obsidian root                | The knowledge surface is vault-wide                  | [obsidian-root.md](references/targets/obsidian-root.md)           |
-| Obsidian lane                | The knowledge surface is local to a top-level lane   | [obsidian-lane.md](references/targets/obsidian-lane.md)           |
+| Obsidian root | The knowledge surface is vault-wide | [obsidian-root.md](references/targets/obsidian-root.md) |
+| Obsidian lane | The knowledge surface is local to a top-level lane | [obsidian-lane.md](references/targets/obsidian-lane.md) |
 
 ## Structure Contract
 
@@ -77,14 +77,14 @@ unresolved facts, and smallest useful follow-up.
 - Preserve useful existing custom sections during Refresh. For repository
   `AGENTS.md`, add optional sections only when the corresponding need is verified:
 
-  | Optional section          | Include when                                                                                   |
-  | ------------------------- | ---------------------------------------------------------------------------------------------- |
-  | Tech Stack                | Decision-relevant runtime, framework, or tooling choices lack an existing documentation owner. |
-  | Local Setup               | Non-obvious agent setup is missing from the README.                                            |
-  | Generated Files           | Source-to-output mappings need more than one Guardrails entry.                                 |
-  | Compatibility & Contracts | API, schema, or platform constraints affect edits; link their specification.                   |
-  | Troubleshooting           | Recurring failures have verified diagnosis or recovery steps.                                  |
-  | Work Tracking             | An owning Project is verified under the repository-root target's conditions.                   |
+  | Optional section | Include when |
+  | ---------------- | ------------ |
+  | Tech Stack | Decision-relevant runtime, framework, or tooling choices lack an existing documentation owner. |
+  | Local Setup | Non-obvious agent setup is missing from the README. |
+  | Generated Files | Source-to-output mappings need more than one Guardrails entry. |
+  | Compatibility & Contracts | API, schema, or platform constraints affect edits; link their specification. |
+  | Troubleshooting | Recurring failures have verified diagnosis or recovery steps. |
+  | Work Tracking | An owning Project is verified under the repository-root target's conditions. |
 
   Preserve core section order; prefer an existing entry or owner link to repetition.
 

@@ -4,11 +4,11 @@ Use GitHub only when the task needs remote shaping, coordination, delivery, or r
 
 ## Concept mapping
 
-| Concept            | GitHub surface | Semantics                                                        |
-| ------------------ | -------------- | ---------------------------------------------------------------- |
-| Work contract      | Issue          | Shaping, decisions, and approved specification or plan snapshots |
-| Coordination state | Project item   | Interpret status from verified metadata or repository policy     |
-| Delivery           | Pull request   | Verification, deviations, and review                             |
+| Concept | GitHub surface | Semantics |
+| ------- | -------------- | --------- |
+| Work contract | Issue | Shaping, decisions, and approved specification or plan snapshots |
+| Coordination state | Project item | Interpret status from verified metadata or repository policy |
+| Delivery | Pull request | Verification, deviations, and review |
 
 ## Evidence resolution
 

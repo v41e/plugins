@@ -14,9 +14,9 @@ change; Operate owns continuation and stopping.
 Intended outcome, owning context, authorized scope, delivery permissions, and
 budget or stopping conditions for this manual or scheduled run.
 
-| Mode            | Purpose                                  | Reference                                             |
-| --------------- | ---------------------------------------- | ----------------------------------------------------- |
-| `engineering`   | Advance capabilities and reliability     | [engineering.md](references/modes/engineering.md)     |
+| Mode | Purpose | Reference |
+| ---- | ------- | --------- |
+| `engineering` | Advance capabilities and reliability | [engineering.md](references/modes/engineering.md) |
 | `documentation` | Keep owned knowledge accurate and useful | [documentation.md](references/modes/documentation.md) |
 
 ## Workflow
