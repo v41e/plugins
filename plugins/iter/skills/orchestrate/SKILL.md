@@ -5,6 +5,8 @@ description: Use when the caller explicitly requests dispatching project-owned t
 
 # Orchestrate Projects
 
+## Purpose
+
 Run arbitrary work through exact project-owned tasks, one project at a time.
 
 ## Input
@@ -15,16 +17,15 @@ mutation, delivery, and production boundaries.
 
 ## Workflow
 
-1. Read local project guidance needed to resolve project identities and
-   boundaries. Do not copy umbrella instructions wholesale into task prompts.
-2. Resolve the harness's project, task, and progress capabilities. For Codex,
-   read the [harness adapter](references/harnesses/codex.md).
-3. Resolve every requested project exactly. Report missing or ambiguous
-   identities; partial task discovery cannot prove absence.
-4. Process resolved projects in caller order:
+1. Resolve requested projects and their boundaries from local guidance and the
+   harness's returned identities. Codex capabilities are mapped in the
+   [harness adapter](references/harnesses/codex.md). Report missing or ambiguous
+   owners; partial discovery cannot prove absence.
+2. Process resolved projects in caller order:
    1. Prepare one standalone task prompt that preserves the caller's work,
       including any explicit delivery authorization and restrictions, and adds
-      only the project identity and applicable boundaries. Preserve signed-commit,
+      only the project identity and applicable boundaries. Do not copy umbrella
+      instructions wholesale. Preserve signed-commit,
       push, and PR grants separately; newer restrictions override older grants.
       Pass requested execution settings through supported tool arguments.
    2. Continue a task only when it is unfinished and clearly owns the same
@@ -41,7 +42,7 @@ mutation, delivery, and production boundaries.
       | Dependent on blocked work | Hold |
       | Shared permission/safety failure, uncertain running state, interruption, or exhausted budget | Stop |
 
-5. Return the ordered aggregate, including unresolved and unstarted projects.
+3. Return the ordered aggregate, including unresolved and unstarted projects.
 
 ## Output
 
@@ -50,15 +51,10 @@ each outcome or blocker, unstarted projects, and any next human action.
 
 ## Rules
 
-- Use project-owned tasks; local subagents are not substitutes.
-- Discussion, comparison, interview, planning, proposal, open questions, prior
-  effort, or matching idle tasks do not authorize dispatch.
-- Do not scan repositories for candidates, rank projects, or replace the
-  caller's task with a fixed route.
-- Never edit project repositories from the umbrella task.
+- Discussion, proposals, prior effort, and matching idle tasks do not authorize dispatch.
+- Preserve the caller's assignment and order; do not scan for candidates or rank projects.
+- Use project-owned tasks; local subagents are not substitutes. Never edit child
+  repositories or bypass a worker's denied action from the umbrella context.
 - Never invent identities, permissions, or execution context.
-- Run one project task at a time.
-- Never bypass a denied action or run repository operations from the coordinator
-  to evade a worker blocker.
 - Never merge, release, deploy, schedule, or change live automations unless the
   caller's task and authorization explicitly require it.
