@@ -14,8 +14,8 @@ plugin boundary.
 
 ## Files
 
-| Document    | Path                            | Template                                                         |
-| ----------- | ------------------------------- | ---------------------------------------------------------------- |
+| Document | Path | Template |
+| -------- | ---- | -------- |
 | `README.md` | `<package-or-plugin>/README.md` | [README.md](../../assets/templates/repository-package/README.md) |
 | `AGENTS.md` | `<package-or-plugin>/AGENTS.md` | [AGENTS.md](../../assets/templates/repository-package/AGENTS.md) |
 

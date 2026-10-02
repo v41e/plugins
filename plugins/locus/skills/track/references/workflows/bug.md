@@ -8,12 +8,12 @@ Use for observed behavior that contradicts an existing expectation.
 
 Resume the first incomplete stage; read its contract before continuing.
 
-| Order | Stage                               | Purpose                                            |
-| ----- | ----------------------------------- | -------------------------------------------------- |
-| 1     | [Triage](../stages/triage.md)       | Confirm the defect and acceptance evidence         |
-| 2     | [Implement](../stages/implement.md) | Fix the shared root cause with regression evidence |
-| 3     | [Review](../stages/review.md)       | Review through the authorized delivery path        |
-| 4     | [Complete](../stages/complete.md)   | Reconcile and verify the integrated result         |
+| Order | Stage | Purpose |
+| ----- | ----- | ------- |
+| 1 | [Triage](../stages/triage.md) | Confirm the defect and acceptance evidence |
+| 2 | [Implement](../stages/implement.md) | Fix the shared root cause with regression evidence |
+| 3 | [Review](../stages/review.md) | Review through the authorized delivery path |
+| 4 | [Complete](../stages/complete.md) | Reconcile and verify the integrated result |
 
 ## Output
 

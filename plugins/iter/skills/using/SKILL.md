@@ -14,15 +14,15 @@ explicitly authorized.
 
 ## Workflow
 
-| Request                                                                                       | Route                 |
-| --------------------------------------------------------------------------------------------- | --------------------- |
-| Current status, plan, or retrospective                                                        | `brief` mode          |
-| One bounded authorized engineering run, or documentation work on selected surfaces            | `operate` mode        |
-| Explicit sequential task dispatch across saved projects                                       | `orchestrate`         |
-| Work-lifecycle classification or advancement when Locus is installed                          | `locus:track`         |
-| Supported canonical-document creation, structural refresh, or reset when installed            | `locus:init`          |
-| Durable-knowledge placement, promotion, or overlapping-guidance reconciliation when installed | `locus:distill`       |
-| Cross-project discussion, comparison, interview, or proposal                                  | Remain read-only here |
+| Request | Route |
+| ------- | ----- |
+| Current status, plan, or retrospective | `brief` mode |
+| One bounded authorized engineering run, or documentation work on selected surfaces | `operate` mode |
+| Explicit sequential task dispatch across saved projects | `orchestrate` |
+| Work-lifecycle classification or advancement when Locus is installed | `locus:track` |
+| Supported canonical-document creation, structural refresh, or reset when installed | `locus:init` |
+| Durable-knowledge placement, promotion, or overlapping-guidance reconciliation when installed | `locus:distill` |
+| Cross-project discussion, comparison, interview, or proposal | Remain read-only here |
 
 Inside an `operate` run, installed Locus owns its matching lifecycle or
 knowledge workflow.

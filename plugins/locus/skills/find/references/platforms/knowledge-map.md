@@ -5,11 +5,11 @@ repository.
 
 ## Concept mapping
 
-| Concept               | Concrete surface                          | Semantics                                       |
-| --------------------- | ----------------------------------------- | ----------------------------------------------- |
-| Discovery entrypoint  | Resolved map directory or its `AGENTS.md` | Locates destination inventories                 |
-| Destination inventory | Smallest matching map entry               | Identifies a candidate owner, not current facts |
-| Verified knowledge    | Destination instructions and owned files  | Supplies evidence for the answer                |
+| Concept | Concrete surface | Semantics |
+| ------- | ---------------- | --------- |
+| Discovery entrypoint | Resolved map directory or its `AGENTS.md` | Locates destination inventories |
+| Destination inventory | Smallest matching map entry | Identifies a candidate owner, not current facts |
+| Verified knowledge | Destination instructions and owned files | Supplies evidence for the answer |
 
 ## Entrypoint resolution
 

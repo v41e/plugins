@@ -8,14 +8,14 @@ Use for a new or materially expanded capability.
 
 Resume the first incomplete stage; read its contract before continuing.
 
-| Order | Stage                               | Purpose                                            |
-| ----- | ----------------------------------- | -------------------------------------------------- |
-| 1     | [Ideate](../stages/ideate.md)       | Refine one outcome; persist it only when resumable |
-| 2     | [Design](../stages/design.md)       | Settle the design at proportional depth            |
-| 3     | [Plan](../stages/plan.md)           | Define authorized implementation steps             |
-| 4     | [Implement](../stages/implement.md) | Deliver the complete authorized change             |
-| 5     | [Review](../stages/review.md)       | Review through the authorized delivery path        |
-| 6     | [Complete](../stages/complete.md)   | Reconcile and verify the integrated result         |
+| Order | Stage | Purpose |
+| ----- | ----- | ------- |
+| 1 | [Ideate](../stages/ideate.md) | Refine one outcome; persist it only when resumable |
+| 2 | [Design](../stages/design.md) | Settle the design at proportional depth |
+| 3 | [Plan](../stages/plan.md) | Define authorized implementation steps |
+| 4 | [Implement](../stages/implement.md) | Deliver the complete authorized change |
+| 5 | [Review](../stages/review.md) | Review through the authorized delivery path |
+| 6 | [Complete](../stages/complete.md) | Reconcile and verify the integrated result |
 
 ## Output
 

@@ -17,26 +17,26 @@ Before any mutation:
 
 ## Surfaces
 
-| Logical concept                | GitHub surface         |
-| ------------------------------ | ---------------------- |
-| Backlog record                 | Project draft          |
-| Formal remote work record      | Issue                  |
+| Logical concept | GitHub surface |
+| --------------- | -------------- |
+| Backlog record | Project draft |
+| Formal remote work record | Issue |
 | Approved specification or plan | Separate Issue comment |
-| Ready, active, review, or done | Mapped Project status  |
-| Delivery record                | Pull request           |
+| Ready, active, review, or done | Mapped Project status |
+| Delivery record | Pull request |
 
 ## Stage references
 
-| Stage     | Reference                           |
-| --------- | ----------------------------------- |
-| Ideate    | [ideate.md](github/ideate.md)       |
-| Design    | [design.md](github/design.md)       |
-| Plan      | [plan.md](github/plan.md)           |
-| Triage    | [triage.md](github/triage.md)       |
-| Scope     | [scope.md](github/scope.md)         |
+| Stage | Reference |
+| ----- | --------- |
+| Ideate | [ideate.md](github/ideate.md) |
+| Design | [design.md](github/design.md) |
+| Plan | [plan.md](github/plan.md) |
+| Triage | [triage.md](github/triage.md) |
+| Scope | [scope.md](github/scope.md) |
 | Implement | [implement.md](github/implement.md) |
-| Review    | [review.md](github/review.md)       |
-| Complete  | [complete.md](github/complete.md)   |
+| Review | [review.md](github/review.md) |
+| Complete | [complete.md](github/complete.md) |
 
 ## Rules
 

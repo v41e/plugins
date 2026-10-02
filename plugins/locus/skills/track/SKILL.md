@@ -24,11 +24,11 @@ any existing work contract, approval evidence, or tracked artifacts.
    stage and update or retire stale artifacts.
 3. Classify the work and read one workflow.
 
-   | Work    | Trigger                                      | Workflow                                      |
-   | ------- | -------------------------------------------- | --------------------------------------------- |
-   | Feature | A capability is new or materially expanded   | [feature.md](references/workflows/feature.md) |
-   | Bug     | Observed behavior contradicts an expectation | [bug.md](references/workflows/bug.md)         |
-   | Task    | Maintenance is neither a Feature nor a Bug   | [task.md](references/workflows/task.md)       |
+   | Work | Trigger | Workflow |
+   | ---- | ------- | -------- |
+   | Feature | A capability is new or materially expanded | [feature.md](references/workflows/feature.md) |
+   | Bug | Observed behavior contradicts an expectation | [bug.md](references/workflows/bug.md) |
+   | Task | Maintenance is neither a Feature nor a Bug | [task.md](references/workflows/task.md) |
 
 4. Follow the workflow's order and read its linked first incomplete stage.
 5. When GitHub owns remote state, read the [GitHub adapter](references/platforms/github.md)

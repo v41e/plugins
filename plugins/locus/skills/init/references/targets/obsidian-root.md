@@ -19,8 +19,8 @@ Use this destination when the knowledge surface is vault-wide.
 
 ## Files
 
-| Document    | Path        | Template                                                    |
-| ----------- | ----------- | ----------------------------------------------------------- |
+| Document | Path | Template |
+| -------- | ---- | -------- |
 | `README.md` | `README.md` | [README.md](../../assets/templates/obsidian-root/README.md) |
 | `AGENTS.md` | `AGENTS.md` | [AGENTS.md](../../assets/templates/obsidian-root/AGENTS.md) |
 

@@ -13,11 +13,11 @@ Turn project evidence into useful judgments about outcomes and decisions.
 - Selected modes and explicit or relative windows below.
 - Caller or runtime IANA timezone and one captured `as_of`.
 
-| Mode            | Windows                                                   | Reference                                             |
-| --------------- | --------------------------------------------------------- | ----------------------------------------------------- |
-| `status`        | Historical `status_window`                                | [status.md](references/modes/status.md)               |
-| `plan`          | Future `planning_horizon`; optional historical `lookback` | [plan.md](references/modes/plan.md)                   |
-| `retrospective` | Historical `retrospective_window`                         | [retrospective.md](references/modes/retrospective.md) |
+| Mode | Windows | Reference |
+| ---- | ------- | --------- |
+| `status` | Historical `status_window` | [status.md](references/modes/status.md) |
+| `plan` | Future `planning_horizon`; optional historical `lookback` | [plan.md](references/modes/plan.md) |
+| `retrospective` | Historical `retrospective_window` | [retrospective.md](references/modes/retrospective.md) |
 
 Daily, weekly, and monthly are cadences, not modes. For unattended runs, report
 missing required inputs instead of guessing or waiting indefinitely.

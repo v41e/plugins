@@ -35,11 +35,11 @@ mutation, delivery, and production boundaries.
       are not completion; never redispatch or start the next project early.
    4. Collect its outcome and apply the continuation rules:
 
-      | State                                                                                        | Action                                         |
-      | -------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-      | Stopped with a local blocker                                                                 | Continue independent work only when authorized |
-      | Dependent on blocked work                                                                    | Hold                                           |
-      | Shared permission/safety failure, uncertain running state, interruption, or exhausted budget | Stop                                           |
+      | State | Action |
+      | ----- | ------ |
+      | Stopped with a local blocker | Continue independent work only when authorized |
+      | Dependent on blocked work | Hold |
+      | Shared permission/safety failure, uncertain running state, interruption, or exhausted budget | Stop |
 
 5. Return the ordered aggregate, including unresolved and unstarted projects.
 
