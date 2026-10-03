@@ -1,55 +1,28 @@
 # Locus
 
-Portable Agent Plugins v1 package for Locus knowledge lifecycle workflows.
-
 ## Overview
 
-The package provides five client-independent Agent Skills for finding owned
-context, maintaining canonical knowledge documents, tracking repository work,
-distilling verified evidence, and choosing the smallest matching workflow.
-
-> _Locus_ is Latin for "place": knowledge and active work belong with their
-> verified owners, where they can be found, maintained, and trusted.
-
-- **Type**: Agent Plugin.
-- **Runtime**: compatible agent client; no bundled runtime or MCP server.
+Find authoritative content and put verified knowledge in its proper owner.
+Locus means place: entrypoints help humans and agents start work; topic docs own
+explanations and reference material. Writing style remains the caller's choice.
 
 ## Structure
 
-- [`examples/`](examples/): generic, publishable examples:
-  - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting point
-- [`skills/`](skills/): shared instruction-driven workflows:
-  - [`find/`](skills/find/): owned-knowledge and active-work discovery
-  - [`init/`](skills/init/): knowledge-document creation, refresh, and templates
-  - [`track/`](skills/track/): proportional Feature, Bug, and Task lifecycle stages
-  - [`distill/`](skills/distill/): durable-knowledge placement, promotion, and reconciliation
-  - [`using/`](skills/using/): capability explanation and routing
-- [`AGENTS.md`](AGENTS.md): plugin operating contract
+- [skills/](skills/): portable instruction-driven skills:
+  - [find/](skills/find/): read-only ownership and evidence discovery
+  - [write/](skills/write/): content placement, reconciliation, and templates
+  - [using/](skills/using/): skill selection
+- [docs/](docs/): configuration documentation
+- [examples/knowledge-map/](examples/knowledge-map/): generic discovery-map example
+- [plugin.json](plugin.json): portable package identity
+- [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and interface
+- [AGENTS.md](AGENTS.md): working instructions
 
 ## Quickstart
 
-1. Install this package through a compatible client; in Codex, select `locus`
-   from the `v41e` marketplace.
-2. Reload plugins as required by the client; restart Codex desktop after local
-   plugin changes.
-3. Use `locus:using` when selection is unclear, or invoke `locus:find`,
-   `locus:init`, `locus:track`, or `locus:distill` for the matching need.
+Install `locus` from the `v41e` marketplace in a compatible client and reload its
+plugins. Invoke `locus:find` or `locus:write`; use `locus:using` when unsure.
 
 ## Configuration
 
-A private knowledge map is optional; use it to locate knowledge outside the
-current repository. Locus resolves its entrypoint in this order:
-
-1. explicit path from the user.
-2. `KNOWLEDGE_MAP_PATH`.
-3. repo-local `.knowledge-map/AGENTS.md`.
-4. `~/.config/knowledge-map/AGENTS.md`.
-
-An explicit path or `KNOWLEDGE_MAP_PATH` may name the map directory or its
-`AGENTS.md`. Without a map, Locus can still search the current repository.
-
-Start with the [generic example](examples/knowledge-map/AGENTS.md), but keep
-personal and company facts outside this package. The
-[knowledge-map platform contract](skills/find/references/platforms/knowledge-map.md)
-defines how Locus reads a map without treating inventory entries as current
-facts.
+Optional cross-destination discovery uses a [knowledge map](docs/knowledge-map.md).

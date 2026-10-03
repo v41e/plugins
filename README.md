@@ -6,16 +6,19 @@ Public Agent Plugins and Codex marketplace metadata for v41e.
 
 The marketplace distributes two independently installable plugins:
 
-| Plugin                           | Purpose                                                                                          |
-| -------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [Locus](plugins/locus/README.md) | Discover, initialize, track, and distill knowledge and active work across owned destinations.    |
-| [Iter](plugins/iter/README.md)   | Brief current project work, execute a bounded authorized run, or dispatch across saved projects. |
+| Plugin | Purpose |
+| ------ | ------- |
+| [Locus](plugins/locus/README.md) | Find authoritative content and write knowledge in its proper owner. |
+| [Iter](plugins/iter/README.md) | Brief project work, track its evidence, maintain authorized changes, or dispatch project-owned tasks. |
 
 ## Structure
 
 - [`plugins/`](plugins/): installable plugin packages:
-  - [`locus/`](plugins/locus/): Locus knowledge lifecycle plugin
-  - [`iter/`](plugins/iter/): Iter engineering operations plugin
+  - [`locus/`](plugins/locus/): Locus content ownership plugin
+  - [`iter/`](plugins/iter/): Iter work tracking and maintenance plugin
+- [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json): package discovery catalog
+- [`release-please-config.json`](release-please-config.json) and [`.release-please-manifest.json`](.release-please-manifest.json): shared release configuration and version
+- [`.github/workflows/`](.github/workflows/): repository checks and release automation
 - [`ARCHITECTURE.md`](ARCHITECTURE.md): repository relationships and distribution boundaries
 - [`AGENTS.md`](AGENTS.md): repository operating contract
 

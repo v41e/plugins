@@ -32,23 +32,29 @@ flowchart LR
   details remain inside its owning directory.
 - **Versioning**: every plugin manifest shares the repository version.
 
+Plugin-specific documentation stays inside the distributed package's `docs/`.
+
 ### 2.3. Skill Contracts
 
 The implementation is Markdown following the [Agent Skills format](https://agentskills.io/llms.txt).
 Skills are callable entrypoints. Modes select alternative operations; workflows
-order lifecycle stages; stages define execution steps and a transition gate.
-Each uses `Input`, `Workflow`, `Output`, and `Rules`, with routing sections
-where selection is needed.
+order lifecycle stages; stages identify required evidence and a transition gate.
+Each uses `Purpose`, `Input`, `Workflow`, `Output`, and `Rules`, with routing
+inside the relevant section. Using skills are concise inventories of purpose,
+skills, and requirements.
 
 Platform adapters map logical concepts to concrete tools, commands, and remote
 surfaces. Integration adapters map observed conditions to installed skills.
-Their mappings preserve the selected operation's scope and approval gates.
+Conditional capability tables use `When`, `Capability`, and `Result`; schemas
+and inventories keep columns appropriate to their content. Mappings preserve
+the selected operation's scope and approval gates.
 Target references describe destination structure and templates.
 
-Locus owns knowledge and Feature, Bug, or Task work lifecycles. Iter owns
-repository briefs, one bounded authorized operation per run, and explicitly
-requested sequential project-task dispatch. They remain independently
-installable.
+Locus owns content placement and discovery. Iter owns work records and gates,
+repository briefs, bounded maintenance runs, and explicitly requested sequential
+project-task dispatch. The owning project context and installed engineering
+skills supply implementation and review methods. Both packages remain
+independently installable.
 
 ## 3. Data Stores
 
@@ -59,13 +65,14 @@ remain in their selected destinations, GitHub, or the host client.
 
 - **GitHub**: hosts distribution, CI, and releases. Skills also use GitHub tools
   or the CLI for Issues, Projects, and pull requests; the
-  [Locus tracking adapter](plugins/locus/skills/track/references/platforms/github.md)
-  and [Iter operation adapter](plugins/iter/skills/operate/references/platforms/github.md)
+  [Iter tracking adapter](plugins/iter/skills/track/references/platforms/github.md)
+  and [Iter maintenance adapter](plugins/iter/skills/maintain/references/platforms/github.md)
   define the applicable mappings and write boundaries.
-- **Codex desktop**: Iter's
-  [saved-project adapter](plugins/iter/skills/orchestrate/references/platforms/codex.md)
-  maps dispatch and progress tracking to host-provided task tools. The live tool
-  schemas own invocation details; dispatch requires the caller's authorization.
+- **Codex desktop**: Iter's skill-local
+  [Brief mapping](plugins/iter/skills/brief/references/harnesses/codex.md) and
+  [Orchestrate adapter](plugins/iter/skills/orchestrate/references/harnesses/codex.md)
+  map read-only evidence and authorized dispatch to host-provided task tools.
+  Live schemas own invocation details; discovery does not authorize dispatch.
 
 The packages bundle no MCP server or standalone API client. Integrations use
 capabilities and authenticated access supplied by the execution environment.

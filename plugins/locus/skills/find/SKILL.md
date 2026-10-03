@@ -5,6 +5,8 @@ description: Use when the user needs to locate relevant owned knowledge, active 
 
 # Find
 
+## Purpose
+
 Find the smallest verified context that can answer the task. Start locally and
 broaden only when the task requires context outside local files.
 
@@ -12,17 +14,6 @@ broaden only when the task requires context outside local files.
 
 - The user's request and any explicit path, issue, or pull request.
 - The current repository and nearest `AGENTS.md`.
-
-## Route
-
-Read one source at a time when the task requires context outside local files.
-Continue to another only when the original question still needs it; a knowledge
-map may locate the owner before GitHub supplies its work context.
-
-| Platform      | Use when                                                            | Reference                                                 |
-| ------------- | ------------------------------------------------------------------- | --------------------------------------------------------- |
-| GitHub        | Remote shaping, coordination, delivery, or review context is needed | [github.md](references/platforms/github.md)               |
-| Knowledge map | A destination outside the current repository is needed              | [knowledge-map.md](references/platforms/knowledge-map.md) |
 
 ## Workflow
 
@@ -33,9 +24,15 @@ map may locate the owner before GitHub supplies its work context.
 3. Read only the selected owner's relevant code, tests, `README.md`, or `docs/`.
 4. Follow issue or pull-request links from the selected local artifact when
    needed to answer the original question, regardless of remote state.
-5. When the task requires non-local context, read the matching platform reference
-   and retrieve the needed evidence. After locating an owner, read its local
-   context and select another source only if the original question is unanswered.
+5. Resolve any missing non-local context through the relevant mapping:
+
+   | When | Capability | Result |
+   | ---- | ---------- | ------ |
+   | Remote work or delivery context is needed | [GitHub](references/platforms/github.md) | Work contract, coordination, or review evidence |
+   | The owner is outside the current repository | [Knowledge map](references/platforms/knowledge-map.md) | Candidate destination to verify locally |
+
+   A map may locate the owner before GitHub supplies its work context. Verify
+   that owner's local sources; broaden again only if the question remains unanswered.
 6. Stop as soon as the minimum verified owner set answers the task.
 
 ## Output
@@ -50,10 +47,8 @@ pointers.
 - Keep retrieval read-only; do not create, edit, or distill knowledge.
 - Treat chat, memory, and map entries as discovery leads; verify facts against
   the selected owner.
-- Use parent instructions for routing and repository-wide rules; use the
-  selected child's surfaces for child-local facts.
-- Do not load sibling packages or plugins unless the task crosses their boundary.
-- Load neither the whole map nor unrelated history.
-- If the next action changes tracked work, route it to `locus:track`; do not
-  perform it during retrieval.
+- Parent instructions own routing and shared rules; the selected owner supplies
+  local facts. Sibling packages, the whole map, and unrelated history need a
+  reason in the original question.
+- Return any tracked-work next action to `iter:track` when installed.
 - If nothing matches clearly, say that instead of guessing.
