@@ -15,15 +15,18 @@ Subject, audience, verified sources, and the current documentation owner.
 | docs/README.md | [README](../../assets/templates/documentation/README.md) |
 | docs/AGENTS.md | [AGENTS](../../assets/templates/documentation/AGENTS.md) |
 
-1. **docs/README.md:** state documentation scope and route readers to existing
-   subjects with one-line responsibilities. Identify an authoritative source or
-   generated reference when readers need it; keep explanations in topic pages.
-2. **docs/AGENTS.md:** map claims to code, tests, configuration, approved decisions,
-   and generators. State maintenance boundaries and the checks needed for changes
-   to facts, links, commands, or examples; keep topic explanations in their owners.
+1. **docs/README.md:** use Overview for scope/audience and Structure for existing
+   topic owners with one-line responsibilities. Add a short Quickstart only when
+   orientation benefits. Keep meaningful source or generated-reference pointers
+   beside their owning passage; no routine Subjects/Sources inventories are required.
+2. **docs/AGENTS.md:** use Overview and Structure, applicable Commands/Checks, and
+   Guardrails. Verify claims against code, tests, configuration, approved decisions,
+   and generators; identify non-obvious editable inputs when useful without a
+   mandatory Sources inventory. Check changed facts, links, commands, examples,
+   and relevant output; keep topic explanations in their owners.
    Include Code Review Rules only when verified, scoped review priorities add
-   value beyond inherited guidance and existing contracts, Sources, Guardrails, and
-   Verification. Link the owning rules rather than copying them; otherwise omit
+   value beyond inherited guidance, existing contracts, Guardrails, and Checks.
+   Link the owning rules rather than copying them; otherwise omit
    the section. Keep intended, implemented, and verified live state distinct.
 3. **Topic pages:** integrate evidence in the nearest existing passage using its
    structure. Keep `docs/` flat until distinct subjects need folders. Follow the

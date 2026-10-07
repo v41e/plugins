@@ -6,7 +6,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified local boundaries and canonical local docs. Follow the local navigation contract in references/targets/repository.md.
+<!-- Replace this example with verified local boundaries and canonical local docs. All repository-file links in this entrypoint stay within the package; inherit ancestor instructions without adding ancestor navigation. Verified external official references are permitted. Follow the local navigation contract in references/targets/repository.md.
 
 - [`src/`](src/): main implementation
   - [`entrypoint.ts`](src/entrypoint.ts): primary entrypoint
@@ -24,22 +24,30 @@
 - **Build/generation**: <!-- When relevant: orchestration tool or source generator and its owning configuration -->
 - **Key dependencies**: <!-- e.g., aws-sdk, boto3, aws-lambda-powertools -->
 
-## Commands
+## Setup & Build
 
-<!-- Optional. List verified entrypoints, their purpose, and necessary setup or working directory. Keep useful focused checks; internal build phases need not be separate commands. -->
+<!-- Optional. List verified local install/build/run entrypoints, their purpose, and necessary setup or working directory. Preserve useful working setup; internal phases need not be separate commands. Use Commands for a non-code owner without a build. Remove inapplicable entries. -->
 
 - Build: `<!-- primary command -->`
-- Test: `<!-- package-local test command -->`
+- Run: `<!-- local run command -->`
 
-## Verification
+## Testing
 
-<!-- Briefly state build coverage from task definitions and CI, required extra checks, and material side effects or limits. Repeat covered checks only after relevant changes or for diagnosis. Add only package-specific guidance beyond the root policy. -->
+<!-- Optional. List verified package-local tests/lint/typecheck and actual CI/task coverage, required extra fact/link/generator/output checks, and material side effects or limits. Follow root policy and affected behavior; add only package differences. Report interrupted/incomplete checks honestly. Use Checks when no test suite exists; remove unused entries. -->
+
+- Focused test: `<!-- closest local test command -->`
+- Full tests: `<!-- local suite command -->`
+- Lint/typecheck: `<!-- applicable local command -->`
+
+## Code Style
+
+<!-- Optional. Inherit root/team conventions. Add only applicable verified language/framework references and local differences; repository-file links stay within this package. Preserve formatter/linter configuration and existing public docstring conventions. Do not repeat root guidance or create a generic design chapter. -->
 
 ## Code Review Rules
 
 <!-- Optional. Omit this section unless verified package-specific review
 priorities add to inherited review guidance and existing contracts, Guardrails,
-and Verification. Link owning compatibility or consumer rules rather than copying them. -->
+and Testing/Checks. Link local owning compatibility or consumer rules rather than copying them. -->
 
 ## Guardrails
 
@@ -51,6 +59,6 @@ and Verification. Link owning compatibility or consumer rules rather than copyin
 
 ## References
 
-<!-- Optional. Link useful sources not already owned by Tech Stack or architecture, with when to consult each. Prefer verified official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. Omit duplicates and empty sections. -->
+<!-- Optional. Link useful package-local sources or verified external official references not already owned by Tech Stack or Code Style, with when to consult each. Prefer official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. Keep repository-file links inside this package; omit duplicates and empty sections. -->
 
 - [<!-- Source -->](<!-- URL -->): <!-- When to consult it -->

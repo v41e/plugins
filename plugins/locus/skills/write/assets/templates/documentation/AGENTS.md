@@ -1,24 +1,26 @@
 # Documentation Agents
 
-## Scope
+## Overview
 
-<!-- Subjects owned here and links to neighboring owners. Keep instructions local. -->
+<!-- Documentation scope and maintenance boundary in 1-3 sentences. Keep instructions local and topic explanations in their owners. -->
 
-## Sources
+## Structure
 
-<!-- Map each documented contract to its actual source: code, tests, configuration,
-approved decisions, or a specification. Name any generator and its editable input. -->
+<!-- One-line links to verified local topic owners and entrypoints. Preserve meaningful source/configuration maps; identify non-obvious generators and editable inputs where useful, without an obvious Sources inventory. -->
 
-## Verification
+## Commands
 
-<!-- State required checks for changed claims, links, commands, examples, and
-version-sensitive references. Include generator checks only when they apply. -->
+<!-- Optional. List actual documentation commands and working directory only when applicable. Do not invent build or test targets. -->
+
+## Checks
+
+<!-- Verify changed claims against code/tests/configuration and approved decisions. Check facts, links, commands, examples, version-sensitive references, and relevant output. Include generator checks only when applicable; keep useful source pointers beside their owning passage. -->
 
 ## Code Review Rules
 
 <!-- Optional. Omit this section unless verified documentation-specific review
-priorities add to inherited review guidance and existing contracts, Sources,
-Guardrails, and Verification. Link owning claim, example, or state rules rather
+priorities add to inherited review guidance, existing contracts, Guardrails,
+and Checks. Link owning claim, example, or state rules rather
 than copying them. -->
 
 ## Guardrails

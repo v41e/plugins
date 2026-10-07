@@ -17,23 +17,37 @@
 - [`README.md`](README.md): human-facing repository overview
 -->
 
-## Commands
+## Setup & Build
 
-<!-- List verified entrypoints, their purpose, and necessary setup or working directory. Keep useful focused checks; internal build phases need not be separate commands. Remove inapplicable examples. -->
+<!-- List verified install/build/run entrypoints, their purpose, and necessary setup or working directory. Preserve useful working setup; internal phases need not be separate commands. Remove inapplicable entries. For a non-code owner without a build, use Commands instead. -->
 
 - Install: `<!-- install command -->`
 - Build: `<!-- build command -->`
-- Test: `<!-- test command -->`
+- Run: `<!-- run command -->`
 
-## Verification
+## Testing
 
-<!-- Briefly state build coverage from task definitions and CI, required extra checks, and material side effects or limits. Repeat covered checks only after relevant changes or for diagnosis. Document project policy, not historical pass claims. -->
+<!-- List verified focused/full tests, lint, and typecheck entrypoints as applicable. State actual CI/task coverage, required extra fact/link/generator/output checks, and material side effects or limits. Follow affected behavior and repository policy; report interrupted or incomplete checks honestly. Repeat checks after relevant changes or for diagnosis. Use Checks for a non-code owner without a test suite; do not invent one. -->
+
+- Focused test: `<!-- closest test command -->`
+- Full tests: `<!-- suite command -->`
+- Lint/typecheck: `<!-- applicable command -->`
+
+## Code Style
+
+<!-- Optional. Team conventions live here or at their existing style owner; packages inherit them. Link only verified project-selected official guides and useful local overrides. Remove unused items and do not change tool configuration to imitate a guide. Keep longer contracts in their existing docs owner. -->
+
+- <!-- Link existing formatter/linter configuration and applicable commands; automated formatting follows those tools. -->
+- <!-- Link applicable language/framework conventions and useful local overrides, with when to consult them. -->
+- <!-- Keep coherent statements/declarations and immediate error handling together; separate distinct logical blocks with blank lines, within formatter constraints. -->
+- <!-- If adopted locally, use semantic NOTE/INFO for orientation, TODO/FIXME for follow-up, and WARNING for a real hazard. Use normal language comment syntax; avoid tagging every comment or restating obvious code. -->
+- <!-- Link public docstring conventions for inputs, returns, errors, and material side effects. -->
 
 ## Code Review Rules
 
 <!-- Optional. Omit this section unless verified repository-specific review
 priorities add to inherited review guidance and existing contracts, Guardrails,
-and Verification. Link the owning rules rather than copying them. -->
+and Testing/Checks. Link the owning rules rather than copying them. -->
 
 ## Work Tracking
 
@@ -48,6 +62,6 @@ and Verification. Link the owning rules rather than copying them. -->
 
 ## References
 
-<!-- Optional. Link useful sources not already owned by Tech Stack or architecture, with when to consult each. Prefer verified official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. Omit duplicates and empty sections. -->
+<!-- Optional. Link existing CONTRIBUTING for Git/contribution policy rather than duplicating it. Add useful sources not already owned by Code Style or architecture, with when to consult each. Prefer verified official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. Omit duplicates and empty sections. -->
 
 - [<!-- Source -->](<!-- URL -->): <!-- When to consult it -->

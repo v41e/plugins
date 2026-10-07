@@ -1,13 +1,21 @@
 # Documentation Agents
 
-## Sources
+## Overview
 
-- [Find](../skills/find/SKILL.md) and its [map adapter](../skills/find/references/platforms/knowledge-map.md) own discovery behavior.
-- [Example map](../examples/knowledge-map/AGENTS.md) supplies a generic starting point.
+Maintain Locus's optional knowledge-map documentation. Skills own procedures;
+topic pages own explanations, and README owns navigation.
 
-## Verification
+## Structure
 
-Check affected links and keep documented configuration consistent with the adapter.
+- [knowledge-map.md](knowledge-map.md): cross-destination discovery configuration.
+- [README.md](README.md): documentation entrypoint.
+
+## Checks
+
+Check affected facts, links, commands, and examples. Keep discovery guidance
+consistent with [Find](../skills/find/SKILL.md) and its
+[map adapter](../skills/find/references/platforms/knowledge-map.md); verify the
+[example map](../examples/knowledge-map/AGENTS.md) when its documented shape changes.
 
 ## Guardrails
 
