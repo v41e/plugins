@@ -13,7 +13,12 @@ A Task needing a proportional work contract.
 1. Record the problem, proposed solution, owner, and deterministic acceptance
    evidence. Include design decisions, implementation steps, alternatives, or
    context when useful.
-2. Record execution authority and any required approvals.
+2. For substantive work, apply [Design](design.md) then [Plan](plan.md) checkpoints
+   inside Scope: independent final-spec review/corrections and summary before
+   human spec approval, then independent plan review/corrections and summary before
+   separate plan/execution approval. Preserve Task classification and proportional
+   artifacts; record the stated delivery scope. Routine settled work stays direct
+   unless human or repository policy requires gates.
 
 ## Output
 

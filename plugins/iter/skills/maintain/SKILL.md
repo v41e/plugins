@@ -36,8 +36,8 @@ authorization, delivery permissions, and run budget or stopping conditions.
    contract, approvals, gate, and evidence. Perform authorized work through the
    owning context's methods, mapped in [Superpowers](references/integrations/superpowers.md).
    Reconcile affected code, tests, docs, and owning configuration; complete
-   required checks and authorized review,
-   then follow the separately authorized delivery path. Return results to
+   required checks and independent final-revision review for substantive work,
+   then follow the approved delivery scope. Return results to
    tracking. Track supplies no execution fallback.
 5. Reassess remaining authorized work after each outcome. Continue independent
    eligible corrections while blocked work is held. Stop when scope is covered,
@@ -54,9 +54,12 @@ no-op from insufficient evidence.
 - Stay in the owning context and selected checkout; preserve unrelated changes.
   Do not list saved projects, dispatch project-owned tasks, or edit other projects.
 - Signals, drafts, status, silence, and access are not authorization. Reuse
-  existing approvals; keep execution, human review, commit, push, and PR grants
-  separate. The latest human restriction wins.
-- Honor required human review before delivery. Use configured signing and the
+  existing approvals and their covered execution, human review, commit, push,
+  and PR scope. An approved plan naming PR delivery covers publication after
+  checks/review without another discretionary pre-push checkpoint; human review
+  occurs on the PR. Explicit local-only, publication holds, or required local
+  human review win. Unapproved ideas remain proposals.
+- Honor required review and delivery boundaries. Use configured signing and the
   approval mechanism for exact authorized Git operations; request only needed
   Git metadata access. A denial stops delivery; retain the diff and report the
   blocker. Never bypass it, broaden escalation, switch repositories, reconstruct

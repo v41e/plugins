@@ -11,18 +11,21 @@ The complete change with passing affected and required checks.
 
 ## Workflow
 
-1. Record final supplied code-defect review, author correction evidence, and
-   verification for the exact diff/revision, generated output, and compatibility
-   boundary. Human delivery judgment covers
-   behavior, general logic, API documentation, quality, and readiness; agent
-   evidence covers detailed investigation and checks.
-2. Require equivalent review evidence for major, security-sensitive, or
-   compatibility-sensitive changes; require independent review when policy
-   calls for it. Reuse review already supplied by the owning method.
-3. Record evidence of any required local human checkpoint before the first
-   delivery mutation; keep it unmet until approved or explicitly waived for this
-   work. Preserve separate delivery grants and record authorized delivery
-   evidence, related formal records, verification, and material notes.
+1. For substantive work, record independent review and passing affected/required
+   checks covering the exact final revision, generated output, and compatibility
+   boundary. Review original intent, accepted decisions, and relevant local
+   examples; judge behavior, general logic, contracts, docs, simplicity, and
+   readiness as well as defects. Passing tests alone do not prove alignment.
+2. Record supported corrections, refreshed final-revision evidence, and the
+   concise delivery summary using Track's handoff. Reuse equivalent supplied
+   review; a narrower code-defect review covers only the judgment it performed.
+3. Record the stated delivery authority. When an approved plan/execution scope
+   covers focused PR delivery under repository policy, checks and review permit
+   the owning context to commit, push, and publish that PR without another
+   discretionary publication question or pre-push human checkpoint. Human review
+   then occurs on the published PR. Explicit local-only, publication holds, or
+   required local human review still bind; retain an unmet checkpoint until
+   approved or explicitly waived. Record actual delivery evidence and material notes.
 4. Distinguish local checks and review from remote checks and review. Requested
    changes return to Implement with delivery open, followed by renewed checks
    and review.

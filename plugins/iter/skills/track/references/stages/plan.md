@@ -6,14 +6,18 @@ Track implementation steps, planning decisions, and execution authority.
 
 ## Input
 
-A settled Feature design with any required design approval.
+A settled Feature design with required spec approval.
 
 ## Workflow
 
-1. Require settled owners, files, checks, boundaries, and implementation steps.
-2. Record supplied review and author corrections for the exact plan revision
-   against the settled design. Human judgment covers sequencing, dependencies,
-   and PR boundaries; record execution authority and any required plan approval.
+1. Require settled owners, files, checks, boundaries, implementation steps, and
+   the stated execution and delivery scope.
+2. For substantive work, record independent review of the exact plan against the
+   approved spec, original intent, accepted decisions, and relevant local examples.
+   Resolve supported findings and refresh final-revision evidence before the
+   concise summary and explicit human plan/execution approval. Human judgment
+   covers sequencing, dependencies, and PR boundaries. Follow Track's handoff;
+   record covered commit/push/PR authority or explicit local-only/publication holds.
 3. Publish an approved local plan when a formal work record exists; synchronize
    mapped ready state.
 

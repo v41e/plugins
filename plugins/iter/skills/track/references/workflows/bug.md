@@ -10,14 +10,14 @@ Observed behavior that contradicts an expectation and its existing evidence.
 
 ## Workflow
 
-Resume the first unmet stage. Triage includes the fix's design and plan work when
-needed; it does not add separate Feature gates.
+Resume the first unmet stage. Triage includes the fix's separate substantive spec
+and plan checkpoints internally; it does not add Feature stages.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
-| 1 | [Triage](../stages/triage.md) | Confirmed defect, diagnosis, acceptance evidence, and execution authority |
+| 1 | [Triage](../stages/triage.md) | Confirmed defect/acceptance; substantive spec then plan approval and delivery authority |
 | 2 | [Implement](../stages/implement.md) | Complete fix and passing regression evidence |
-| 3 | [Review](../stages/review.md) | Required review and authorized delivery evidence |
+| 3 | [Review](../stages/review.md) | Final review/checks, covered delivery, and required human PR review |
 | 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
 
 ## Output

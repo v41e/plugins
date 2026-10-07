@@ -24,7 +24,10 @@ approval evidence, local artifacts, and optional remote records.
    material changes since approval visible and return to the earliest affected
    gate; reuse unaffected decisions and approvals. Retire stale artifacts,
    consolidate redundant records, and split independently prioritizable
-   outcomes before implementation when useful.
+   outcomes before implementation when useful. Retain human-reserved comparison
+   evidence until its purpose is complete and removal is authorized; an `-old`
+   suffix alone does not make it stale. Interpret mixed feedback per outcome:
+   authorized corrections may proceed; exploration and deferred ideas stay proposals.
 3. Classify the work and read one workflow:
 
    - [Feature](references/workflows/feature.md): new or materially expanded capability.
@@ -34,14 +37,21 @@ approval evidence, local artifacts, and optional remote records.
 
 4. Resume the first unmet stage in workflow order using its linked contract.
    Existing evidence can satisfy earlier gates without restarting completed
-   methods. For a needed Design, Plan, or Review handoff, record the owning
-   context's sequence: author supplies the exact artifact/revision and approved
-   intent → suitable existing reviewer inspects → author validates findings and
-   fixes supported ones → human judges the final result. Reuse equivalent evidence
-   covering the relevant revision and scope; refresh evidence affected by corrections.
-   At material decision or review checkpoints, briefly identify
+   methods. For substantive Design, Plan, or Review, record the owning context's
+   handoff: exact artifact/revision and original intent, accepted decisions, and
+   relevant local examples → suitable independent review → validated corrections
+   and final-revision evidence → concise summary → required human decision.
+   The execution context obtains `artifact_reviewer` when available or equivalent
+   read-only review; Track does not select reviewers. Artifact review is distinct
+   from host tool-approval review. Reuse equivalent evidence for the same revision
+   and scope; refresh affected evidence after corrections. Solicit approval only
+   after review and supported corrections cover the final artifact, including
+   interactive questions. At material decision or review checkpoints, identify
    **Human decision**, **Agent evidence**, and **Remaining uncertainty** in the
-   existing artifact or checkpoint response. Omit this framing for trivial work.
+   existing artifact or response. Briefly name its reviewed identity, contracts,
+   risks, consequential assumptions, intentional differences, findings, and
+   evidence limits; link details. Summary approval covers its exact artifact;
+   full spec/plan reading is not an additional gate. Omit framing for trivial work.
 5. Record the contract, evidence, approval, and delivery state using existing
    surfaces. For remote synchronization, use the relevant platform mapping:
 
@@ -50,7 +60,11 @@ approval evidence, local artifacts, and optional remote records.
 
 6. Hand missing engineering work to the owning execution context with the
    authorized contract, approved decisions and steps, existing evidence, and
-   remaining gate. For supplied method evidence, use the installed integration:
+   remaining gate. The execution owner investigates options and established
+   native/library/local patterns, chooses and discloses routine defaults, and
+   presents unsettled material choices for human decision. Continue independent
+   authorized preparation while dependent work waits. For supplied method
+   evidence, use the installed integration:
 
    - [Superpowers](references/integrations/superpowers.md): engineering-method
      evidence supplied to tracking gates.
@@ -81,8 +95,13 @@ the interfaces or passages needing human judgment.
   records or plugins require no setup and do not block work.
 - Latest restrictions win. Access, drafts, status, and silence are not approval.
   Reuse settled authorization; preserve execution, review, commit, push, and
-  delivery-record grants separately.
-  Separate plan approval follows human intent or repository policy; unresolved
-  material human choices and required approvals remain gates.
+  delivery-record scope, including grants covered by an approved delivery route.
+- Substantive work has material product, architecture, contract, ownership,
+  security, or scope choices, or a nontrivial implementation needing settled
+  design and steps. Require separate spec then plan/execution approvals, including
+  within Task Scope and Bug Triage. Routine low-risk work with a settled solution
+  stays direct unless human or repository policy requires gates. Reversibility
+  alone does not make a material choice routine. Explicit directions and stricter
+  applicable policy win; reopen only materially affected approvals.
 - Tracking state is not proof. Obtain missing or stale evidence from the
   execution context; never weaken a failed check or expand scope to pass a gate.

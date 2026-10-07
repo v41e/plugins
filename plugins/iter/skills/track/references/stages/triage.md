@@ -16,8 +16,11 @@ Observed behavior that may contradict an expectation.
    agent-discovered failure may proceed with sufficient evidence.
 3. Hand missing diagnosis, reproduction, or acceptance work to the execution
    context and record its returned evidence.
-4. Record design decisions and implementation steps when the fix needs them,
-   execution authority, and any required approvals within Triage.
+4. For substantive fixes, apply [Design](design.md) then [Plan](plan.md) checkpoints
+   inside Triage: independent final-spec review/corrections and summary before
+   human spec approval, then independent plan review/corrections and summary before
+   separate plan/execution approval. Record the stated delivery scope. Keep Bug
+   classification; routine settled fixes stay direct unless policy requires gates.
 
 ## Output
 
