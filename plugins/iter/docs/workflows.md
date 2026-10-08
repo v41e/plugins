@@ -30,39 +30,33 @@ ownership, security, and scope choices for a focused human decision. A reversibl
 choice can still be material. Questions and exploration do not grant execution;
 continue independent authorized preparation while dependent choices wait.
 
-[Track](../skills/track/SKILL.md) records substantive checkpoints inside existing
-stages: independent final-artifact review and corrections precede a concise
-summary, then separate human spec and plan/execution approvals. Task Scope and
-Bug Triage apply the same checkpoints internally. Routine settled work stays
-proportional. Summary approval covers its identified artifact; full reading adds
-no gate. The execution context obtains reviews against original intent, accepted
-decisions, and relevant local examples; checks alone do not prove alignment.
+[Track](../skills/track/SKILL.md) records the selected workflow's gates:
+[Feature](../skills/track/references/workflows/feature.md) uses the same Review
+contract for its draft, specification, plan, and implementation. Idea review and
+summary stay quick for early human feedback. [Task](../skills/track/references/workflows/task.md)
+and [Bug](../skills/track/references/workflows/bug.md) settle their problem,
+solution, and authority through proportional evidence and discussion, then review
+the implementation; they do not automatically inherit draft/spec/plan approvals.
+Workflows own all stage relationships; stages describe their own responsibilities.
 
-The [Plan](../skills/track/references/stages/plan.md) states delivery scope.
-[Review](../skills/track/references/stages/review.md) records final review/checks
-and covered PR publication before human PR review, unless an explicit local
-checkpoint or publication hold applies. Reuse unchanged approvals/evidence;
-reopen materially affected gates. Human integration decisions and verification
-of the actual integrated result remain prerequisites for Complete.
+[Review](../skills/track/references/stages/review.md) records independent evidence,
+supported corrections, a concise identified-artifact summary, and the human
+decision required by the workflow. The execution context obtains suitable review
+against original intent, accepted decisions, and relevant local examples; checks
+alone do not prove alignment. Approved execution scope can cover PR publication
+after checks/review without another discretionary checkpoint. Explicit holds,
+human PR review/integration, and actual integrated-result verification still bind.
+Reuse unaffected approvals and equivalent evidence; summary approval adds no
+mandatory full-artifact reading gate.
 
 ## Interactive Goals
 
-A [native Goal](https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex)
-is a finite objective in its owning chat. Specify **Task**, **Expected Outcomes**,
-and **Constraints**: the outcome, evidence-based finish line, material decisions,
-and delivery boundary. Persistence supplies no new scope or authority. Reconcile
-current work and approvals before proposing the next useful outcome.
-
-Brief supports read-only focus; Track records state; the owning execution
-context and engineering methods perform research, review, and approved work.
-Bounded subagents may help; Orchestrate remains the distinct authorized route
-for sequential project-owned chat dispatch, not a parallel-team manager.
-
-A separately authorized [scheduled follow-up](https://learn.chatgpt.com/docs/automations)
-may wake the same chat under verified host capabilities. Notify on meaningful
-change, completion, failure, or a needed decision; stay quiet while unchanged or
-non-actionable. A wakeup supplies no consent and never resumes explicitly paused
-work. This composition requires no new coordinator, runtime, or schedule.
+Native Goals and separately authorized same-chat follow-ups compose with existing
+skills through the [Track Codex mapping](../skills/track/references/harnesses/codex.md).
+Brief supports read-only focus; Track records state; the owning execution context
+performs research, review, and approved work. Orchestrate remains the distinct
+route for authorized sequential project-chat dispatch. No coordinator or runtime
+is bundled.
 
 ## Signals and harnesses
 

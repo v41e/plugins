@@ -35,7 +35,7 @@ Run from this directory:
 
 - Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
 
-## Verification
+## Checks
 
 - Check both manifests' identity fields, shared release version, and discovery paths.
 - Read changed skills with affected references; check approvals, tracking,

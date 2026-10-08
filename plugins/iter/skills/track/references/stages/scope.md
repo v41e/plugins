@@ -2,29 +2,27 @@
 
 ## Purpose
 
-Track a proportional Task contract, including its design and plan when needed.
+Track a proportional Task problem, proposed solution, and execution authority.
 
 ## Input
 
-A Task needing a proportional work contract.
+A Task needing a proportional work contract, current direction, and any existing
+Issue discussion or supporting evidence.
 
 ## Workflow
 
 1. Record the problem, proposed solution, owner, and deterministic acceptance
    evidence. Include design decisions, implementation steps, alternatives, or
    context when useful.
-2. For substantive work, apply [Design](design.md) then [Plan](plan.md) checkpoints
-   inside Scope: independent final-spec review/corrections and summary before
-   human spec approval, then independent plan review/corrections and summary before
-   separate plan/execution approval. Preserve Task classification and proportional
-   artifacts; record the stated delivery scope. Routine settled work stays direct
-   unless human or repository policy requires gates.
+2. Record focused human agreement for unsettled material decisions and applicable
+   policy approvals, proportional steps, execution authority, and delivery scope.
+   Reuse existing discussion and records; a settled low-risk correction needs no
+   new artifact or record merely to establish its contract.
 
 ## Output
 
-Work contract, evidence, and authorization. A scoping-only request ends here;
-otherwise advance to Implement when scope and execution authority are understood
-and required approvals are satisfied.
+Understood problem and solution, acceptance evidence, proportional steps,
+authorization, and any unresolved material decision.
 
 ## Rules
 

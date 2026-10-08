@@ -2,11 +2,12 @@
 
 ## Purpose
 
-Track a confirmed defect and the proportional design and plan for its fix.
+Track a confirmed defect, diagnosis, proposed correction, and execution authority.
 
 ## Input
 
-Observed behavior that may contradict an expectation.
+Observed behavior that may contradict an expectation, current direction, and any
+existing Issue discussion or supporting evidence.
 
 ## Workflow
 
@@ -16,17 +17,16 @@ Observed behavior that may contradict an expectation.
    agent-discovered failure may proceed with sufficient evidence.
 3. Hand missing diagnosis, reproduction, or acceptance work to the execution
    context and record its returned evidence.
-4. For substantive fixes, apply [Design](design.md) then [Plan](plan.md) checkpoints
-   inside Triage: independent final-spec review/corrections and summary before
-   human spec approval, then independent plan review/corrections and summary before
-   separate plan/execution approval. Record the stated delivery scope. Keep Bug
-   classification; routine settled fixes stay direct unless policy requires gates.
+4. Record the proposed correction, proportional steps, focused human agreement
+   for unsettled material decisions, applicable policy approvals, execution
+   authority, and delivery scope. Reuse existing discussion and records; a settled
+   low-risk fix needs no new artifact or record merely to establish its contract.
 
 ## Output
 
-Confirmed defect, acceptance evidence, and authorization, or the unmet gate.
-Advance to Implement only when the gate is satisfied.
+Confirmed defect and diagnosis, proposed correction, acceptance evidence,
+proportional steps, authorization, and any unresolved material decision.
 
 ## Rules
 
-- Missing defect or acceptance evidence blocks advancement; do not invent a fix.
+- Missing defect or acceptance evidence remains unresolved; do not invent a fix.

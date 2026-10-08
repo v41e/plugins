@@ -2,42 +2,51 @@
 
 ## Purpose
 
-Track supplied reviews, the human's delivery judgment, and authorized delivery
-state.
+Track supplied independent artifact review, its concise summary, and the human
+decision specified by the selected workflow.
 
 ## Input
 
-The complete change with passing affected and required checks.
+Artifact kind and required human decision from the workflow; exact artifact or
+change revision, original intent, accepted decisions, relevant local examples,
+supplied review/correction evidence, and applicable authority. Implementation
+artifacts also need passing affected and required checks.
 
 ## Workflow
 
-1. For substantive work, record independent review and passing affected/required
-   checks covering the exact final revision, generated output, and compatibility
-   boundary. Review original intent, accepted decisions, and relevant local
-   examples; judge behavior, general logic, contracts, docs, simplicity, and
-   readiness as well as defects. Passing tests alone do not prove alignment.
-2. Record supported corrections, refreshed final-revision evidence, and the
-   concise delivery summary using Track's handoff. Reuse equivalent supplied
-   review; a narrower code-defect review covers only the judgment it performed.
-3. Record the stated delivery authority. When an approved plan/execution scope
-   covers focused PR delivery under repository policy, checks and review permit
-   the owning context to commit, push, and publish that PR without another
-   discretionary publication question or pre-push human checkpoint. Human review
-   then occurs on the published PR. Explicit local-only, publication holds, or
-   required local human review still bind; retain an unmet checkpoint until
-   approved or explicitly waived. Record actual delivery evidence and material notes.
-4. Distinguish local checks and review from remote checks and review. Requested
-   changes return to Implement with delivery open, followed by renewed checks
-   and review.
+1. Require independent supplied review suited to the artifact and its original
+   intent, accepted decisions, and local examples. Draft review is quick: check
+   the intended outcome, scope, and important uncertainties without demanding a
+   detailed design or plan. Specification review covers contracts, architecture,
+   scope, and simplicity; plan review covers steps, dependencies, and delivery
+   boundaries; implementation review covers behavior, logic, contracts, docs,
+   simplicity, readiness, generated output, and compatibility as well as defects.
+2. Record validated findings, supported corrections, and final-revision evidence.
+   Reuse equivalent supplied review; narrower evidence covers only the judgment
+   it performed. Missing review or stale evidence remains an unmet requirement.
+3. Record the concise summary using Track's handoff. Draft, specification, and
+   plan approvals follow review and supported corrections of the final artifact.
+   Keep an idea summary to a few sentences; other summaries remain proportional.
+   Record the exact approved artifact and covered authority.
+4. For implementation delivery, require passing checks and final independent
+   review before covered commit/push/PR publication by the owning context. No
+   discretionary pre-push checkpoint is needed for authorized PR delivery;
+   record actual publication and the subsequent human PR decision separately.
+   The implementation human checkpoint follows the covered delivery route,
+   normally the published PR; explicit local-only, publication holds, or required
+   local human review still bind. Distinguish local evidence from remote checks
+   and reviews for the exact PR head.
 
 ## Output
 
-Review outcome, delivery state, and outstanding human or integration gate.
-Advance to Complete only after required reviews and authorized integration.
+Artifact kind and revision, supplied review/correction evidence, concise summary,
+human decision and authority, delivery state where applicable, and unmet requirements.
 
 ## Rules
 
 - Review methods and delivery belong to the owning execution context.
+- Passing checks alone do not prove intent or architecture alignment. Artifact
+  review is distinct from host tool-approval review.
 - Existing commits remain valid review inputs; do not uncommit resumed work to
   manufacture a working-tree diff.
 - The delivery owner follows repository Git policy and configured signing.

@@ -55,7 +55,7 @@ no-op from insufficient evidence.
   Do not list saved projects, dispatch project-owned tasks, or edit other projects.
 - Signals, drafts, status, silence, and access are not authorization. Reuse
   existing approvals and their covered execution, human review, commit, push,
-  and PR scope. An approved plan naming PR delivery covers publication after
+  and PR scope. Agreed execution scope naming PR delivery covers publication after
   checks/review without another discretionary pre-push checkpoint; human review
   occurs on the PR. Explicit local-only, publication holds, or required local
   human review win. Unapproved ideas remain proposals.
