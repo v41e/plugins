@@ -10,15 +10,23 @@ Observed behavior that contradicts an expectation and its existing evidence.
 
 ## Workflow
 
-Resume the first unmet stage. Triage includes the fix's design and plan work when
-needed; it does not add separate Feature gates.
+Resume the first unmet stage. Confirm the defect and correct solution from
+reproduction, diagnosis, evidence, and existing discussion, with focused human
+agreement on unsettled material choices. Bug does not automatically add draft,
+spec, or plan stages and approvals; explicit direction or repository policy applies.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
-| 1 | [Triage](../stages/triage.md) | Confirmed defect, diagnosis, acceptance evidence, and execution authority |
+| 1 | [Triage](../stages/triage.md) | Confirmed defect/diagnosis, proposed correction, acceptance evidence, and execution/delivery authority |
 | 2 | [Implement](../stages/implement.md) | Complete fix and passing regression evidence |
-| 3 | [Review](../stages/review.md) | Required review and authorized delivery evidence |
+| 3 | [Review](../stages/review.md) (change/PR) | Independent final-change review/checks before covered publication; concise summary, human PR review, and authorized integration |
 | 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
+
+Unresolved defect, diagnosis, solution, or authority remains at Triage. Fix
+corrections return to Implement, followed by Review with current evidence;
+materially changed scope needs focused human agreement. Missing integrated
+verification remains at Complete; changed implementation needs renewed Implement
+and Review evidence.
 
 ## Output
 

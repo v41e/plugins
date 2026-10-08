@@ -23,7 +23,7 @@ and nearest local instructions. Use `locus:find` when the owner or source is unc
 | ------- | ------- |
 | README.md; `packages/**/README.md` | Human entrypoints: purpose, shortest working start, source navigation, owner links. |
 | AGENTS.md; `packages/**/AGENTS.md` | Working instructions: boundaries, routing, commands, checks, source/generator rules. |
-| docs/README.md | Documentation index: subjects and one-line owner links. |
+| docs/README.md | Documentation entrypoint: Overview, Structure, and one-line owner links. |
 | docs/AGENTS.md | Instructions for maintaining docs and their sources. |
 | ARCHITECTURE.md | Standard architecture overview: system boundaries, components, flows, constraints, and design sources. |
 | Topic pages under docs/ | Explanations, architecture, reference contracts, guides, durable decisions. |

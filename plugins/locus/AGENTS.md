@@ -34,8 +34,9 @@ Run from this directory:
 
 - Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
 
-## Verification
+## Checks
 
+- There is no compiled build or runtime test suite; CI checks JSON and whitespace.
 - For manifest changes, check both manifests' identity fields and discovery paths.
 - For skill changes, read the entrypoint and affected references together; check
   routing, authorization, and completion boundaries.

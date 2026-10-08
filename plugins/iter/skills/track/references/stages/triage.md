@@ -2,11 +2,12 @@
 
 ## Purpose
 
-Track a confirmed defect and the proportional design and plan for its fix.
+Track a confirmed defect, diagnosis, proposed correction, and execution authority.
 
 ## Input
 
-Observed behavior that may contradict an expectation.
+Observed behavior that may contradict an expectation, current direction, and any
+existing Issue discussion or supporting evidence.
 
 ## Workflow
 
@@ -16,14 +17,16 @@ Observed behavior that may contradict an expectation.
    agent-discovered failure may proceed with sufficient evidence.
 3. Hand missing diagnosis, reproduction, or acceptance work to the execution
    context and record its returned evidence.
-4. Record design decisions and implementation steps when the fix needs them,
-   execution authority, and any required approvals within Triage.
+4. Record the proposed correction, proportional steps, focused human agreement
+   for unsettled material decisions, applicable policy approvals, execution
+   authority, and delivery scope. Reuse existing discussion and records; a settled
+   low-risk fix needs no new artifact or record merely to establish its contract.
 
 ## Output
 
-Confirmed defect, acceptance evidence, and authorization, or the unmet gate.
-Advance to Implement only when the gate is satisfied.
+Confirmed defect and diagnosis, proposed correction, acceptance evidence,
+proportional steps, authorization, and any unresolved material decision.
 
 ## Rules
 
-- Missing defect or acceptance evidence blocks advancement; do not invent a fix.
+- Missing defect or acceptance evidence remains unresolved; do not invent a fix.

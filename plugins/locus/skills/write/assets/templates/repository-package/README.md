@@ -11,7 +11,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified downward local paths. Follow the local navigation contract in references/targets/repository.md.
+<!-- Replace this example with verified downward local paths. All repository-file links in this entrypoint stay within the package; verified external official references are permitted. Follow the local navigation contract in references/targets/repository.md.
 
 - [`src/`](src/): main implementation
   - [`entrypoint.ts`](src/entrypoint.ts): primary entrypoint
@@ -21,7 +21,7 @@
 
 ## Quickstart
 
-<!-- Show the shortest working path for this package's user: a library call, CLI invocation, service startup, or plugin installation. Include setup and verification only as needed; replace these example actions. -->
+<!-- Show the shortest working path for this package's user: a library call, CLI invocation, service startup, or plugin installation. Preserve useful install/setup/use instructions and include checks only as needed; replace these example actions. -->
 
 - **Build**:
 

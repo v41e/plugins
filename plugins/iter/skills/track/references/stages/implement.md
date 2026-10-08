@@ -22,7 +22,6 @@ An understood authorized contract with required approvals satisfied.
 ## Output
 
 Complete scoped change and passing evidence, or the missing evidence and handoff.
-Advance to Review only when the gate is satisfied.
 
 ## Rules
 

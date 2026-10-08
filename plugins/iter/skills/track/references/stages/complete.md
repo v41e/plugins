@@ -11,7 +11,7 @@ Required reviews passed and the authorized integration boundary was reached.
 ## Workflow
 
 1. Confirm reconciliation and artifact cleanup were included in the reviewed
-   result. Return missing changes through Implement and Review.
+   result. Report missing changes to the execution context.
 2. Require evidence covering the actual integrated result and environment.
    Hand missing, stale, or policy-required verification to the execution context.
 3. Correct linked formal records and mapped done state only when authorized and
