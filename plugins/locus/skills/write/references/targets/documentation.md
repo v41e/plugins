@@ -23,8 +23,10 @@ Subject, audience, verified sources, and the current documentation owner.
    Guardrails. Verify claims against code, tests, configuration, approved decisions,
    and generators; identify non-obvious editable inputs when useful without a
    mandatory Sources inventory. Check changed facts, links, commands, examples,
-   and relevant output; keep topic explanations in their owners.
-   Include Code Review Rules only when verified, scoped review priorities add
+   and relevant output; keep topic explanations in their owners. Optional Code
+   Style inherits team conventions and adds only verified documentation/example
+   differences; preserve formatter/linter and public docstring ownership.
+   Include Code Review only when verified, scoped review priorities add
    value beyond inherited guidance, existing contracts, Guardrails, and Checks.
    Link the owning rules rather than copying them; otherwise omit
    the section. Keep intended, implemented, and verified live state distinct.

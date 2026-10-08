@@ -16,7 +16,7 @@
 
 ## Tech Stack
 
-<!-- Optional. Retain dependency roles, relevant version/mode/target constraints, and verified official links with when to consult them. Include build/generation tooling when it affects edits; omit manifest inventories and unused categories. Follow the References guidance for source format. -->
+<!-- Optional. Retain dependency roles, relevant version/mode/target constraints, and verified official links with when to consult them. Include build/generation tooling when it affects edits; omit manifest inventories and unused categories. Keep useful source links and when to consult them in their corresponding sections. Prefer verified official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. -->
 
 - **Language/runtime**: <!-- e.g., TypeScript + Node 20, Python 3.13 -->
 - **Framework**: <!-- e.g., FastAPI, Typer, CDK, React -->
@@ -43,7 +43,7 @@
 
 <!-- Optional. Inherit root/team conventions. Add only applicable verified language/framework references and local differences; repository-file links stay within this package. Preserve formatter/linter configuration and existing public docstring conventions. Do not repeat root guidance or create a generic design chapter. -->
 
-## Code Review Rules
+## Code Review
 
 <!-- Optional. Omit this section unless verified package-specific review
 priorities add to inherited review guidance and existing contracts, Guardrails,
@@ -56,9 +56,3 @@ and Testing/Checks. Link local owning compatibility or consumer rules rather tha
 - <!-- Generated-vs-source boundary rule -->
 - <!-- Important local side-effect rule -->
 - <!-- Approval boundary or sensitive action rule -->
-
-## References
-
-<!-- Optional. Link useful package-local sources or verified external official references not already owned by Tech Stack or Code Style, with when to consult each. Prefer official Markdown or agent documentation; llms.txt aids discovery, and applicable official HTML is a fallback. Keep repository-file links inside this package; omit duplicates and empty sections. -->
-
-- [<!-- Source -->](<!-- URL -->): <!-- When to consult it -->

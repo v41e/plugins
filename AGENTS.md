@@ -23,7 +23,7 @@ owning directory under `plugins/`.
 
 - Metadata: `jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json plugins/iter/plugin.json plugins/iter/.codex-plugin/plugin.json`.
 
-## Verification
+## Checks
 
 - CI checks JSON syntax and whitespace; it does not validate schemas or skill
   behavior. There is no compiled build or runtime test suite.
@@ -33,18 +33,21 @@ owning directory under `plugins/`.
 - For docs, check affected links and facts; follow the owning plugin's `AGENTS.md`
   for skill and template checks.
 
-## Guardrails
+## Code Style
 
-- Keep private information, credentials, and personal knowledge maps out of
-  this public repository.
-- Treat marketplace and plugin distribution changes as supply-chain changes.
-- Keep implementations and plugin-specific guidance inside the owning plugin.
 - Skills, modes, workflows, and stages use `Purpose`, `Input`, `Workflow`,
   `Output`, and `Rules` in that order. Put routing inside the relevant section.
   Using skills are concise inventories: `Purpose`, `Skills`, and `Requirements`.
 - Platform and integration references map concepts or conditions to concrete
   capabilities and their semantics; they do not define a second workflow.
   Conditional capability tables use `When`, `Capability`, and `Result`.
+
+## Guardrails
+
+- Keep private information, credentials, and personal knowledge maps out of
+  this public repository.
+- Treat marketplace and plugin distribution changes as supply-chain changes.
+- Keep implementations and plugin-specific guidance inside the owning plugin.
 - Preserve unrelated worktree changes.
 - Do not release, publish, mutate external systems, or run destructive commands
   unless the user explicitly requests it.

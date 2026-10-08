@@ -53,9 +53,6 @@ of copying explanations or configuration reference into them.
    named documents: identify useful or uncertain content it would discard and
    resolve ambiguous scope before replacing. Detection, advice, and dry runs return
    placements without writing. Update the generator when it owns the output.
-   Retain human-reserved examples or comparison evidence through the review they
-   support; an `-old` suffix alone does not establish obsolescence. Retire them
-   only when their purpose is complete and current authorization covers removal.
 4. Check affected facts, links, commands, examples, and generated output together.
 
 ## Output

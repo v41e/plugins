@@ -19,7 +19,10 @@ The selected root or package, its actual source layout, and existing entrypoints
    two paragraphs and Configuration as a link to its topic owner.
 2. **AGENTS.md:** give agents editing boundaries, verified commands and checks,
    generator ownership, and reasons to consult authoritative references. Include
-   dependency constraints only when they affect an edit; link their owner.
+   dependency constraints only when they affect an edit; link their owner. Put
+   useful source links and when to consult them in their corresponding sections,
+   not a separate References inventory. Prefer verified official Markdown or
+   agent documentation; applicable official HTML is a fallback.
    Use Setup & Build for install/build/run entrypoints and Testing for focused/full
    tests, lint, typecheck, required extra checks, and honest coverage or side-effect
    limits. Follow affected behavior and repository policy, not a blanket full-suite
@@ -31,7 +34,7 @@ The selected root or package, its actual source layout, and existing entrypoints
    spacing, selective semantic comment prefixes, and public docstring conventions.
    Packages inherit root policy and add only relevant language/framework references
    or differences. Do not impose a guide, editor, tag taxonomy, or new style skill.
-   Include Code Review Rules only when verified, scoped review priorities add
+   Include Code Review only when verified, scoped review priorities add
    value beyond inherited guidance, existing contracts, Guardrails, and Testing/Checks.
    Link the owning rules rather than copying them; otherwise omit the section.
 3. **Structure in both:** map relevant local sources, important modules, source

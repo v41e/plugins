@@ -16,7 +16,11 @@
 
 <!-- Verify changed claims against code/tests/configuration and approved decisions. Check facts, links, commands, examples, version-sensitive references, and relevant output. Include generator checks only when applicable; keep useful source pointers beside their owning passage. -->
 
-## Code Review Rules
+## Code Style
+
+<!-- Optional. Inherit root/team conventions; add only verified documentation or code-example differences. Preserve existing formatter/linter configuration and public docstring conventions; link the scoped owner rather than repeating inherited guidance. -->
+
+## Code Review
 
 <!-- Optional. Omit this section unless verified documentation-specific review
 priorities add to inherited review guidance, existing contracts, Guardrails,
