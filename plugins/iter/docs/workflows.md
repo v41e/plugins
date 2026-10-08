@@ -20,6 +20,44 @@ choosing work. An already owned outcome is resumed only when it belongs to this
 assignment; another owner's work stays with that owner. Locus Find and Write can
 help resolve content ownership and reconcile documentation when installed.
 
+## Supervised work
+
+The owning copilot investigates and recommends within the agreed outcome.
+Compare native/library capabilities, workload, and established local patterns
+before adding machinery. Choose routine defaults and disclose consequential
+assumptions; present unsettled material product, architecture, contract,
+ownership, security, and scope choices for a focused human decision. A reversible
+choice can still be material. Questions and exploration do not grant execution;
+continue independent authorized preparation while dependent choices wait.
+
+[Track](../skills/track/SKILL.md) records the selected workflow's gates:
+[Feature](../skills/track/references/workflows/feature.md) uses the same Review
+contract for its draft, specification, plan, and implementation. Idea review and
+summary stay quick for early human feedback. [Task](../skills/track/references/workflows/task.md)
+and [Bug](../skills/track/references/workflows/bug.md) settle their problem,
+solution, and authority through proportional evidence and discussion, then review
+the implementation; they do not automatically inherit draft/spec/plan approvals.
+Workflows own all stage relationships; stages describe their own responsibilities.
+
+[Review](../skills/track/references/stages/review.md) records independent evidence,
+supported corrections, a concise identified-artifact summary, and the human
+decision required by the workflow. The execution context obtains suitable review
+against original intent, accepted decisions, and relevant local examples; checks
+alone do not prove alignment. Approved execution scope can cover PR publication
+after checks/review without another discretionary checkpoint. Explicit holds,
+human PR review/integration, and actual integrated-result verification still bind.
+Reuse unaffected approvals and equivalent evidence; summary approval adds no
+mandatory full-artifact reading gate.
+
+## Interactive Goals
+
+Native Goals and separately authorized same-chat follow-ups compose with existing
+skills through the [Track Codex mapping](../skills/track/references/harnesses/codex.md).
+Brief supports read-only focus; Track records state; the owning execution context
+performs research, review, and approved work. Orchestrate remains the distinct
+route for authorized sequential project-chat dispatch. No coordinator or runtime
+is bundled.
+
 ## Signals and harnesses
 
 A timer or supported event can supply a repository, resource link, revision or

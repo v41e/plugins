@@ -11,16 +11,13 @@ A Feature idea without a settled repository contract.
 ## Workflow
 
 1. Record one refined outcome, scope, human direction, and ownership when known.
-2. Keep local drafts and mapped backlog records optional. Their absence or
-   unresolved ownership does not block Design in chat or a cross-repository
-   planning surface.
+2. Keep the idea brief and mapped backlog records optional. Unresolved ownership
+   stays explicit; it does not require a repository artifact or remote record.
 
 ## Output
 
-Refined outcome and remaining questions. An ideation-only request ends here;
-otherwise advance to Design when the outcome is clear.
+One concise draft outcome, scope, known ownership, and remaining questions.
 
 ## Rules
 
-- Formal work records, specifications, plans, branches, and implementation
-  belong to later gates.
+- An idea or backlog record supplies no execution or delivery authority.

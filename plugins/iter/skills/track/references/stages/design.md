@@ -2,32 +2,26 @@
 
 ## Purpose
 
-Track a settled Feature design and its review and approval state.
+Track the supplied specification and its material decisions.
 
 ## Input
 
-A refined Feature outcome needing a settled design.
+A refined outcome, agreed intent and constraints, and supplied design evidence.
 
 ## Workflow
 
-1. Require the settled problem, outcome, decisions, constraints, interfaces,
-   verification, and non-goals at proportional depth.
-2. Record supplied review and author corrections for the exact specification
-   revision against approved intent. Human judgment covers contracts,
-   architecture, and simplicity, with any required design approval. Keep
-   unresolved material choices explicit.
-3. Once settled and required approvals are satisfied, create or promote a formal
-   work record only when a repository contract is required. When it and an
-   approved local specification both exist, publish the specification using the
-   selected platform's snapshot mapping.
+1. Record the problem, outcome, decisions, constraints, interfaces, verification,
+   and non-goals in the supplied specification at proportional depth.
+2. Identify its exact revision, original intent, accepted decisions, and relevant
+   local examples. Keep unresolved material choices and evidence limits explicit.
 
 ## Output
 
-Settled design, evidence, and approval state. A design-only request ends here;
-otherwise advance to Plan when the gate is satisfied.
+An identified specification, supplied design evidence, and any unresolved
+material choices.
 
 ## Rules
 
-- Missing design work returns to the owning context; Track records its result.
-  Spec review judges the proposed contract and design; code-defect review does
-  not substitute for that judgment.
+- The owning context authors the design; Track records the supplied result.
+- Specification existence establishes neither human approval nor execution
+  authority. Approval-dependent promotion and snapshots require supplied approval.

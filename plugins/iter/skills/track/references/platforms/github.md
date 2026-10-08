@@ -31,7 +31,7 @@ configuration.
 | An approved local specification/design or plan has an owning Issue | Separate Issue comments | Publish each approved snapshot separately, with local-only tracking metadata removed. |
 | The selected workflow is ready for implementation | Mapped ready status and Priority/Effort | Synchronize ready state and understood priority/effort after required gates. |
 | Implementation actually begins | Mapped active status and Start Date | Record actual start; stage names alone do not establish execution. |
-| The delivery owner supplies an existing PR for review | Existing PR and mapped review status | Record its identity, required local checkpoint, and delivery authority from supplied evidence; collect checks and reviews for its exact head. Keep delivery open during corrections. |
+| The delivery owner supplies an existing PR for review | Existing PR and mapped review status | Record its identity, approved delivery scope and any explicit hold/local checkpoint; collect supplied local evidence and remote checks/reviews for its exact head. Keep delivery open during corrections and human PR review. |
 | The PR targets a non-default branch | Manual Issue link | Link its Issue explicitly; closing keywords create neither the link nor automatic closure. |
 | Authorized integration and completion verification are established | Linked Issue and mapped done status | Verify closure and done state; correct only authorized state. Non-default-target links or references may need explicit Issue closure. |
 
