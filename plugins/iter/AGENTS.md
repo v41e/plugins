@@ -39,7 +39,6 @@ methods in their owning skills.
 Run from this directory:
 
 - Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
-- Inherit root Markdown check/fix commands; use this directory as the target.
 - Check both manifests' identity fields, shared release version, and discovery
   paths.
 - Read changed skills with affected references; check approvals, tracking,
