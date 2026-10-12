@@ -37,7 +37,6 @@ workflow behavior; client metadata only adapts package discovery.
 Run from this directory:
 
 - Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
-- Inherit root Markdown check/fix commands; use this directory as the target.
 - There is no compiled build or runtime test suite; CI checks Markdown, JSON,
   and whitespace.
 - For manifest changes, check both manifests' identity fields and discovery

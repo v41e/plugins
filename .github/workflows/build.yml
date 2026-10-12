@@ -16,13 +16,11 @@ jobs:
           fetch-depth: 0
       - name: Validate JSON
         run: jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json plugins/iter/plugin.json plugins/iter/.codex-plugin/plugin.json
-      - name: Set up uv
-        uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
-        with:
-          version: "0.13.0"
-          enable-cache: false
       - name: Check Markdown
-        run: uvx rumdl==0.2.79 check --no-cache --deny-config-warnings --fail-on error .
+        uses: rvben/rumdl@a7a8434abe60f64239ea05624885f9bad66a1026 # v0.2.79
+        with:
+          version: "0.2.79"
+          args: --no-cache --deny-config-warnings --fail-on error
       - name: Check whitespace
         env:
           EVENT_NAME: ${{ github.event_name }}
