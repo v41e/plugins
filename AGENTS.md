@@ -38,10 +38,10 @@ Run from the repository root with rumdl **0.2.79**, the version pinned in CI:
 - Whitespace: `git diff --check`.
 
 CI runs read-only Markdown, JSON syntax, and whitespace checks. Markdown
-warnings remain visible; errors fail the check. The local configuration excludes
-temporary work notes and scopes exceptions to intentional template and GitHub
-link syntax. There is no compiled build or runtime test suite; checks do not
-validate schemas or skill behavior.
+warnings remain visible; errors fail the check. Drafts, specs, and plans follow
+the same Markdown policy. Exceptions cover intentional template and GitHub link
+syntax. There is no compiled build or runtime test suite; checks do not validate
+schemas or skill behavior.
 
 - For metadata changes, check catalog paths, README entries, shared manifest
   fields/order and release version. Homepages identify packages; repository URLs
