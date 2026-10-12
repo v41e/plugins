@@ -27,18 +27,22 @@
 
 ## Testing
 
-<!-- List verified focused/full tests, lint, and typecheck entrypoints as applicable. State actual CI/task coverage, required extra fact/link/generator/output checks, and material side effects or limits. Follow affected behavior and repository policy; report interrupted or incomplete checks honestly. Repeat checks after relevant changes or for diagnosis. Use Checks for a non-code owner without a test suite; do not invent one. -->
+<!-- Optional. List verified test commands; add only necessary coverage or setup notes and disclose snapshot updates or bundled fixes. -->
 
-- Focused test: `<!-- closest test command -->`
-- Full tests: `<!-- suite command -->`
-- Lint/typecheck: `<!-- applicable command -->`
+- Test: `<!-- test command -->`
+
+## Checks
+
+<!-- Optional. List verified read-only checks and safe-fix commands when available, plus necessary type, compatibility, or generated-output checks. Disclose side effects and reuse coverage from build/test tasks. Link the owning configuration or generator only when useful; packages inherit shared policy. Remove inapplicable entries. -->
+
+- Check: `<!-- read-only check command -->`
+- Fix: `<!-- safe-fix command -->`
 
 ## Code Style
 
 <!-- Optional. Team conventions live here or at their existing style owner; packages inherit them. Link only verified project-selected official guides and useful local overrides. Remove unused items and do not change tool configuration to imitate a guide. Keep longer contracts in their existing docs owner. -->
 
-- <!-- Link existing formatter/linter configuration and applicable commands; automated formatting follows those tools. -->
-- <!-- Link applicable language/framework conventions and useful local overrides, with when to consult them. -->
+- <!-- Link the existing standards owner or useful language/framework conventions; automated rules and commands belong in Checks. -->
 - <!-- Keep coherent statements/declarations and immediate error handling together; separate distinct logical blocks with blank lines, within formatter constraints. -->
 - <!-- If adopted locally, use semantic NOTE/INFO for orientation, TODO/FIXME for follow-up, and WARNING for a real hazard. Use normal language comment syntax; avoid tagging every comment or restating obvious code. -->
 - <!-- Link public docstring conventions for inputs, returns, errors, and material side effects. -->

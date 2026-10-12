@@ -4,7 +4,7 @@ Superpowers owns engineering methods, method selection, execution topology,
 and review procedures. Track consumes their results and preserves the work
 contract, required approvals, and tracking gates.
 
-## Evidence mapping
+## Evidence Mapping
 
 | When | Capability | Result |
 | ---- | ---------- | ------ |
@@ -14,17 +14,23 @@ contract, required approvals, and tracking gates.
 | Changed behavior supports an executable regression or acceptance check | `superpowers:test-driven-development` | Meaningful failing and passing checks under repository verification policy |
 | Independent work warrants parallel execution | `superpowers:dispatching-parallel-agents` | Owner-supplied results, resolved conflicts, and affected and required checks |
 | An approved plan needs execution | `superpowers:subagent-driven-development` / `superpowers:executing-plans` | Owner-selected execution, complete scoped change, reconciliation, and verification |
-| A substantive or policy-required change lacks equivalent code review | `superpowers:requesting-code-review` | Code-defect evidence toward the broader implementation review; draft/spec/plan judgment remains distinct |
+| A substantive or policy-required change lacks equivalent code review | `superpowers:requesting-code-review` | Evidence for the code-quality dimensions actually reviewed; draft/spec/plan judgment remains distinct |
 | Supplied code review requests changes | `superpowers:receiving-code-review` | Verified feedback, correction evidence, and remaining review or integration gate |
 | An integration or branch-delivery decision remains unsettled | `superpowers:finishing-a-development-branch` | Required decision and authorized delivery evidence; reuse covered PR authority, while method completion grants none |
 | Completion evidence is missing, stale, or does not cover the integrated result | `superpowers:verification-before-completion` | Verification of the actual integrated result and environment |
 
-Methods are optional and proportional to the selected work contract; their use
-does not add lifecycle stages or approval gates. Task and Bug do not inherit the
-Feature artifact pipeline. The owning context obtains suitable independent review
-and any judgment absent from narrower method evidence; a code-defect review is not
-draft/spec/plan review. Reuse supplied approvals and equivalent final-revision
-evidence.
+Methods inherit the caller's work contract, authority, and repository policy.
+Routine implementation choices remain with the execution owner; unsettled
+material scope, contract, or architecture choices require focused human
+direction. Method defaults do not add tracking stages or approval gates; Task
+and Bug do not inherit the Feature artifact pipeline.
+
+The owning context obtains required independent artifact judgment, including
+judgment absent from method evidence. Reuse the dimensions actually reviewed for
+the same revision; code review does not establish draft/spec/plan review.
+Self-review and passing tests do not replace independent judgment. After
+corrections, refresh affected independent evidence even when a method says to
+stop after tests; reuse unaffected approvals and evidence.
 
 Track records results and hands missing engineering work back to the execution
 context, including when Superpowers is unavailable. It neither selects executors

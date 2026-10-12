@@ -74,3 +74,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Markdown linter cache
+.rumdl_cache/
