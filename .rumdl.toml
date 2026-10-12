@@ -1,7 +1,6 @@
 [global]
 extend-enable = ["MD060", "MD063", "MD070", "MD080", "MD082", "MD083", "MD084", "MD085", "MD087", "MD089", "MD090", "MD091", "MD093", "MD095"]
 unfixable = ["MD070", "MD084"]
-exclude = ["docs/superpowers/**"]
 
 [MD003]
 style = "atx"
