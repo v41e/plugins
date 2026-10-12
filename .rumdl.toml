@@ -1,0 +1,55 @@
+[global]
+extend-enable = ["MD060", "MD063", "MD070", "MD080", "MD082", "MD083", "MD084", "MD085", "MD087", "MD089", "MD090", "MD091", "MD093", "MD095"]
+unfixable = ["MD070", "MD084"]
+exclude = ["docs/superpowers/**"]
+
+[MD003]
+style = "atx"
+
+[MD004]
+style = "dash"
+
+[MD013]
+line-length = 80
+code-blocks = false
+headings = false
+reflow = true
+
+[MD029]
+style = "ordered"
+
+[MD035]
+style = "---"
+
+[MD046]
+style = "fenced"
+
+[MD048]
+style = "backtick"
+
+[MD049]
+style = "asterisk"
+
+[MD050]
+style = "asterisk"
+
+[MD055]
+style = "leading-and-trailing"
+
+[MD060]
+style = "compact"
+aligned-delimiter = true
+
+[MD063]
+style = "title-case"
+ignore-words = ["AGENTS", "README", "Locus", "Iter", "Codex", "GitHub", "Markdown", "Mermaid", "D2"]
+
+[MD082]
+allow-parent-headings = true
+
+[per-file-ignores]
+# Support links are GitHub issue routes, not local files.
+"SUPPORT.md" = ["MD057"]
+# Templates intentionally contain placeholder destinations and empty sections.
+"plugins/locus/skills/write/assets/templates/**/*.md" = ["MD057", "MD082"]
+".github/PULL_REQUEST_TEMPLATE.md" = ["MD041", "MD082"]

@@ -33,11 +33,16 @@
 
 ## Testing
 
-<!-- Optional. List verified package-local tests/lint/typecheck and actual CI/task coverage, required extra fact/link/generator/output checks, and material side effects or limits. Follow root policy and affected behavior; add only package differences. Report interrupted/incomplete checks honestly. Use Checks when no test suite exists; remove unused entries. -->
+<!-- Optional. List verified local test commands; add only necessary coverage or setup notes and disclose snapshot updates or bundled fixes. -->
 
-- Focused test: `<!-- closest local test command -->`
-- Full tests: `<!-- local suite command -->`
-- Lint/typecheck: `<!-- applicable local command -->`
+- Test: `<!-- local test command -->`
+
+## Checks
+
+<!-- Optional. List verified local read-only checks and safe-fix commands when available, plus necessary type, compatibility, or generated-output checks. Disclose side effects and reuse coverage from build/test tasks. Link the owning configuration or generator only when useful; packages inherit shared policy. Remove inapplicable entries. -->
+
+- Check: `<!-- local read-only check command -->`
+- Fix: `<!-- local safe-fix command -->`
 
 ## Code Style
 

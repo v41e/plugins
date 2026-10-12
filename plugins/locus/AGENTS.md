@@ -8,7 +8,8 @@ workflow behavior; client metadata only adapts package discovery.
 ## Structure
 
 - [`examples/`](examples/): generic, publishable examples:
-  - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting point
+  - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting
+    point
 - [`skills/`](skills/): shared instruction-driven workflows:
   - [`find/`](skills/find/): owned-knowledge and active-work discovery
   - [`write/`](skills/write/): content ownership, reconciliation, and templates
@@ -16,32 +17,36 @@ workflow behavior; client metadata only adapts package discovery.
 - [`README.md`](README.md): human-facing plugin overview and quickstart
 - [`docs/`](docs/): configuration documentation
 - [`plugin.json`](plugin.json): portable package identity
-- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and interface
+- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and
+  interface
 
 ## Tech Stack
 
-- **Packaging**: [Agent Plugins v1.0.0](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md)
+- **Packaging**:
+  [Agent Plugins v1.0.0](https://raw.githubusercontent.com/agentplugins/agent-plugins-spec/refs/heads/main/spec/1.0.0.md)
   in `plugin.json`; consult when changing portable metadata or package layout.
 - **Instructions**: Markdown [Agent Skills](https://agentskills.io/llms.txt);
   use the agent index when changing skill format or resource-loading guidance.
-- **Codex compatibility**: [Plugin format](https://developers.openai.com/plugins/build/plugins)
-  in `.codex-plugin/plugin.json`; consult when changing skill discovery or
+- **Codex compatibility**:
+  [Plugin format](https://developers.openai.com/plugins/build/plugins) in
+  `.codex-plugin/plugin.json`; consult when changing skill discovery or
   interface metadata.
 
-## Commands
+## Checks
 
 Run from this directory:
 
 - Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
-
-## Checks
-
-- There is no compiled build or runtime test suite; CI checks JSON and whitespace.
-- For manifest changes, check both manifests' identity fields and discovery paths.
+- Inherit root Markdown check/fix commands; use this directory as the target.
+- There is no compiled build or runtime test suite; CI checks Markdown, JSON,
+  and whitespace.
+- For manifest changes, check both manifests' identity fields and discovery
+  paths.
 - For skill changes, read the entrypoint and affected references together; check
   routing, authorization, and completion boundaries.
 - For template changes, compare the target reference, matching templates under
-  `skills/write/assets/templates/`, and resulting document ownership and structure.
+  `skills/write/assets/templates/`, and resulting document ownership and
+  structure.
 
 ## Guardrails
 
@@ -53,5 +58,7 @@ Run from this directory:
 - Add a deterministic runtime only when instructions cannot reliably perform the
   required operation.
 - Keep examples and templates generic and safe to publish.
-- README and AGENTS own entrypoints and instructions; topic docs own explanations.
-- Locus owns content placement and structure; preserve the caller's writing style.
+- README and AGENTS own entrypoints and instructions; topic docs own
+  explanations.
+- Locus owns content placement and structure; preserve the caller's writing
+  style.
