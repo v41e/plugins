@@ -10,13 +10,16 @@ project context and installed methods such as Superpowers.
 
 - [skills/brief/](skills/brief/): read-only status, plan, and retrospective
 - [skills/track/](skills/track/): work contracts, approvals, and evidence gates
-- [skills/maintain/](skills/maintain/): bounded engineering or documentation maintenance
-- [skills/orchestrate/](skills/orchestrate/): authorized sequential project dispatch
+- [skills/maintain/](skills/maintain/): bounded engineering or documentation
+  maintenance
+- [skills/orchestrate/](skills/orchestrate/): authorized sequential project
+  dispatch
 - [skills/using/](skills/using/): skill selection
 - [docs/](docs/): workflow boundaries and integration guidance
 - [AGENTS.md](AGENTS.md): package instructions
 - [plugin.json](plugin.json): portable package identity
-- [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and interface
+- [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and
+  interface
 
 ## Quickstart
 

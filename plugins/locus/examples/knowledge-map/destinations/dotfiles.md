@@ -5,17 +5,20 @@ Dotfiles and local config managed by a source-controlled dotfiles repository.
 ## Inventory
 
 - **path**: `~/path/to/dotfiles/`.
-- **purpose**: source of truth for local configuration, agent setup, machine workflow, and reusable personal tooling.
+- **purpose**: source of truth for local configuration, agent setup, machine
+  workflow, and reusable personal tooling.
 
 ### Agents
 
 - **path**: `home/.agents/`.
-- **purpose**: runtime-independent agent prompt templates and shared agent resources.
+- **purpose**: runtime-independent agent prompt templates and shared agent
+  resources.
 
 ### Codex
 
 - **path**: `home/.codex/`.
-- **purpose**: Codex config, rules, agent instructions, permissions, and local Codex operating model.
+- **purpose**: Codex config, rules, agent instructions, permissions, and local
+  Codex operating model.
 
 ### Config
 

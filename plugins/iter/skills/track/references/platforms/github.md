@@ -1,6 +1,6 @@
 # GitHub Adapter
 
-## Capability resolution
+## Capability Resolution
 
 Before a tracking mutation, inspect only the repository, organization, and
 owning Project metadata needed for it. Map a logical concept only when a rename,
@@ -35,7 +35,7 @@ configuration.
 | The PR targets a non-default branch | Manual Issue link | Link its Issue explicitly; closing keywords create neither the link nor automatic closure. |
 | Authorized integration and completion verification are established | Linked Issue and mapped done status | Verify closure and done state; correct only authorized state. Non-default-target links or references may need explicit Issue closure. |
 
-## Issue contracts
+## Issue Contracts
 
 Follow repository Issue Forms when present. Otherwise:
 
@@ -72,5 +72,6 @@ local, browser, or manual validation.
 - Automatic merge eligibility follows a separate policy decision; PR types and
   green checks alone do not establish it.
 
-GitHub's [Issue linking rules](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
+GitHub's
+[Issue linking rules](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
 own closing-keyword and branch-target semantics.

@@ -7,4 +7,5 @@ their optional configuration.
 
 ## Structure
 
-- [Knowledge map](knowledge-map.md): optional cross-destination discovery configuration.
+- [Knowledge map](knowledge-map.md): optional cross-destination discovery
+  configuration.

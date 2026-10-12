@@ -30,8 +30,9 @@ than copying them. -->
 ## Guardrails
 
 - Integrate changes in the existing topic passage; README owns navigation.
-- Preserve approved intent, implemented behavior, and proposals as distinct states.
+- Preserve approved intent, implemented behavior, and proposals as distinct
+  states.
 - Edit generated documentation through its source and inspect affected output.
-- Reconcile overlapping or superseded guidance while preserving valid constraints
-  and source references.
+- Reconcile overlapping or superseded guidance while preserving valid
+  constraints and source references.
 <!-- Add verified local maintenance boundaries; avoid repeating inherited rules. -->

@@ -32,17 +32,17 @@ A handoff in existing artifacts or a concise brief containing:
 2. Record validated findings, supported corrections, and final-revision
    evidence. Reuse equivalent review for the same revision and scope; retain
    unaffected evidence and refresh affected review after corrections, reusing
-   the reviewer when available.
-   Add reviewers only for distinct material risks or missing independent
-   judgment. Narrow evidence covers only its actual judgment; missing or stale
-   review remains an unmet requirement.
-3. Summarize **Human decision**, **Agent evidence**, and **Remaining uncertainty**:
-   reviewed identity, contracts, risks, consequential assumptions, intentional
-   differences, findings, and evidence limits; link details. Idea summaries need
-   only a few sentences. Solicit approval, including interactive questions, only
-   after independent review and supported corrections cover the final artifact.
-   Record the exact approved artifact and covered authority; summary approval
-   does not require a separate full-artifact reading gate.
+   the reviewer when available. Add reviewers only for distinct material risks
+   or missing independent judgment. Narrow evidence covers only its actual
+   judgment; missing or stale review remains an unmet requirement.
+3. Summarize **Human decision**, **Agent evidence**, and
+   **Remaining uncertainty**: reviewed identity, contracts, risks, consequential
+   assumptions, intentional differences, findings, and evidence limits; link
+   details. Idea summaries need only a few sentences. Solicit approval,
+   including interactive questions, only after independent review and supported
+   corrections cover the final artifact. Record the exact approved artifact and
+   covered authority; summary approval does not require a separate full-artifact
+   reading gate.
 4. For implementation delivery, require passing checks and final independent
    review before covered commit/push/PR publication by the owning context. No
    discretionary pre-push checkpoint is needed for authorized PR delivery;

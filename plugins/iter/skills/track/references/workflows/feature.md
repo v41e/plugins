@@ -34,12 +34,14 @@ Implement and Review evidence.
 
 ## Output
 
-Current gate, evidence, approval state, and next transition or execution handoff.
+Current gate, evidence, approval state, and next transition or execution
+handoff.
 
 ## Rules
 
 - Ideation-only, design-only, and planning-only requests end with the requested
-  artifact and its applicable Review checkpoint; approval does not expand the request.
+  artifact and its applicable Review checkpoint; approval does not expand the
+  request.
 - Draft approval permits design; spec approval permits planning. Neither grants
   implementation or publication authority. Plan/execution approval covers only
   its stated, authorized scope; explicit holds and local-only instructions win.

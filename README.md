@@ -1,4 +1,4 @@
-# v41e Plugins
+# V41e Plugins
 
 Public Agent Plugins and Codex marketplace metadata for v41e.
 
@@ -16,10 +16,15 @@ The marketplace distributes two independently installable plugins:
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus content ownership plugin
   - [`iter/`](plugins/iter/): Iter work tracking and maintenance plugin
-- [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json): package discovery catalog
-- [`release-please-config.json`](release-please-config.json) and [`.release-please-manifest.json`](.release-please-manifest.json): shared release configuration and version
-- [`.github/workflows/`](.github/workflows/): repository checks and release automation
-- [`ARCHITECTURE.md`](ARCHITECTURE.md): repository relationships and distribution boundaries
+- [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json):
+  package discovery catalog
+- [`release-please-config.json`](release-please-config.json) and
+  [`.release-please-manifest.json`](.release-please-manifest.json): shared
+  release configuration and version
+- [`.github/workflows/`](.github/workflows/): repository checks and release
+  automation
+- [`ARCHITECTURE.md`](ARCHITECTURE.md): repository relationships and
+  distribution boundaries
 - [`AGENTS.md`](AGENTS.md): repository operating contract
 
 ## Getting Started
@@ -29,10 +34,10 @@ The marketplace distributes two independently installable plugins:
 Use an agent client that supports Agent Plugins v1 and Agent Skills. The Codex
 commands below require a CLI installation with plugin support.
 
-### How To Use
+### How to Use
 
-Point a compatible client at the selected package root under [`plugins/`](plugins/)
-using the client's installation process.
+Point a compatible client at the selected package root under
+[`plugins/`](plugins/) using the client's installation process.
 
 With Codex:
 

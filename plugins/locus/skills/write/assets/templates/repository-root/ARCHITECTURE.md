@@ -2,7 +2,8 @@
 
 <!-- Keep all eight numbered sections and their numbering. Inapplicable sections may be empty or briefly marked not applicable. Remove authoring notes and unused example subsections. -->
 
-This document provides a high-level overview of the **<!-- Project name -->** architecture.
+This document provides a high-level overview of the **<!-- Project name -->**
+architecture.
 
 ## 1. High-Level System Overview
 

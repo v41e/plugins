@@ -3,8 +3,8 @@
 ## Overview
 
 This portable Agent Plugins package owns briefs, tracking, maintenance loops,
-and project dispatch. Keep host capabilities in adapters and engineering
-methods in their owning skills.
+and project dispatch. Keep host capabilities in adapters and engineering methods
+in their owning skills.
 
 ## Structure
 

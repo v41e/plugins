@@ -10,6 +10,6 @@ Use the host's `codex_app` tools and live schemas for read-only evidence.
 | The window or linked history includes archived work | `list_archived_threads` | Archived evidence without authorization to resume it. |
 | Selected work needs current progress evidence | `wait_threads` with `timeoutMs: 0` | Compact read-only snapshot; setup and timeouts do not establish completion. |
 
-Record missing or ambiguous identities and incomplete discovery as coverage gaps.
-Brief does not create, continue, change, or archive tasks. Supplied local evidence
-remains usable without Codex tools.
+Record missing or ambiguous identities and incomplete discovery as coverage
+gaps. Brief does not create, continue, change, or archive tasks. Supplied local
+evidence remains usable without Codex tools.

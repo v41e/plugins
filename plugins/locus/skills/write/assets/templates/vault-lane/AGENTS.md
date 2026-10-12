@@ -18,5 +18,6 @@
 - Keep this lane focused on the purpose and PARA meaning in `README.md`.
 - Place structured notes in the narrowest matching topic or child folder.
 - Route unclassified capture to the established lane or vault inbox.
-- Preserve sources and established note format; verify affected navigation links.
+- Preserve sources and established note format; verify affected navigation
+  links.
 <!-- Add only local maintenance or generator constraints that change editing. -->

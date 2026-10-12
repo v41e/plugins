@@ -20,8 +20,8 @@ evidence.
 
 ## Output
 
-An identified plan, proposed steps and execution/delivery scope, existing grants,
-and unresolved planning decisions.
+An identified plan, proposed steps and execution/delivery scope, existing
+grants, and unresolved planning decisions.
 
 ## Rules
 

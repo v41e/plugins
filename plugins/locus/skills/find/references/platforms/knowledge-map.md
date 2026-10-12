@@ -8,7 +8,7 @@
 | An inventory matches the request | Smallest matching map entry | A candidate owner to verify |
 | The owner is selected | Destination instructions and owned files | Current evidence for the answer |
 
-## Entrypoint resolution
+## Entrypoint Resolution
 
 Resolve its entrypoint in this order:
 
@@ -20,10 +20,10 @@ Resolve its entrypoint in this order:
 An explicit value may name the directory or its `AGENTS.md`. Read the entrypoint
 and only the smallest matching destination inventory. The map owns destination
 inventory; the selected destination and its nearest instructions own facts.
-Before answering a factual question, read that destination's nearest
-`AGENTS.md` and only the relevant owned surface.
+Before answering a factual question, read that destination's nearest `AGENTS.md`
+and only the relevant owned surface.
 
-## Boundary semantics
+## Boundary Semantics
 
 If no map exists, continue locally when possible. Report the missing map only
 when broader discovery is required, and never invent a destination.

@@ -28,9 +28,8 @@ For caller-supplied native Goal or scheduled-wakeup context, read the
    changes since approval and return to the earliest affected gate; reuse
    unaffected approvals. Retire stale artifacts, consolidate duplicate records,
    and split independently prioritizable outcomes before implementation when
-   useful. Interpret mixed feedback per outcome:
-   authorized corrections may proceed; exploration and deferred ideas remain
-   proposals.
+   useful. Interpret mixed feedback per outcome: authorized corrections may
+   proceed; exploration and deferred ideas remain proposals.
 3. Classify the work and read one workflow:
 
    - [Feature](references/workflows/feature.md): new or materially expanded
@@ -70,9 +69,10 @@ For caller-supplied native Goal or scheduled-wakeup context, read the
 
 ## Output
 
-Work type, gate, changed records, final evidence and uncertainty, human decisions,
-approval and delivery state, and smallest next action or handoff. Keep artifacts
-concise, linking the interfaces or passages needing human judgment.
+Work type, gate, changed records, final evidence and uncertainty, human
+decisions, approval and delivery state, and smallest next action or handoff.
+Keep artifacts concise, linking the interfaces or passages needing human
+judgment.
 
 ## Rules
 

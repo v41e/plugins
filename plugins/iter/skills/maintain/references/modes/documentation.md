@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Reconcile owned documentation with verified current behavior and approved intent.
+Reconcile owned documentation with verified current behavior and approved
+intent.
 
 ## Input
 
@@ -15,8 +16,9 @@ Verify a concrete discrepancy against code, commands, manifests, tests, or
 approved decisions. Use installed `locus:write` for content placement and
 reconciliation; otherwise update the nearest owned source directly. Correct,
 consolidate, or remove superseded text. Edit the generator when it owns output,
-then regenerate. Validate affected facts, links, examples, commands, and required
-checks. Report a verified no-op when the surfaces already serve their purpose.
+then regenerate. Validate affected facts, links, examples, commands, and
+required checks. Report a verified no-op when the surfaces already serve their
+purpose.
 
 ## Output
 

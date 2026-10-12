@@ -39,7 +39,8 @@ instead of copying it into README or AGENTS.
 
 1. Read the owner and verify claims against sources. Distinguish agreed intent
    from implemented behavior; chat and memory are leads.
-2. For creation or structural refresh, load the matching reference and templates:
+2. For creation or structural refresh, load the matching reference and
+   templates:
 
    | Destination | Reference |
    | ----------- | --------- |
@@ -54,7 +55,8 @@ instead of copying it into README or AGENTS.
    only to named documents; identify useful or uncertain content it would
    discard and resolve ambiguous scope first. Detection, advice, and dry runs
    propose placements without writing. Edit the generator when it owns output.
-4. Check affected facts, links, commands, examples, and generated output together.
+4. Check affected facts, links, commands, examples, and generated output
+   together.
 
 ## Output
 
@@ -75,5 +77,5 @@ read-only requests, return proposed placements.
   configuration entrypoints such as `CONFIGURATION.md`, linking detailed
   explanations to their topic owner. Preserve vault organization unless
   migration or structural reset is requested.
-- Use the owning engineering or tracking workflow for runtime, configuration,
-  or work-record changes.
+- Use the owning engineering or tracking workflow for runtime, configuration, or
+  work-record changes.

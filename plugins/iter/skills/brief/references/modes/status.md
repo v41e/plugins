@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Explain where work stands, what changed, and which decisions or reviews matter now.
+Explain where work stands, what changed, and which decisions or reviews matter
+now.
 
 ## Input
 

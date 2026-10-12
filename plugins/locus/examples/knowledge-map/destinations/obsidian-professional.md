@@ -10,7 +10,8 @@ Shareable professional knowledge and operating notes.
 ### Inbox
 
 - **path**: `00-inbox/`.
-- **purpose**: temporary staging before filing into the professional PARA structure.
+- **purpose**: temporary staging before filing into the professional PARA
+  structure.
 
 ### Projects
 

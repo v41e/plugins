@@ -24,4 +24,5 @@ explicitly reset PARA structure; each lane owns its children. -->
   matching PARA lane; follow the naming and placement policies in `README.md`.
 - Use standard Markdown links in canonical entrypoints.
 - Topic notes own explanations; lane entrypoints own local navigation and rules.
-- Edit the owning template or source when it generates a note; check affected links.
+- Edit the owning template or source when it generates a note; check affected
+  links.

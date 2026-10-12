@@ -23,7 +23,7 @@ evidence is unclear.
 
 ## Requirements
 
-No setup or maintained status database is required. Repository instructions
-and declared owners supply local context. A knowledge map and GitHub access are
+No setup or maintained status database is required. Repository instructions and
+declared owners supply local context. A knowledge map and GitHub access are
 optional discovery sources. Templates target Markdown files; other tools keep
 their own access and editing methods.
