@@ -2,7 +2,8 @@
 
 ## Overview
 
-Maintain Iter's documentation as concise navigation to its owning skills and adapters.
+Maintain Iter's documentation as concise navigation to its owning skills and
+adapters.
 
 ## Structure
 
@@ -11,10 +12,12 @@ Maintain Iter's documentation as concise navigation to its owning skills and ada
 
 ## Checks
 
-- Verify guidance against the owning skills, adapters, manifests, and live tool contracts.
+- Verify guidance against the owning skills, adapters, manifests, and live tool
+  contracts.
 - Check affected facts, links, and representative workflow decisions.
 
 ## Guardrails
 
 - Keep procedures in skills and capability mappings in adapters; link them here.
-- Keep this README an index and these instructions specific to documentation maintenance.
+- Keep this README an index and these instructions specific to documentation
+  maintenance.

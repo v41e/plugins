@@ -6,8 +6,8 @@ architecture.
 ## 1. High-Level System Overview
 
 The repository distributes instruction-driven plugins that run in the user's
-agent client. It hosts no application service or shared execution runtime.
-The marketplace routes installation; each package owns its behavior and context.
+agent client. It hosts no application service or shared execution runtime. The
+marketplace routes installation; each package owns its behavior and context.
 
 ```mermaid
 flowchart LR
@@ -50,9 +50,9 @@ requirements.
 Platform adapters map logical concepts to concrete tools, commands, and remote
 surfaces. Integration adapters map observed conditions to installed skills.
 Conditional capability tables use `When`, `Capability`, and `Result`; schemas
-and inventories keep columns appropriate to their content. Mappings preserve
-the selected operation's scope and approval gates.
-Target references describe destination structure and templates.
+and inventories keep columns appropriate to their content. Mappings preserve the
+selected operation's scope and approval gates. Target references describe
+destination structure and templates.
 
 Locus owns content placement and discovery. Iter owns work records and gates,
 repository briefs, bounded maintenance runs, and explicitly requested sequential
@@ -91,9 +91,9 @@ capabilities and authenticated access supplied by the execution environment.
   `plugins/`.
 - **CI/CD**: GitHub Actions checks Markdown with the repository's rumdl policy,
   JSON syntax, diff whitespace, and pull-request titles, and applies the shared
-  stale-item policy. Release Please opens version
-  pull requests against `main`; merging one creates a `vX.Y.Z` tag and GitHub
-  Release without publishing to a package registry.
+  stale-item policy. Release Please opens version pull requests against `main`;
+  merging one creates a `vX.Y.Z` tag and GitHub Release without publishing to a
+  package registry.
 
 ## 6. Security Considerations
 

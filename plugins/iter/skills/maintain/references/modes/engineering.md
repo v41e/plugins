@@ -6,8 +6,8 @@ Repair evidenced engineering problems within the owner's maintenance authority.
 
 ## Input
 
-Authorized repair scope, intended result, current source and checks, and relevant
-Issues, PRs, tasks, workflow results, or approved plans.
+Authorized repair scope, intended result, current source and checks, and
+relevant Issues, PRs, tasks, workflow results, or approved plans.
 
 ## Workflow
 

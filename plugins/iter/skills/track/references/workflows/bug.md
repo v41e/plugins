@@ -13,7 +13,8 @@ Observed behavior that contradicts an expectation and its existing evidence.
 Resume the first unmet stage. Confirm the defect and correct solution from
 reproduction, diagnosis, evidence, and existing discussion, with focused human
 agreement on unsettled material choices. Bug does not automatically add draft,
-spec, or plan stages and approvals; explicit direction or repository policy applies.
+spec, or plan stages and approvals; explicit direction or repository policy
+applies.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
@@ -30,7 +31,8 @@ and Review evidence.
 
 ## Output
 
-Current gate, evidence, approval state, and next transition or execution handoff.
+Current gate, evidence, approval state, and next transition or execution
+handoff.
 
 ## Rules
 

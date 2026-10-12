@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Compare outcomes with approved intent and identify what to continue, change, or stop.
+Compare outcomes with approved intent and identify what to continue, change, or
+stop.
 
 ## Input
 
@@ -22,8 +23,8 @@ results, and earlier improvement decisions.
 ## Output
 
 Assess progress toward intended outcomes, explain material differences, and
-recommend what to continue, change, or stop. Separate outstanding approved
-work from new proposals; use only sections warranted by the evidence.
+recommend what to continue, change, or stop. Separate outstanding approved work
+from new proposals; use only sections warranted by the evidence.
 
 ## Rules
 

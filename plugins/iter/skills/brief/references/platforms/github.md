@@ -3,7 +3,7 @@
 Current open work includes quiet pending reviews. Tracker status does not
 establish goals or approvals.
 
-## Evidence mapping
+## Evidence Mapping
 
 | When | Capability | Result |
 | ---- | ---------- | ------ |
@@ -20,7 +20,7 @@ gh pr list --repo OWNER/REPO --state open --limit 1000 \
   --jq 'map(.statusCheckRollup |= ([.[]? | (.conclusion | select(. != null and . != "")) // .state // .status // "UNKNOWN"] | group_by(.) | map({state: .[0], count: length})) | .closingIssuesReferences |= [.[]? | {number,url}])'
 ```
 
-## Historical evidence
+## Historical Evidence
 
 | When | Capability | Result |
 | ---- | ---------- | ------ |
@@ -29,7 +29,7 @@ gh pr list --repo OWNER/REPO --state open --limit 1000 \
 | CI outcomes or reruns are relevant to the window | `gh run list --repo OWNER/REPO --created 'START_DATE..END_DATE' --limit 1000 --json databaseId,workflowDatabaseId,workflowName,displayTitle,headBranch,headSha,event,status,conclusion,attempt,createdAt,updatedAt,url`; `gh run list --repo OWNER/REPO --commit HEAD_SHA --limit 100 --json databaseId,workflowDatabaseId,workflowName,headBranch,headSha,status,conclusion,attempt,createdAt,updatedAt,url`; `gh api repos/OWNER/REPO/actions/runs/RUN_ID/attempts/ATTEMPT` | Created-time search misses reruns. Reconcile attempts by stable workflow ID, branch, and commit. Incomplete rerun discovery is **Partial**. |
 | Published release evidence is relevant to the window | `gh api --paginate -X GET 'repos/OWNER/REPO/releases?per_page=100'` | Retain non-drafts with non-null `published_at` inside exact `[start, end)`. Label prereleases; never infer deployment. |
 
-## Planning evidence
+## Planning Evidence
 
 | When | Capability | Result |
 | ---- | ---------- | ------ |
@@ -39,7 +39,7 @@ gh pr list --repo OWNER/REPO --state open --limit 1000 \
 Combine Project items with current Issue and PR evidence above; do not query
 future events inside the planning horizon.
 
-## Coverage semantics
+## Coverage Semantics
 
 - Current open state is observed now, not reconstructed at a past `as_of`.
 - Apply exact UTC half-open bounds after broad date discovery; use the selected

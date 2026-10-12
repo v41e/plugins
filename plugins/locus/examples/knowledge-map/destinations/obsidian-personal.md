@@ -1,6 +1,7 @@
 # Obsidian - Personal
 
-Private knowledge, rough thinking, personal heuristics, and other non-shareable notes.
+Private knowledge, rough thinking, personal heuristics, and other non-shareable
+notes.
 
 ## Inventory
 

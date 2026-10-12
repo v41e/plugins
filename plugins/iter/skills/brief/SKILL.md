@@ -35,13 +35,14 @@ required inputs instead of guessing or waiting indefinitely.
 3. Screen the requested scope using supplied local evidence, compact
    [Codex task summaries](references/harnesses/codex.md), or
    [GitHub lists](references/platforms/github.md) as relevant. Select meaningful
-   changes and unresolved commitments or reviews; record discovery gaps.
-   Quiet work can still require attention.
-4. Verify details that could change the judgment: selected task turns, decisions,
-   PRs, checks, source, or docs. Read child instructions when investigating that
-   owner. Compact discovery accounts for scope; deep reads of routine work need
-   an evidenced reason. Reconcile newer evidence with old failures or
-   recommendations; stop when more detail would not change the brief.
+   changes and unresolved commitments or reviews; record discovery gaps. Quiet
+   work can still require attention.
+4. Verify details that could change the judgment: selected task turns,
+   decisions, PRs, checks, source, or docs. Read child instructions when
+   investigating that owner. Compact discovery accounts for scope; deep reads of
+   routine work need an evidenced reason. Reconcile newer evidence with old
+   failures or recommendations; stop when more detail would not change the
+   brief.
 
 ## Output
 
@@ -52,8 +53,8 @@ useful shape for the audience.
 
 ## Rules
 
-- Remain read-only: no file, Git, remote, task, schedule, or live-system mutations,
-  including task creation or continuation.
+- Remain read-only: no file, Git, remote, task, schedule, or live-system
+  mutations, including task creation or continuation.
 - Missing, inaccessible, or truncated evidence makes affected conclusions
   **Unknown** or **Partial**. Continue supported analysis.
 - Distinguish interval activity from current state observed at collection time;

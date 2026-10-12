@@ -8,13 +8,13 @@
 | Coordination state is needed | Project item | Status interpreted from verified metadata or repository policy |
 | Delivery evidence is needed | Pull request | Verification, deviations, and review |
 
-## Evidence resolution
+## Evidence Resolution
 
 1. Follow an explicitly named issue or pull request regardless of state.
 2. Otherwise read the repository-root `Work Tracking` section when present. If
    the section or Project declaration is absent, or it declares no Project,
-   search repository-scoped open issues when useful. Missing tracking context
-   is not evidence that no work exists.
+   search repository-scoped open issues when useful. Missing tracking context is
+   not evidence that no work exists.
 3. Resolve the current repository from its remote. In a cross-repository
    Project, filter items to that repository before loading their content.
 4. Resolve Project status semantics from Project metadata or repository policy.
@@ -31,6 +31,6 @@
 8. After completed delivery, inspect the relevant current code, tests, or
    repository docs when the question asks for current truth rather than history.
 
-## Boundary semantics
+## Boundary Semantics
 
 Code, tests, and repository docs remain durable truth.

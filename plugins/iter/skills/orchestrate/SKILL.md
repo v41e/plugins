@@ -25,15 +25,15 @@ mutation, delivery, and production boundaries.
    1. Prepare one standalone task prompt that preserves the caller's work,
       including any explicit delivery authorization and restrictions, and adds
       only the project identity and applicable boundaries. Do not copy umbrella
-      instructions wholesale. Preserve signed-commit,
-      push, and PR grants separately; newer restrictions override older grants.
-      Pass requested execution settings through supported tool arguments.
+      instructions wholesale. Preserve signed-commit, push, and PR grants
+      separately; newer restrictions override older grants. Pass requested
+      execution settings through supported tool arguments.
    2. Continue a task only when it is unfinished and clearly owns the same
       project and assignment. An Issue or PR may corroborate identity but never
       replace the assignment match; a matching title is not identity. Otherwise
       create one only when authorized.
-   3. Dispatch once and wait for that task alone. Pending setup and timeouts
-      are not completion; never redispatch or start the next project early.
+   3. Dispatch once and wait for that task alone. Pending setup and timeouts are
+      not completion; never redispatch or start the next project early.
    4. Collect its outcome and apply the continuation rules:
 
       | State | Action |
@@ -51,8 +51,10 @@ each outcome or blocker, unstarted projects, and any next human action.
 
 ## Rules
 
-- Discussion, proposals, prior effort, and matching idle tasks do not authorize dispatch.
-- Preserve the caller's assignment and order; do not scan for candidates or rank projects.
+- Discussion, proposals, prior effort, and matching idle tasks do not authorize
+  dispatch.
+- Preserve the caller's assignment and order; do not scan for candidates or rank
+  projects.
 - Use project-owned tasks; local subagents are not substitutes. Never edit child
   repositories or bypass a worker's denied action from the umbrella context.
 - Never invent identities, permissions, or execution context.

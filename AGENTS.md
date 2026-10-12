@@ -63,8 +63,8 @@ validate schemas or skill behavior.
 
 ## Guardrails
 
-- Keep private information, credentials, and personal knowledge maps out of
-  this public repository.
+- Keep private information, credentials, and personal knowledge maps out of this
+  public repository.
 - Treat marketplace and plugin distribution changes as supply-chain changes.
 - Keep implementations and plugin-specific guidance inside the owning plugin.
 - Preserve unrelated worktree changes.

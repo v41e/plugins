@@ -19,8 +19,8 @@ broaden only when the task requires context outside local files.
 
 1. Select an explicitly named path, issue, or pull request first.
 2. For local context, read applicable `AGENTS.md` files from the repository root
-   to the selected owner. At each level, follow only the matching immediate child
-   and continue through nested boundaries when needed.
+   to the selected owner. At each level, follow only the matching immediate
+   child and continue through nested boundaries when needed.
 3. Read only the selected owner's relevant code, tests, `README.md`, or `docs/`.
 4. Follow issue or pull-request links from the selected local artifact when
    needed to answer the original question, regardless of remote state.
@@ -32,7 +32,8 @@ broaden only when the task requires context outside local files.
    | The owner is outside the current repository | [Knowledge map](references/platforms/knowledge-map.md) | Candidate destination to verify locally |
 
    A map may locate the owner before GitHub supplies its work context. Verify
-   that owner's local sources; broaden again only if the question remains unanswered.
+   that owner's local sources; broaden again only if the question remains
+   unanswered.
 6. Stop as soon as the minimum verified owner set answers the task.
 
 ## Output

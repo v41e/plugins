@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Track a confirmed defect, diagnosis, proposed correction, and execution authority.
+Track a confirmed defect, diagnosis, proposed correction, and execution
+authority.
 
 ## Input
 
@@ -19,8 +20,9 @@ existing Issue discussion or supporting evidence.
    context and record its returned evidence.
 4. Record the proposed correction, proportional steps, focused human agreement
    for unsettled material decisions, applicable policy approvals, execution
-   authority, and delivery scope. Reuse existing discussion and records; a settled
-   low-risk fix needs no new artifact or record merely to establish its contract.
+   authority, and delivery scope. Reuse existing discussion and records; a
+   settled low-risk fix needs no new artifact or record merely to establish its
+   contract.
 
 ## Output
 

@@ -24,13 +24,15 @@ and approvals; explicit human direction or repository policy still applies.
 | 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
 
 Unresolved solution or authority remains at Scope. Implementation corrections
-return to Implement, followed by Review with current evidence; materially changed
-scope needs focused human agreement. Missing integrated verification remains at
-Complete; changed implementation needs renewed Implement and Review evidence.
+return to Implement, followed by Review with current evidence; materially
+changed scope needs focused human agreement. Missing integrated verification
+remains at Complete; changed implementation needs renewed Implement and Review
+evidence.
 
 ## Output
 
-Current gate, evidence, approval state, and next transition or execution handoff.
+Current gate, evidence, approval state, and next transition or execution
+handoff.
 
 ## Rules
 

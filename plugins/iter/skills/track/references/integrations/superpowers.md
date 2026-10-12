@@ -1,8 +1,8 @@
 # Superpowers Evidence Bridge
 
-Superpowers owns engineering methods, method selection, execution topology,
-and review procedures. Track consumes their results and preserves the work
-contract, required approvals, and tracking gates.
+Superpowers owns engineering methods, method selection, execution topology, and
+review procedures. Track consumes their results and preserves the work contract,
+required approvals, and tracking gates.
 
 ## Evidence Mapping
 

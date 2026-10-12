@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Track completion against the actual authorized integrated result and environment.
+Track completion against the actual authorized integrated result and
+environment.
 
 ## Input
 
@@ -12,8 +13,8 @@ Required reviews passed and the authorized integration boundary was reached.
 
 1. Confirm reconciliation and artifact cleanup were included in the reviewed
    result. Report missing changes to the execution context.
-2. Require evidence covering the actual integrated result and environment.
-   Hand missing, stale, or policy-required verification to the execution context.
+2. Require evidence covering the actual integrated result and environment. Hand
+   missing, stale, or policy-required verification to the execution context.
 3. Correct linked formal records and mapped done state only when authorized and
    the gate is satisfied.
 4. Report remaining release, publish, production, or promotion work under human
@@ -21,7 +22,8 @@ Required reviews passed and the authorized integration boundary was reached.
 
 ## Output
 
-Completion with current integrated-result evidence, or the unmet gate and handoff.
+Completion with current integrated-result evidence, or the unmet gate and
+handoff.
 
 ## Rules
 

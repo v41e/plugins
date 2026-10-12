@@ -30,7 +30,7 @@ Ensure you have the following installed:
 - **<!-- Tool -->** (<!-- Version or constraint -->)
 - ...
 
-### How To Use
+### How to Use
 
 <!-- Keep only the steps needed for the repository's primary use. A CLI invocation, library example, or plugin installation may replace these examples; environment initialization is not mandatory. -->
 
@@ -56,7 +56,8 @@ Ensure you have the following installed:
 
 <!-- Add contribution guidance or link to CONTRIBUTING.md only when it exists. -->
 
-Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for details on how to contribute. Pull requests, bug reports, and feature requests are welcome!
+Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for details on how to
+contribute. Pull requests, bug reports, and feature requests are welcome!
 
 ## License
 
