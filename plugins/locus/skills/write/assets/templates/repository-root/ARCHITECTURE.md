@@ -23,7 +23,8 @@ flowchart TD
 
 <!-- Description of the component's responsibility. -->
 
-- **Technology**: <!-- Runtime, framework, or service; link official docs matching the verified setup and include version or mode constraints only when they affect decisions -->
+- **Technology**:
+  <!-- Runtime, framework, or service; link official docs matching the verified setup and include version or mode constraints only when they affect decisions -->
 - **Responsibility**: <!-- What this component owns -->
 - **Key interactions**: <!-- Reads from / writes to / invokes -->
 
@@ -34,8 +35,10 @@ flowchart TD
 ### 3.1. <!-- Store Name -->
 
 - **Technology**: <!-- e.g. PostgreSQL, DynamoDB -->
-- **Purpose and ownership**: <!-- What state is held and which component owns it -->
-- **Schema or lifecycle**: <!-- Relevant migration, format, retention, or regeneration contract; omit if inapplicable -->
+- **Purpose and ownership**:
+  <!-- What state is held and which component owns it -->
+- **Schema or lifecycle**:
+  <!-- Relevant migration, format, retention, or regeneration contract; omit if inapplicable -->
 
 ## 4. External Integrations / APIs
 
@@ -45,7 +48,8 @@ flowchart TD
 
 <!-- Describe actual delivery: hosted services, applications, devices, package registries, or plugin distribution. If none exists, state that briefly and remove the example list. -->
 
-- **Execution or distribution target**: <!-- e.g. AWS, browser, device, package registry -->
+- **Execution or distribution target**:
+  <!-- e.g. AWS, browser, device, package registry -->
 - **CI/CD**: <!-- e.g. GitHub Actions -->
 - **Environments**: <!-- e.g. local, staging, prod -->
 - **Operational notes**: <!-- sharp edges, approvals, manual steps -->
@@ -57,7 +61,8 @@ flowchart TD
 - **Authentication**: <!-- e.g. OAuth2, Cognito -->
 - **Authorization**: <!-- e.g. RBAC, IAM -->
 - **Encryption**: <!-- e.g. KMS, TLS -->
-- **Trust boundaries**: <!-- Relevant untrusted inputs, secrets, file access, or external calls -->
+- **Trust boundaries**:
+  <!-- Relevant untrusted inputs, secrets, file access, or external calls -->
 
 ## 7. Development & Testing Environment
 

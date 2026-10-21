@@ -19,5 +19,7 @@ Expand grouping folders only as far as their direct meaningful boundaries.
 ## Boundaries
 
 - **Keep here:** <!-- Which topics or responsibilities this lane owns. -->
-- **Move elsewhere:** <!-- Which neighboring lane owns material outside this purpose. -->
-- **Naming:** <!-- Existing naming convention; default child folders to kebab-case. -->
+- **Move elsewhere:**
+  <!-- Which neighboring lane owns material outside this purpose. -->
+- **Naming:**
+  <!-- Existing naming convention; default child folders to kebab-case. -->

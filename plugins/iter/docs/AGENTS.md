@@ -1,4 +1,4 @@
-# Documentation Instructions
+# Documentation Agents
 
 ## Overview
 
@@ -7,8 +7,8 @@ adapters.
 
 ## Structure
 
-- [README.md](README.md): documentation index
-- [workflows.md](workflows.md): skill ownership and workflow composition
+- [`workflows.md`](workflows.md): skill ownership and workflow composition
+- [`README.md`](README.md): documentation entrypoint
 
 ## Checks
 

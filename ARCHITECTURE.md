@@ -56,8 +56,10 @@ destination structure and templates.
 
 Locus owns content placement and discovery. Iter owns work records and gates,
 repository briefs, bounded maintenance runs, and explicitly requested sequential
-project-task dispatch. The owning project context and installed engineering
-skills supply implementation and review methods. Both packages remain
+project-task dispatch. Forma supplies code-design and refactoring guidance
+through Shape's design/refactor modes and skill-local references; Using
+introduces the plugin. The owning project context and installed engineering
+skills supply implementation and review methods. All three packages remain
 independently installable.
 
 ## 3. Data Stores
@@ -89,11 +91,10 @@ capabilities and authenticated access supplied by the execution environment.
 - **Codex delivery**: marketplace catalog under `.agents/`.
 - **Other clients**: direct installation from a compatible package under
   `plugins/`.
-- **CI/CD**: GitHub Actions checks Markdown with the repository's rumdl policy,
-  JSON syntax, diff whitespace, and pull-request titles, and applies the shared
-  stale-item policy. Release Please opens version pull requests against `main`;
-  merging one creates a `vX.Y.Z` tag and GitHub Release without publishing to a
-  package registry.
+- **CI/CD**: GitHub Actions checks Markdown with the repository's rumdl policy
+  and pull-request titles, and applies the shared stale-item policy. Release
+  Please opens version pull requests against `main`; merging one creates a
+  `vX.Y.Z` tag and GitHub Release without publishing to a package registry.
 
 ## 6. Security Considerations
 
@@ -106,8 +107,8 @@ capabilities and authenticated access supplied by the execution environment.
 
 ## 7. Development & Testing Environment
 
-Validate repository metadata using the root [`AGENTS.md`](AGENTS.md) command.
-Follow the owning plugin's `AGENTS.md` for package-level checks and
+Run the Markdown check documented in root [`AGENTS.md`](AGENTS.md). Follow the
+owning plugin's `AGENTS.md` for package-specific review guidance and
 [`CONTRIBUTING.md`](CONTRIBUTING.md) for the repository workflow.
 
 Codex loads an installed copy of each plugin. Refresh that installation and

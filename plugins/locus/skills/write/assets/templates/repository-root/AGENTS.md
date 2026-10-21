@@ -58,7 +58,8 @@ and Testing/Checks. Link the owning rules rather than copying them. -->
 <!-- Remove this section when no owning GitHub Project is verified. -->
 
 - **Project:** [<!-- Project name -->](<!-- Project URL -->)
-- **Milestones:** <!-- Remove when unused. Describe the stable naming or selection convention, not the current milestone. -->
+- **Milestones:**
+  <!-- Remove when unused. Describe the stable naming or selection convention, not the current milestone. -->
 
 ## Guardrails
 

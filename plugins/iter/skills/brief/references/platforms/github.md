@@ -16,8 +16,15 @@ Current PR discovery keeps check states/counts and Issue identities compact:
 
 ```sh
 gh pr list --repo OWNER/REPO --state open --limit 1000 \
-  --json number,title,state,isDraft,reviewDecision,statusCheckRollup,closingIssuesReferences,headRefName,headRefOid,createdAt,updatedAt,url \
-  --jq 'map(.statusCheckRollup |= ([.[]? | (.conclusion | select(. != null and . != "")) // .state // .status // "UNKNOWN"] | group_by(.) | map({state: .[0], count: length})) | .closingIssuesReferences |= [.[]? | {number,url}])'
+  --json number,title,state,isDraft,reviewDecision,statusCheckRollup,\
+closingIssuesReferences,headRefName,headRefOid,createdAt,updatedAt,url \
+  --jq 'map(
+    .statusCheckRollup |= (
+      [.[]? | (.conclusion | select(. != null and . != ""))
+        // .state // .status // "UNKNOWN"]
+      | group_by(.) | map({state: .[0], count: length})
+    ) | .closingIssuesReferences |= [.[]? | {number,url}]
+  )'
 ```
 
 ## Historical Evidence

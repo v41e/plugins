@@ -8,17 +8,17 @@ explanations and reference material. Writing style remains the caller's choice.
 
 ## Structure
 
-- [skills/](skills/): portable instruction-driven skills:
-  - [find/](skills/find/): read-only ownership and evidence discovery
-  - [write/](skills/write/): content placement, reconciliation, and templates
-  - [using/](skills/using/): skill selection
-- [docs/](docs/): configuration documentation
-- [examples/knowledge-map/](examples/knowledge-map/): generic discovery-map
-  example
-- [plugin.json](plugin.json): portable package identity
-- [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and
+- [`skills/`](skills/): instruction-driven skills:
+  - [`find/`](skills/find/): read-only ownership and evidence discovery
+  - [`write/`](skills/write/): content placement, reconciliation, and templates
+  - [`using/`](skills/using/): skill selection
+- [`docs/`](docs/): configuration documentation
+- [`examples/`](examples/): generic, publishable examples:
+  - [`knowledge-map/`](examples/knowledge-map/): discovery-map starting point
+- [`plugin.json`](plugin.json): portable package identity
+- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and
   interface
-- [AGENTS.md](AGENTS.md): working instructions
+- [`AGENTS.md`](AGENTS.md): package operating contract
 
 ## Quickstart
 

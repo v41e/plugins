@@ -8,4 +8,5 @@ their optional configuration.
 ## Structure
 
 - [Knowledge map](knowledge-map.md): optional cross-destination discovery
-  configuration.
+  configuration
+- [`AGENTS.md`](AGENTS.md): documentation checks and editing boundaries

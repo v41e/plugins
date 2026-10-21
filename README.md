@@ -4,18 +4,20 @@ Public Agent Plugins and Codex marketplace metadata for v41e.
 
 ## Overview
 
-The marketplace distributes two independently installable plugins:
+The marketplace distributes three independently installable plugins:
 
 | Plugin | Purpose |
 | ------ | ------- |
 | [Locus](plugins/locus/README.md) | Find authoritative content and write knowledge in its proper owner. |
 | [Iter](plugins/iter/README.md) | Brief project work, track its evidence, maintain authorized changes, or dispatch project-owned tasks. |
+| [Forma](plugins/forma/README.md) | Design code structure and refactor existing code with practical maintainability guidance. |
 
 ## Structure
 
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus content ownership plugin
   - [`iter/`](plugins/iter/): Iter work tracking and maintenance plugin
+  - [`forma/`](plugins/forma/): Forma code design and refactoring plugin
 - [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json):
   package discovery catalog
 - [`release-please-config.json`](release-please-config.json) and
@@ -45,15 +47,16 @@ With Codex:
 codex plugin marketplace add https://github.com/v41e/plugins
 codex plugin add locus@v41e
 codex plugin add iter@v41e
+codex plugin add forma@v41e
 ```
 
-Install either or both plugins as needed. Follow the client's reload process
-after installation or updates; restart the desktop app for Codex desktop use.
+Install the plugins you need. Follow the client's reload process after
+installation or updates; restart the desktop app for Codex desktop use.
 
 ## Contributing
 
-Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for workflow and
-contribution expectations.
+Please read the [CONTRIBUTING](CONTRIBUTING.md) guide for details on how to
+contribute. Pull requests, bug reports, and feature requests are welcome!
 
 ## License
 

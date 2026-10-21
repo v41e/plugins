@@ -8,19 +8,19 @@ in their owning skills.
 
 ## Structure
 
-- [skills/](skills/): callable workflows; read the selected skill and its
-  applicable references:
-  - [brief/](skills/brief/): read-only status, plan, and retrospective
-  - [track/](skills/track/): work contracts, approvals, and evidence gates
-  - [maintain/](skills/maintain/): bounded engineering or documentation
+- [`skills/`](skills/): instruction-driven skills:
+  - [`brief/`](skills/brief/): read-only status, plan, and retrospective
+  - [`track/`](skills/track/): work contracts, approvals, and evidence gates
+  - [`maintain/`](skills/maintain/): bounded engineering or documentation
     maintenance
-  - [orchestrate/](skills/orchestrate/): authorized sequential project dispatch
-  - [using/](skills/using/): skill selection
-- [docs/](docs/): workflow documentation
-- [README.md](README.md): human entrypoint
-- [plugin.json](plugin.json): portable identity
-- [.codex-plugin/plugin.json](.codex-plugin/plugin.json): Codex discovery and
+  - [`orchestrate/`](skills/orchestrate/): authorized sequential project
+    dispatch
+  - [`using/`](skills/using/): skill selection
+- [`docs/`](docs/): workflow documentation
+- [`plugin.json`](plugin.json): portable package identity
+- [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and
   interface
+- [`README.md`](README.md): human-facing package overview
 
 ## Tech Stack
 
@@ -36,15 +36,9 @@ in their owning skills.
 
 ## Checks
 
-Run from this directory:
-
-- Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
-- Check both manifests' identity fields, shared release version, and discovery
-  paths.
-- Read changed skills with affected references; check approvals, tracking,
-  execution, discovery, and dispatch boundaries.
-- Check affected links and representative decisions or artifacts. Keep private
-  evaluation fixtures outside this public package.
+Read changed skills with affected references; check approval, tracking,
+execution, discovery, and dispatch boundaries. Check links and representative
+decisions; keep private evaluation fixtures outside this public package.
 
 ## Guardrails
 
