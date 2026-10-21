@@ -44,6 +44,8 @@ ignore-words = ["AGENTS", "README", "Locus", "Iter", "Codex", "GitHub", "Markdow
 allow-parent-headings = true
 
 [per-file-ignores]
+# Repeated Problem/Solution subheadings; reference links target unique entries.
+"plugins/forma/skills/shape/references/**/*.md" = ["MD080"]
 # Support links are GitHub issue routes, not local files.
 "SUPPORT.md" = ["MD057"]
 # Templates intentionally contain placeholder destinations and empty sections.

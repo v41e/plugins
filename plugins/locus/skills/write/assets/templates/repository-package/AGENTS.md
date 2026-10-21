@@ -21,7 +21,8 @@
 - **Language/runtime**: <!-- e.g., TypeScript + Node 20, Python 3.13 -->
 - **Framework**: <!-- e.g., FastAPI, Typer, CDK, React -->
 - **Package manager**: <!-- e.g., pnpm, uv, poetry -->
-- **Build/generation**: <!-- When relevant: orchestration tool or source generator and its owning configuration -->
+- **Build/generation**:
+  <!-- When relevant: orchestration tool or source generator and its owning configuration -->
 - **Key dependencies**: <!-- e.g., aws-sdk, boto3, aws-lambda-powertools -->
 
 ## Setup & Build

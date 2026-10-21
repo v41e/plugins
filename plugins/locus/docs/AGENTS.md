@@ -7,9 +7,9 @@ topic pages own explanations, and README owns navigation.
 
 ## Structure
 
-- [knowledge-map.md](knowledge-map.md): cross-destination discovery
-  configuration.
-- [README.md](README.md): documentation entrypoint.
+- [`knowledge-map.md`](knowledge-map.md): cross-destination discovery
+  configuration
+- [`README.md`](README.md): documentation entrypoint
 
 ## Checks
 

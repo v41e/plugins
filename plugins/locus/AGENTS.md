@@ -7,18 +7,17 @@ workflow behavior; client metadata only adapts package discovery.
 
 ## Structure
 
-- [`examples/`](examples/): generic, publishable examples:
-  - [`knowledge-map/`](examples/knowledge-map/): private knowledge-map starting
-    point
-- [`skills/`](skills/): shared instruction-driven workflows:
+- [`skills/`](skills/): instruction-driven skills:
   - [`find/`](skills/find/): owned-knowledge and active-work discovery
   - [`write/`](skills/write/): content ownership, reconciliation, and templates
   - [`using/`](skills/using/): capability explanation and routing
-- [`README.md`](README.md): human-facing plugin overview and quickstart
 - [`docs/`](docs/): configuration documentation
+- [`examples/`](examples/): generic, publishable examples:
+  - [`knowledge-map/`](examples/knowledge-map/): discovery-map starting point
 - [`plugin.json`](plugin.json): portable package identity
 - [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json): Codex discovery and
   interface
+- [`README.md`](README.md): human-facing package overview
 
 ## Tech Stack
 
@@ -34,18 +33,10 @@ workflow behavior; client metadata only adapts package discovery.
 
 ## Checks
 
-Run from this directory:
-
-- Metadata syntax: `jq empty plugin.json .codex-plugin/plugin.json`.
-- There is no compiled build or runtime test suite; CI checks Markdown, JSON,
-  and whitespace.
-- For manifest changes, check both manifests' identity fields and discovery
-  paths.
-- For skill changes, read the entrypoint and affected references together; check
-  routing, authorization, and completion boundaries.
-- For template changes, compare the target reference, matching templates under
-  `skills/write/assets/templates/`, and resulting document ownership and
-  structure.
+Read changed skills with their references; check routing, authorization, and
+completion boundaries. For template changes, compare the target reference,
+matching [templates](skills/write/assets/templates/), and resulting document
+ownership and structure.
 
 ## Guardrails
 

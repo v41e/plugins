@@ -11,6 +11,7 @@ owning directory under `plugins/`.
 - [`plugins/`](plugins/): installable plugin packages:
   - [`locus/`](plugins/locus/): Locus plugin; follow its local `AGENTS.md`
   - [`iter/`](plugins/iter/): Iter plugin; follow its local `AGENTS.md`
+  - [`forma/`](plugins/forma/): Forma plugin; follow its local `AGENTS.md`
 - [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json):
   package discovery catalog
 - [`release-please-config.json`](release-please-config.json) and
@@ -27,27 +28,13 @@ owning directory under `plugins/`.
 
 ## Checks
 
-Run from the repository root with rumdl **0.2.79**, the version pinned in CI:
+Run `rumdl check .` from the repository root.
 
-- Markdown: `rumdl check --deny-config-warnings --fail-on error .`.
-- Apply Markdown fixes to affected files:
-  `rumdl check --fix --fail-on error <paths>`; inspect the diff and rerun the
-  read-only check. Avoid unrelated formatting churn.
-- Metadata:
-  `jq empty .agents/plugins/marketplace.json .release-please-manifest.json release-please-config.json plugins/locus/plugin.json plugins/locus/.codex-plugin/plugin.json plugins/iter/plugin.json plugins/iter/.codex-plugin/plugin.json`.
-- Whitespace: `git diff --check`.
+To format affected files, use `rumdl check --fix <paths>`, inspect the diff, and
+rerun the check.
 
-CI runs read-only Markdown, JSON syntax, and whitespace checks. Markdown
-warnings remain visible; errors fail the check. Drafts, specs, and plans follow
-the same Markdown policy. Exceptions cover intentional template and GitHub link
-syntax. There is no compiled build or runtime test suite; checks do not validate
-schemas or skill behavior.
-
-- For metadata changes, check catalog paths, README entries, shared manifest
-  fields/order and release version. Homepages identify packages; repository URLs
-  identify the shared repository.
-- For docs, check affected links and facts; follow the owning plugin's
-  `AGENTS.md` for skill and template checks.
+For metadata changes, verify catalog paths, matching manifest identities, and
+the shared release version.
 
 ## Code Style
 
