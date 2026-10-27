@@ -31,15 +31,13 @@ authorization, delivery permissions, and run budget or stopping conditions.
 3. Choose an evidenced correction inside the pass's authority. Compare impact,
    urgency, dependencies, and confidence. Keep additional opportunities as
    proposals when they require new scope or approval.
-4. Use `iter:track` when repository policy requires it, the work is already
-   tracked, materially undecided, or independently prioritizable. Reconcile the
-   contract, approvals, gate, and evidence. Perform authorized work through the
+4. Use `iter:track` for tracked, policy-required, materially undecided, or
+   independently prioritizable work. Perform authorized corrections through the
    owning context's methods, mapped in
    [Superpowers](references/integrations/superpowers.md). Reconcile affected
    code, tests, docs, and owning configuration; complete required checks and
-   independent final-revision review for substantive work, then follow the
-   approved delivery scope. Return results to tracking. Track supplies no
-   execution fallback.
+   independent review for substantive work. Follow the caller's approval and
+   delivery contract, then return results to tracking where applicable.
 5. Reassess remaining authorized work after each outcome. Continue independent
    eligible corrections while blocked work is held. Stop when scope is covered,
    the budget is reached, or adequate evidence shows no eligible work remains.
@@ -56,11 +54,8 @@ a verified no-op from insufficient evidence.
   Do not list saved projects, dispatch project-owned tasks, or edit other
   projects.
 - Signals, drafts, status, silence, and access are not authorization. Reuse
-  existing approvals and their covered execution, human review, commit, push,
-  and PR scope. Agreed execution scope naming PR delivery covers publication
-  after checks/review without another discretionary pre-push checkpoint; human
-  review occurs on the PR. Explicit local-only, publication holds, or required
-  local human review win. Unapproved ideas remain proposals.
+  existing approvals for their exact scope; implementation and delivery remain
+  distinct permissions. Unapproved ideas remain proposals.
 - Honor required review and delivery boundaries. Use configured signing and the
   approval mechanism for exact authorized Git operations; request only needed
   Git metadata access. A denial stops delivery; retain the diff and report the

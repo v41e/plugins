@@ -11,23 +11,25 @@ operations that are neither a Feature nor a Bug.
 
 ## Workflow
 
-Resume the first unmet stage. Resolve the problem and correct solution from
-evidence and existing discussion, with focused human agreement on unsettled
-material choices. Task does not automatically add draft, spec, or plan stages
-and approvals; explicit human direction or repository policy still applies.
+Resume the first unmet stage using evidence and existing discussion to settle
+the problem and solution. Seek focused human agreement on unsettled material
+choices. Add a spec or plan only when the work warrants it; each material
+artifact follows [Review](../stages/review.md) before dependent work. This adds
+no Feature approval stages; caller policy determines the human decisions.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
-| 1 | [Scope](../stages/scope.md) | Understood problem/solution, acceptance evidence, proportional steps, and execution/delivery authority |
-| 2 | [Implement](../stages/implement.md) | Complete change and passing required checks |
-| 3 | [Review](../stages/review.md) (change/PR) | Independent final-change review/checks before covered publication; concise summary, human PR review, and authorized integration |
-| 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
+| 1 | [Scope](../stages/scope.md) | Work contract (local draft or existing Issue), problem/solution, acceptance evidence, proposed steps, and existing authority |
+| 2 | [Review](../stages/review.md) (contract) | Independent contract review/corrections, applicable human scope/execution decision, and Issue synchronization when authorized |
+| 3 | [Implement](../stages/implement.md) | Complete change and passing required checks |
+| 4 | [Review](../stages/review.md) (change/PR) | Independent change review/checks, PR evidence when published, and required human decision under the delivery contract |
+| 5 | [Complete](../stages/complete.md) | Verified authorized integrated result |
 
-Unresolved solution or authority remains at Scope. Implementation corrections
-return to Implement, followed by Review with current evidence; materially
-changed scope needs focused human agreement. Missing integrated verification
-remains at Complete; changed implementation needs renewed Implement and Review
-evidence.
+Contract corrections return to Scope, followed by Review with current evidence.
+Unresolved authority holds progress at Review. Implementation corrections return
+to Implement, followed by Review; materially changed scope needs focused human
+agreement. Missing integrated verification remains at Complete; changed
+implementation needs renewed Implement and Review evidence.
 
 ## Output
 
@@ -36,4 +38,5 @@ handoff.
 
 ## Rules
 
-- A scoping-only request ends at Scope.
+- A scoping-only request ends with contract Review and its applicable scope
+  decision; it does not authorize implementation.

@@ -13,10 +13,9 @@ evidence.
 
 1. Record owners, files, checks, boundaries, dependencies, implementation steps,
    and PR boundaries in the supplied plan.
-2. Identify its exact revision and specification, with stated execution and
-   delivery scope, including commit/push/PR authority requested and any explicit
-   local-only or publication holds. Distinguish proposed permissions from grants
-   already supplied by the human.
+2. Link the specification, or the draft/Issue contract when no spec is needed;
+   keep tracking metadata with its agreed owner. Identify the plan's exact
+   revision, execution and delivery scope, and existing grants or holds.
 
 ## Output
 
