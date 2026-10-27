@@ -6,7 +6,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified local boundaries and canonical local docs. All repository-file links in this entrypoint stay within the package; inherit ancestor instructions without adding ancestor navigation. Verified external official references are permitted. Follow the local navigation contract in references/targets/repository.md.
+<!-- Replace this example with verified local boundaries and canonical docs. Preserve useful links to verified owners and follow the repository's navigation conventions. Follow the local navigation contract in references/targets/repository.md.
 
 - [`src/`](src/): main implementation
   - [`entrypoint.ts`](src/entrypoint.ts): primary entrypoint
@@ -47,7 +47,7 @@
 
 ## Code Style
 
-<!-- Optional. Inherit root/team conventions. Add only applicable verified language/framework references and local differences; repository-file links stay within this package. Preserve formatter/linter configuration and existing public docstring conventions. Do not repeat root guidance or create a generic design chapter. -->
+<!-- Optional. Inherit root/team conventions. Add only applicable verified language/framework references and local differences. Preserve formatter/linter configuration and existing public docstring conventions. Do not repeat root guidance or create a generic design chapter. -->
 
 ## Code Review
 
