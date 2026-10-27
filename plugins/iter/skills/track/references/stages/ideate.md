@@ -11,8 +11,11 @@ A Feature idea without a settled repository contract.
 ## Workflow
 
 1. Record one refined outcome, scope, human direction, and ownership when known.
-2. Keep the idea brief and mapped backlog records optional. Unresolved ownership
-   stays explicit; it does not require a repository artifact or remote record.
+   Once repository ownership is settled, retain a concise local draft with
+   agreed metadata.
+2. Keep mapped Project backlog records optional. Unresolved ownership stays
+   explicit in the planning surface. Scope/draft approval permits the repository
+   Issue when remote writes are authorized and available.
 
 ## Output
 

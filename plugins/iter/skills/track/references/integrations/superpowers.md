@@ -16,21 +16,12 @@ required approvals, and tracking gates.
 | An approved plan needs execution | `superpowers:subagent-driven-development` / `superpowers:executing-plans` | Owner-selected execution, complete scoped change, reconciliation, and verification |
 | A substantive or policy-required change lacks equivalent code review | `superpowers:requesting-code-review` | Evidence for the code-quality dimensions actually reviewed; draft/spec/plan judgment remains distinct |
 | Supplied code review requests changes | `superpowers:receiving-code-review` | Verified feedback, correction evidence, and remaining review or integration gate |
-| An integration or branch-delivery decision remains unsettled | `superpowers:finishing-a-development-branch` | Required decision and authorized delivery evidence; reuse covered PR authority, while method completion grants none |
+| An integration or branch-delivery decision remains unsettled | `superpowers:finishing-a-development-branch` | Delivery options and evidence under the caller's existing authority |
 | Completion evidence is missing, stale, or does not cover the integrated result | `superpowers:verification-before-completion` | Verification of the actual integrated result and environment |
 
-Methods inherit the caller's work contract, authority, and repository policy.
-Routine implementation choices remain with the execution owner; unsettled
-material scope, contract, or architecture choices require focused human
-direction. Method defaults do not add tracking stages or approval gates; Task
-and Bug do not inherit the Feature artifact pipeline.
-
-The owning context obtains required independent artifact judgment, including
-judgment absent from method evidence. Reuse the dimensions actually reviewed for
-the same revision; code review does not establish draft/spec/plan review.
-Self-review and passing tests do not replace independent judgment. After
-corrections, refresh affected independent evidence even when a method says to
-stop after tests; reuse unaffected approvals and evidence.
+Methods inherit the caller's contract, authority, and repository policy. Their
+evidence satisfies only the dimensions and revision actually reviewed; the
+[Review stage](../stages/review.md) owns the tracking checkpoint.
 
 Track records results and hands missing engineering work back to the execution
 context, including when Superpowers is unavailable. It neither selects executors

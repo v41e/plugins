@@ -25,13 +25,14 @@ configuration.
 | When | Capability | Result |
 | ---- | ---------- | ------ |
 | A resumable Feature lacks a formal contract and has an owning Project and backlog mapping | Project draft | Consolidate one draft and link any local draft. Set title, body, real assignees, and mapped Project fields; defer repository, Issue Type, labels, milestone, organization Issue fields, and relationships until conversion. |
-| A Feature design is settled, required approvals hold, and a repository contract is required | Feature Issue | Promote its linked draft or create the formal contract. |
-| A Bug requires tracking by policy, human intent, or existing records | Bug Issue | Create or update its triage evidence; never create a Bug Project draft. |
-| A Task already has a record or requires a formal repository contract | Task record or Issue | Reuse the record unless policy or human intent says otherwise; create an Issue only when a formal contract is required. |
+| A tracked Feature has scope/draft approval and remote writes are authorized | Feature Issue | Promote its linked Project draft or create/update the formal contract; retain any existing local draft. |
+| A tracked Bug has applicable scope approval and remote writes are authorized | Bug Issue | Create/update its triage contract and link any existing local draft; never create a Bug Project draft. |
+| A tracked Task has applicable scope approval and remote writes are authorized | Task Issue | Create/update the repository contract and link any existing local draft. |
 | An approved local specification/design or plan has an owning Issue | Separate Issue comments | Publish each approved snapshot separately, with local-only tracking metadata removed. |
-| The selected workflow is ready for implementation | Mapped ready status and Priority/Effort | Synchronize ready state and understood priority/effort after required gates. |
+| Agreed local/remote metadata needs reconciliation | Mapped fields or agreed Issue/Project-draft body values | Apply the inherited synchronization contract; read back authorized writes before confirming agreement. |
+| The selected workflow is ready for implementation | Mapped ready status | Synchronize ready state after required gates; a GitHub URL is linkage, not stage or approval evidence. |
 | Implementation actually begins | Mapped active status and Start Date | Record actual start; stage names alone do not establish execution. |
-| The delivery owner supplies an existing PR for review | Existing PR and mapped review status | Record its identity, approved delivery scope and any explicit hold/local checkpoint; collect supplied local evidence and remote checks/reviews for its exact head. Keep delivery open during corrections and human PR review. |
+| The delivery owner supplies an existing PR for review | Existing PR and mapped review status | Record supplied review and current checks for its exact head, delivery authority, and any remaining human decision. Keep delivery open during corrections. |
 | The PR targets a non-default branch | Manual Issue link | Link its Issue explicitly; closing keywords create neither the link nor automatic closure. |
 | Authorized integration and completion verification are established | Linked Issue and mapped done status | Verify closure and done state; correct only authorized state. Non-default-target links or references may need explicit Issue closure. |
 
@@ -42,17 +43,17 @@ Follow repository Issue Forms when present. Otherwise:
 | Work | Initial Issue body |
 | ---- | ------------------ |
 | Feature / Task | `Problem`, `Solution`, optional `Alternatives`, optional `Context` |
-| Bug | `Description`, `Current behavior`, `Expected behavior`, `Reproduction`, optional `Environment`, `Logs`, `Possible fix` |
+| Bug | `Description`, `Current Behavior`, `Expected Behavior`, `Reproduction`, optional `Environment`, optional `Logs`, optional `Possible Fix` |
 
-Omit empty optional sections. Keep Issue/Project tracking URLs, stage, Project
-fields, local Tracking metadata, specification/design, and plan out of the
-initial body. Approved snapshots are separate comments with local-only tracking
-metadata removed.
+Omit empty optional sections. Keep stage, Project-only fields, local sync
+metadata, specification/design, and plan out of the initial body. Approved
+snapshots are separate comments with local-only tracking metadata removed.
 
-Apply mapped Issue Type or repository label and understood mapped Priority and
-Effort. Assign people or relationships only when real. Target Date represents a
-real scheduling commitment; a milestone represents a concrete release or dated
-target. Remove intake-only labels after acceptance; preserve orthogonal labels.
+Apply mapped Issue Type or repository label and the caller's agreed metadata.
+Unknown scales or ambiguous mappings remain pending. Assign people or
+relationships only when real. Target Date represents a real scheduling
+commitment; a milestone represents a concrete release or dated target. Remove
+intake-only labels after acceptance; preserve orthogonal labels.
 
 For an existing PR, record related Issues, summary, verification, and material
 notes using its template when present. PR creation and delivery mutations belong
@@ -61,11 +62,14 @@ local, browser, or manual validation.
 
 ## Rules
 
-- Follow the selected lifecycle's order and gates. Synchronize only when policy,
-  human direction, or existing owned records require it; an explicit opt-out
-  wins. Without that condition, leave GitHub unchanged.
-- Projects and structured metadata are optional; an Issue may exist without
-  either. Skip actions whose record, item, field, or mapping is absent.
+- Follow the selected lifecycle's order and gates. Issue creation and every
+  remote mutation require authority. Local-only direction, unavailable access,
+  or unresolved mapping leaves synchronization pending; preserve local artifacts
+  and continue authorized local work without claiming remote agreement.
+- Projects and structured fields are optional; every tracked work item still
+  needs its repository Issue after scope approval when remote writes are
+  authorized and available. Missing Project fields do not require configuration
+  changes. Never mark a skipped or failed write as synced.
 - Track does not create pull requests or perform the delivery owner's
   engineering work. Close Issues or mark work done only after authorized
   integration and completion verification.

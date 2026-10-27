@@ -10,24 +10,27 @@ Observed behavior that contradicts an expectation and its existing evidence.
 
 ## Workflow
 
-Resume the first unmet stage. Confirm the defect and correct solution from
-reproduction, diagnosis, evidence, and existing discussion, with focused human
-agreement on unsettled material choices. Bug does not automatically add draft,
-spec, or plan stages and approvals; explicit direction or repository policy
-applies.
+Resume the first unmet stage using reproduction, diagnosis, and existing
+discussion to settle the correction. Seek focused human agreement on unsettled
+material choices. Add a spec or plan only when the work warrants it; each
+material artifact follows [Review](../stages/review.md) before dependent work.
+This adds no Feature approval stages; caller policy determines the human
+decisions.
 
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
-| 1 | [Triage](../stages/triage.md) | Confirmed defect/diagnosis, proposed correction, acceptance evidence, and execution/delivery authority |
-| 2 | [Implement](../stages/implement.md) | Complete fix and passing regression evidence |
-| 3 | [Review](../stages/review.md) (change/PR) | Independent final-change review/checks before covered publication; concise summary, human PR review, and authorized integration |
-| 4 | [Complete](../stages/complete.md) | Verified authorized integrated result |
+| 1 | [Triage](../stages/triage.md) | Work contract (local draft or existing Issue), confirmed defect/diagnosis, proposed correction, acceptance evidence, and existing authority |
+| 2 | [Review](../stages/review.md) (contract) | Independent contract review/corrections, applicable human scope/execution decision, and Issue synchronization when authorized |
+| 3 | [Implement](../stages/implement.md) | Complete fix and passing regression evidence |
+| 4 | [Review](../stages/review.md) (change/PR) | Independent change review/checks, PR evidence when published, and required human decision under the delivery contract |
+| 5 | [Complete](../stages/complete.md) | Verified authorized integrated result |
 
-Unresolved defect, diagnosis, solution, or authority remains at Triage. Fix
-corrections return to Implement, followed by Review with current evidence;
-materially changed scope needs focused human agreement. Missing integrated
-verification remains at Complete; changed implementation needs renewed Implement
-and Review evidence.
+Missing defect, diagnosis, or solution evidence remains at Triage. Contract
+corrections return to Triage, followed by Review with current evidence.
+Unresolved authority holds progress at Review. Fix corrections return to
+Implement, followed by Review; materially changed scope needs focused human
+agreement. Missing integrated verification remains at Complete; changed
+implementation needs renewed Implement and Review evidence.
 
 ## Output
 
@@ -36,5 +39,8 @@ handoff.
 
 ## Rules
 
+- A triage-only request ends with contract Review and its applicable scope
+  decision; it does not authorize implementation.
 - Complexity does not turn a Bug into a Feature.
-- Never create a Bug backlog record.
+- Never create a Bug Project draft; the repository Issue owns the remote
+  contract.

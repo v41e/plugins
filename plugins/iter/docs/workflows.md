@@ -12,8 +12,11 @@ Each skill has one owner; engineering methods remain in the project context.
 
 Track can be used directly for manual work. It records the results of
 engineering methods such as Superpowers; it does not implement, debug, review
-code, or deliver changes. Required records and artifact depth follow the current
-contract and repository policy. Missing optional records require no setup.
+code, or deliver changes. New Feature, Bug, and Task work starts in a local
+draft before authorized Issue publication. Work arriving through an existing
+Issue uses that contract and resumes the first unmet gate; it needs no duplicate
+draft. Optional Projects and fields require no setup. Pending synchronization
+remains explicit and useful local artifacts stay actionable.
 
 Maintain checks signals against current state and existing ownership before
 choosing work. An already owned outcome is resumed only when it belongs to this
@@ -22,35 +25,33 @@ help resolve content ownership and reconcile documentation when installed.
 
 ## Supervised Work
 
-The owning copilot investigates and recommends within the agreed outcome.
-Compare native/library capabilities, workload, and established local patterns
-before adding machinery. Choose routine defaults and disclose consequential
-assumptions; present unsettled material product, architecture, contract,
-ownership, security, and scope choices for a focused human decision. A
-reversible choice can still be material. Questions and exploration do not grant
-execution; continue independent authorized preparation while dependent choices
-wait.
+The owning copilot investigates and recommends within the agreed outcome,
+chooses routine implementation details, and brings unsettled material decisions
+to the human. Caller instructions and repository policy supply review, metadata,
+and delivery requirements; Iter preserves their authority.
 
 [Track](../skills/track/SKILL.md) records the selected workflow's gates:
-[Feature](../skills/track/references/workflows/feature.md) uses the same Review
-contract for its draft, specification, plan, and implementation. Idea review and
-summary stay quick for early human feedback.
-[Task](../skills/track/references/workflows/task.md) and
-[Bug](../skills/track/references/workflows/bug.md) settle their problem,
-solution, and authority through proportional evidence and discussion, then
-review the implementation; they do not automatically inherit draft/spec/plan
-approvals. Workflows own all stage relationships; stages describe their own
-responsibilities.
 
-[Review](../skills/track/references/stages/review.md) records independent
-evidence, supported corrections, a concise identified-artifact summary, and the
-human decision required by the workflow. The execution context obtains suitable
-review against original intent, accepted decisions, and relevant local examples;
-checks alone do not prove alignment. Approved execution scope can cover PR
-publication after checks/review without another discretionary checkpoint.
-Explicit holds, human PR review/integration, and actual integrated-result
-verification still bind. Reuse unaffected approvals and equivalent evidence;
-summary approval adds no mandatory full-artifact reading gate.
+- [Feature](../skills/track/references/workflows/feature.md) reviews its draft,
+  specification, plan, and implementation, with distinct scope, design, and
+  execution approvals.
+- [Task](../skills/track/references/workflows/task.md) and
+  [Bug](../skills/track/references/workflows/bug.md) establish a lightweight
+  contract in Scope or Triage, then review it before implementation. The
+  contract can be a local draft or an existing Issue; current review and
+  approvals are reused. There is no automatic spec/plan pipeline.
+- [Review](../skills/track/references/stages/review.md) repeats within each
+  material stage: author, fresh review, supported corrections, then review
+  again. Ready evidence reaches the applicable human checkpoint; missing
+  evidence or the caller's retry limit holds progress. Optional Bug/Task specs
+  and plans follow the same loop without adding Feature approval stages.
+- [Record synchronization](../skills/track/SKILL.md#record-synchronization)
+  reconciles the agreed local and remote owners without overwriting conflicts or
+  treating pending writes as complete.
+
+Workflows own stage relationships; stages own evidence requirements and adapters
+map capabilities. Useful local artifacts remain until their content and approved
+snapshots are safely represented in their owners.
 
 ## Interactive Goals
 
