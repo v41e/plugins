@@ -46,11 +46,10 @@ entrypoints.
    configuration, canonical docs, and direct child boundaries with one-line
    responsibilities. Expand grouping directories only to direct owning packages;
    child entrypoints own their internals. Link local README/AGENTS counterparts
-   directly and child boundaries as directories; leave ancestor navigation to
-   the caller. All repository-file links in package entrypoints stay within the
-   package; verified external official references are permitted. Preserve useful
-   working setup, module/configuration maps, and generator ownership. Route Git
-   workflow to existing CONTRIBUTING from the root rather than repeating it. Use
+   directly and child boundaries as directories. Follow repository navigation
+   conventions, preserving useful links to verified owners, working setup,
+   module/configuration maps, and generator ownership. Route Git workflow to
+   existing CONTRIBUTING from the root rather than repeating it. Use
    [documentation.md](documentation.md) for displaced topic detail.
 4. **ARCHITECTURE.md:** create only at repository root when requested or when
    non-obvious system relationships need an overview. Retain its eight numbered

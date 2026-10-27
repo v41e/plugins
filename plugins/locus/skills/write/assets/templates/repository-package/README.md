@@ -11,7 +11,7 @@
 
 ## Structure
 
-<!-- Replace this example with verified downward local paths. All repository-file links in this entrypoint stay within the package; verified external official references are permitted. Follow the local navigation contract in references/targets/repository.md.
+<!-- Replace this example with verified local paths. Preserve useful links to verified owners and follow the repository's navigation conventions. Follow the local navigation contract in references/targets/repository.md.
 
 - [`src/`](src/): main implementation
   - [`entrypoint.ts`](src/entrypoint.ts): primary entrypoint
