@@ -50,7 +50,7 @@ commitment. Use the caller's priority/effort scales; never invent a mapping.
 ```yaml
 ---
 kind: "spec"
-draft: "docs/superpowers/drafts/example.md"
+draft: "path/to/brief.md"
 ---
 ```
 
@@ -59,7 +59,7 @@ draft: "docs/superpowers/drafts/example.md"
 ```yaml
 ---
 kind: "plan"
-spec: "docs/superpowers/specs/example.md"
+spec: "path/to/spec.md"
 ---
 ```
 

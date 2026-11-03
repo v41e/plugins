@@ -55,8 +55,9 @@ range. Implementation requires passing affected and required checks.
 
 ## Output
 
-Exact reviewed revision and scope, review evidence, author responses, unresolved
-findings, human decision/authority, and delivery state.
+Lead with the verdict, actionable findings, and smallest next action or human
+decision. Link exact revision/scope evidence and author responses; summarize
+material limits and delivery authority without repeating the full report.
 
 ## Rules
 

@@ -5,9 +5,9 @@
 Paths are relative to the project root. Project instructions and links override
 defaults.
 
-| Artifact | Default path |
-| -------- | ------------ |
-| Drafts | `docs/superpowers/drafts/` |
+| Artifact | Known path |
+| -------- | ---------- |
+| Earlier work drafts | `docs/superpowers/drafts/` |
 | Specs | `docs/superpowers/specs/` |
 | Plans | `docs/superpowers/plans/` |
 

@@ -49,24 +49,20 @@ For caller-supplied native Goal or scheduled-wakeup context, read the
    do not restart satisfied methods. Workflow files define stage order,
    transitions, and correction routes; stages own their evidence requirements.
 5. Use the existing Issue as the work contract. For new work without an Issue,
-   prepare a concise local draft under `docs/superpowers/drafts/` or its
-   supplied owner before publication. Keep additional local notes, specs, or
-   plans only when useful or requested; an existing Issue needs no duplicate
-   draft. After applicable scope approval, create or update the Issue when
-   authorized; pending synchronization does not block authorized local work.
-   Record evidence, approval, and delivery state in their existing owners. For
-   remote writes, use the relevant platform mapping:
+   prepare a concise draft in the caller's artifact location, reusing a method's
+   brief when available. Keep additional local notes, specs, or plans only when
+   useful or requested. After applicable scope approval, create or update the
+   Issue when authorized; pending synchronization does not block authorized
+   local work. Record evidence, approval, and delivery state in their existing
+   owners. For remote writes, use the relevant platform mapping:
 
    - [GitHub](references/platforms/github.md): mapped repository, Issue,
      Project, and existing pull-request records.
 
 6. Hand missing engineering work to its execution owner with the authorized
    contract, approved decisions and steps, instructions and quality standards,
-   evidence, and remaining gate. The owner investigates options and established
-   native/library/local patterns, chooses and discloses routine defaults, and
-   presents unsettled material choices for human decision. Continue independent
-   authorized preparation while dependent work waits. For supplied method
-   evidence, use the installed integration:
+   evidence, and remaining gate. Keep unsettled material choices explicit for
+   human decision. For supplied method evidence, use the relevant integration:
 
    - [Superpowers](references/integrations/superpowers.md): engineering-method
      evidence supplied to tracking gates.
