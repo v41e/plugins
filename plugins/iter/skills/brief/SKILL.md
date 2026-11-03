@@ -27,7 +27,8 @@ required inputs instead of guessing or waiting indefinitely.
 
 1. Read the selected mode and caller's governing context: goals, latest human
    decisions, prior briefs with responses or amendments, and relevant
-   [specifications or plans](references/integrations/superpowers.md). Separate
+   [EGM artifacts](references/integrations/egm.md) or
+   [Superpowers artifacts](references/integrations/superpowers.md). Separate
    recommendations from approved commitments; carry unfinished work forward.
 2. Resolve calendar windows against `as_of` in the supplied timezone, including
    daylight saving. Filter historical events using exact UTC bounds

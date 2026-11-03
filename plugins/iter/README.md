@@ -4,7 +4,7 @@
 
 Iter supports iteration: understand current work, maintain it, track evidence,
 and coordinate authorized tasks. Engineering methods stay with the owning
-project context and installed methods such as Superpowers.
+project context and installed methods such as EGM and Superpowers.
 
 ## Structure
 

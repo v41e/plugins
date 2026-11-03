@@ -64,8 +64,10 @@ For caller-supplied native Goal or scheduled-wakeup context, read the
    evidence, and remaining gate. Keep unsettled material choices explicit for
    human decision. For supplied method evidence, use the relevant integration:
 
-   - [Superpowers](references/integrations/superpowers.md): engineering-method
-     evidence supplied to tracking gates.
+   - [EGM](references/integrations/egm.md): supplied concept, design, and
+     document-review evidence.
+   - [Superpowers](references/integrations/superpowers.md): supplied planning,
+     implementation, and other selected engineering-method evidence.
 
 7. Synchronize authorized tracking changes. Advance within scope only when
    evidence and approvals satisfy the gate; report unmet decisions, approvals,
