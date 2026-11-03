@@ -11,12 +11,20 @@ Each skill has one owner; engineering methods remain in the project context.
 | [Orchestrate](../skills/orchestrate/SKILL.md) | Authorized sequential dispatch to exact project-owned tasks | Owning task references and aggregate outcomes |
 
 Track can be used directly for manual work. It records the results of
-engineering methods such as Superpowers; it does not implement, debug, review
-code, or deliver changes. New Feature, Bug, and Task work starts in a local
-draft before authorized Issue publication. Work arriving through an existing
-Issue uses that contract and resumes the first unmet gate; it needs no duplicate
-draft. Optional Projects and fields require no setup. Pending synchronization
-remains explicit and useful local artifacts stay actionable.
+engineering methods such as EGM and Superpowers; it does not implement, debug,
+review code, or deliver changes. New Feature, Bug, and Task work starts in a
+local draft before authorized Issue publication. Work arriving through an
+existing Issue uses that contract and resumes the first unmet gate; it needs no
+duplicate draft. Optional Projects and fields require no setup. Pending
+synchronization remains explicit and useful local artifacts stay actionable.
+
+The optional [EGM bridge](../skills/track/references/integrations/egm.md) maps
+concept, design, and document-review evidence. In a combined route, EGM supplies
+one feature spec and
+[Superpowers](../skills/track/references/integrations/superpowers.md) supplies
+its implementation plan and execution evidence. The owning context selects and
+runs methods; Track reuses accepted artifacts and records the next unmet gate.
+Brief follows both artifact owners without requiring installation.
 
 Maintain checks signals against current state and existing ownership before
 choosing work. An already owned outcome is resumed only when it belongs to this

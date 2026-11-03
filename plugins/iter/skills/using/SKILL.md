@@ -28,5 +28,6 @@ them.
 
 No setup or maintained status database is required. Host and GitHub adapters
 depend on the capabilities available in the execution context. Orchestrate needs
-project-owned task capabilities and explicit dispatch authority. Locus placement
-and Superpowers engineering methods are optional integrations.
+project-owned task capabilities and explicit dispatch authority. Locus
+placement, EGM design/review, and Superpowers engineering methods are optional
+integrations.

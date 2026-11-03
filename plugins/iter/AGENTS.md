@@ -52,8 +52,8 @@ decisions; keep private evaluation fixtures outside this public package.
 - Orchestrate alone creates or continues project-owned tasks, only with human
   authorization and exact assignment identity. It never edits child repositories
   from an umbrella context.
-- Locus placement and Superpowers methods are optional integrations, not package
-  dependencies or replacement workflows.
+- Locus placement, EGM design/review, and Superpowers engineering methods are
+  optional integrations, not package dependencies or replacement workflows.
 - Fold recurring generic review feedback into existing Iter guidance; keep
   domain and compatibility rules in their owning repository.
 - Keep references, including harness mappings, inside their owning skill.
