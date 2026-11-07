@@ -9,7 +9,7 @@ their results and preserves the work contract, required approvals, and gates.
 | When | Capability | Result |
 | ---- | ---------- | ------ |
 | Design remains unsettled and the owner selected Superpowers for it | `superpowers:brainstorming` | Refined outcome, settled decisions, remaining questions, and required human approval |
-| An accepted spec or requirements need a written multi-step plan | `superpowers:writing-plans` | Steps, dependencies, PR boundaries, checks, stated execution/delivery scope, and any approval required by the selected contract |
+| The workflow permits planning from the supplied spec or requirements | `superpowers:writing-plans` | Steps, dependencies, PR boundaries, checks, stated execution/delivery scope, and any approval required by the selected contract |
 | A defect or unexpected failure needs diagnosis | `superpowers:systematic-debugging` | Reproduction, root cause, and acceptance evidence before proposing a fix |
 | Changed behavior supports an executable regression or acceptance check | `superpowers:test-driven-development` | Meaningful failing and passing checks under repository verification policy |
 | Independent work warrants parallel execution | `superpowers:dispatching-parallel-agents` | Owner-supplied results, resolved conflicts, and affected and required checks |

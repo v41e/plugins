@@ -17,19 +17,23 @@ choices. Add a spec or plan only when the work warrants it; each material
 artifact follows [Review](../stages/review.md) before dependent work. This adds
 no Feature approval stages; caller policy determines the human decisions.
 
+Routine low-risk Tasks with settled scope, solution, and acceptance criteria
+skip independent contract review unless caller or repository policy requires it.
+Proceed from Scope to Implement only with execution authority.
+
 | Order | Stage | Required outcome |
 | ----- | ----- | ---------------- |
 | 1 | [Scope](../stages/scope.md) | Work contract (local draft or existing Issue), problem/solution, acceptance evidence, proposed steps, and existing authority |
-| 2 | [Review](../stages/review.md) (contract) | Independent contract review/corrections, applicable human scope/execution decision, and Issue synchronization when authorized |
+| 2 | [Review](../stages/review.md) (contract, when required) | Independent contract review/corrections, applicable human scope/execution decision, and Issue synchronization when authorized |
 | 3 | [Implement](../stages/implement.md) | Complete change and passing required checks |
 | 4 | [Review](../stages/review.md) (change/PR) | Independent change review/checks, PR evidence when published, and required human decision under the delivery contract |
 | 5 | [Complete](../stages/complete.md) | Verified authorized integrated result |
 
-Contract corrections return to Scope, followed by Review with current evidence.
-Unresolved authority holds progress at Review. Implementation corrections return
-to Implement, followed by Review; materially changed scope needs focused human
-agreement. Missing integrated verification remains at Complete; changed
-implementation needs renewed Implement and Review evidence.
+Contract corrections return to Scope and any required Review with current
+evidence. Missing execution authority blocks implementation. Implementation
+corrections return to Implement, followed by Review; materially changed scope
+needs focused human agreement. Missing integrated verification remains at
+Complete; changed implementation needs renewed Implement and Review evidence.
 
 ## Output
 
@@ -38,5 +42,5 @@ handoff.
 
 ## Rules
 
-- A scoping-only request ends with contract Review and its applicable scope
+- A scoping-only request ends with the contract and any required Review or scope
   decision; it does not authorize implementation.

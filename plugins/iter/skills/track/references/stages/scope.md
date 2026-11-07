@@ -17,8 +17,8 @@ Issue discussion or supporting evidence.
    context when useful.
 2. Record proposed steps, existing scope/execution approval, separate
    publication scope, and unresolved material decisions. Reuse existing approval
-   and discussion; contract Review owns the next decision. A settled low-risk
-   correction needs no separate spec or plan.
+   and discussion; follow the [Task workflow](../workflows/task.md) for the next
+   gate.
 
 ## Output
 
