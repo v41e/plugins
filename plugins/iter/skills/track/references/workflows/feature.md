@@ -19,12 +19,18 @@ equivalent evidence; an approved artifact authorizes only the next agreed phase.
 | 1 | [Ideate](../stages/ideate.md) | Concise draft outcome, scope, and ownership when known |
 | 2 | [Review](../stages/review.md) (draft) | Quick independent draft review, short summary, and human scope/draft approval permitting an Issue and Design |
 | 3 | [Design](../stages/design.md) | Identified specification and material decisions |
-| 4 | [Review](../stages/review.md) (spec) | Independent final-spec review/corrections, concise summary, and human spec approval permitting Plan |
+| 4 | [Review](../stages/review.md) (spec) | Independent final-spec review/corrections, concise summary, and human spec approval permitting Plan; may join the plan checkpoint below |
 | 5 | [Plan](../stages/plan.md) | Identified implementation steps and proposed execution/delivery scope |
-| 6 | [Review](../stages/review.md) (plan) | Independent final-plan review/corrections, concise summary, and human plan/execution approval with separate publication scope |
+| 6 | [Review](../stages/review.md) (plan) | Independent final-plan review/corrections, concise summary, and human plan/execution approval, covering design too when combined; publication scope stays separate |
 | 7 | [Implement](../stages/implement.md) | Complete authorized change and passing required checks |
 | 8 | [Review](../stages/review.md) (change/PR) | Independent change review/checks, PR evidence when published, and required human decision under the delivery contract |
 | 9 | [Complete](../stages/complete.md) | Verified authorized integrated result |
+
+For bounded features with agreed scope, established patterns, and no unresolved
+material decisions, prepare Design and Plan together. Combine their Review
+checkpoints, covering both final revisions, then obtain one human
+design/plan/execution approval before Implement. Otherwise retain separate spec
+and plan checkpoints.
 
 Corrections to a draft, spec, plan, or implementation return to Ideate, Design,
 Plan, or Implement respectively, followed by its Review checkpoint with current
@@ -42,8 +48,8 @@ handoff.
 - Ideation-only, design-only, and planning-only requests end with the requested
   artifact and its applicable Review checkpoint; approval does not expand the
   request.
-- Draft approval permits design; spec approval permits planning. Neither grants
-  implementation or publication authority. Plan/execution approval covers only
-  its stated scope; delivery follows the caller's contract and existing grants.
+- Draft approval permits preparation through the next human checkpoint, not
+  implementation or publication. Plan/execution approval covers only its stated
+  scope; delivery follows the caller's contract and existing grants.
 - If an originating draft exists, retain it and link the Issue after authorized
   publication. An existing Issue resumes at the first unmet gate.

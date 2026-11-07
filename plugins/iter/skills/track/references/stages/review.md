@@ -45,10 +45,11 @@ range. Implementation requires passing affected and required checks.
    Stop for stalled progress, an unresolved material decision or blocker, or the
    caller's unsuccessful-round limit. A successful round at that limit may
    advance. Present unresolved findings and the needed human decision.
-4. Summarize the human decision, agent evidence, and remaining uncertainty with
-   links to the exact reviewed artifact. Record applicable approval and reuse
-   existing grants. Feature draft, spec, and plan approvals remain distinct;
-   Bug/Task review does not add Feature gates.
+4. Summarize the human decision and remaining gaps; link the exact reviewed
+   revision. At implementation acceptance, connect important agreed behaviors to
+   checks and observed results. Record applicable approval and reuse existing
+   grants under the selected workflow; Bug/Task review does not add Feature
+   gates.
 5. Track delivery under the caller's contract. For a published PR, verify review
    and current checks against its actual head; corrections refresh affected
    evidence and materially affected approvals before integration.

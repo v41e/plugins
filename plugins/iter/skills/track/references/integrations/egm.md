@@ -17,8 +17,10 @@ Track consumes evidence under the caller's existing workflow and authority.
 
 When EGM supplies design and [Superpowers](superpowers.md) supplies planning,
 the caller explicitly excludes EGM's Detailed Implementation Plan authoring.
-Retain finalization and predecessor reconciliation, then supply the accepted
-spec to `superpowers:writing-plans` without another brainstorm or spec.
+Retain finalization and predecessor reconciliation, then supply the spec to
+`superpowers:writing-plans` without another brainstorm or spec. Follow the
+[Feature workflow](../workflows/feature.md) for separate or combined design/plan
+checkpoints.
 
 The caller supplies the accepted predecessor file as `egm-draft`'s
 `Context File` when available. Issue-only intake uses the accepted record

@@ -41,12 +41,12 @@ and delivery requirements; Iter preserves their authority.
 [Track](../skills/track/SKILL.md) records the selected workflow's gates:
 
 - [Feature](../skills/track/references/workflows/feature.md) reviews its draft,
-  specification, plan, and implementation, with distinct scope, design, and
-  execution approvals.
+  specification, plan, and implementation. After scope approval, bounded
+  features combine design/plan review and approval before implementation.
 - [Task](../skills/track/references/workflows/task.md) and
   [Bug](../skills/track/references/workflows/bug.md) establish a lightweight
-  contract in Scope or Triage, then review it before implementation. The
-  contract can be a local draft or an existing Issue; current review and
+  contract in Scope or Triage and apply their workflow's review requirements.
+  The contract can be a local draft or an existing Issue; current review and
   approvals are reused. There is no automatic spec/plan pipeline.
 - [Review](../skills/track/references/stages/review.md) repeats within each
   material stage: author, fresh review, supported corrections, then review
