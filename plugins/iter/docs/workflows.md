@@ -19,12 +19,11 @@ duplicate draft. Optional Projects and fields require no setup. Pending
 synchronization remains explicit and useful local artifacts stay actionable.
 
 The optional [EGM bridge](../skills/track/references/integrations/egm.md) maps
-concept, design, and document-review evidence. In a combined route, EGM supplies
-one feature spec and
-[Superpowers](../skills/track/references/integrations/superpowers.md) supplies
-its implementation plan and execution evidence. The owning context selects and
-runs methods; Track reuses accepted artifacts and records the next unmet gate.
-Brief follows both artifact owners without requiring installation.
+concept, design, plan, and review evidence.
+[Superpowers](../skills/track/references/integrations/superpowers.md) can
+execute an accepted plan or supply one when selected as planner. The owning
+context chooses and runs methods. Track records the next unmet gate, and Brief
+follows the existing artifacts.
 
 Maintain checks signals against current state and existing ownership before
 choosing work. An already owned outcome is resumed only when it belongs to this
