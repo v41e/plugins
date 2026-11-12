@@ -64,7 +64,7 @@ For caller-supplied native Goal or scheduled-wakeup context, read the
    evidence, and remaining gate. Keep unsettled material choices explicit for
    human decision. For supplied method evidence, use the relevant integration:
 
-   - [EGM](references/integrations/egm.md): supplied concept, design, and
+   - [EGM](references/integrations/egm.md): supplied concept, design, plan, and
      document-review evidence.
    - [Superpowers](references/integrations/superpowers.md): supplied planning,
      implementation, and other selected engineering-method evidence.
